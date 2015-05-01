@@ -1,18 +1,22 @@
-diag_log format ["onPlayerRespawn for %s", name player];
+_unit = _this select 0;
 
-if (side player != west) then {
+diag_log format ["onPlayerRespawn for %1", name _unit];
+
+if (side _unit != west) then {
 	_classname = "NVGoggles";
-	switch (side player) do {
+	switch (side _unit) do {
 		case east: { _classname = "NVGoggles_OPFOR"; };
 		case resistance:  { _classname = "NVGoggles_INDEP"; };
 	};
 
-	player unassignItem _classname;
-	player removeItem _classname;
+	_unit unassignItem _classname;
+	_unit removeItem _classname;
 };
 
-if (player == blufor_hostage) then {
-	player execVM "prepHostage.sqf";
-} else {
-	player addPrimaryWeaponItem "acc_flashlight";
+_unit addPrimaryWeaponItem "acc_flashlight";
+
+if (!(isNil "blufor_hostage")) then {
+	if (_unit == blufor_hostage) then {
+		_unit execVM "prepHostage.sqf";
+	};
 };
