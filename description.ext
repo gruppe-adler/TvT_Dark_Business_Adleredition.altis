@@ -1,0 +1,14 @@
+author="Fusselwurm";
+OnLoadName = "Dark Business";
+onLoadIntro="Ein NATO-Helikopter ist über CSAT-Gebiet abgestürzt. Der Pilot kam mit dem Leben davon,  beindet sich allerdings in der Hand einer Gruppe von Aufständischen.";
+onLoadIntroTime=false;
+onLoadMission="Ein NATO-Helikopter ist über CSAT-Gebiet abgestürzt. Der Pilot kam mit dem Leben davon,  beindet sich allerdings in der Hand einer Gruppe von Aufständischen.";
+onLoadMissionTime=false;
+overviewPicture="pics\hossi.jpg";
+
+
+//Mission and map
+// disabledAI = 1;
+enableDebugConsole = 1;
+respawn = "BIRD";
+respawnDelay = 3;
