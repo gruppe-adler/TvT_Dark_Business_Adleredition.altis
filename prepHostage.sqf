@@ -1,3 +1,4 @@
+diag_log format ["removing weapons from %s", name _this];
 
 removeAllWeapons _this;
 removeAllItems _this;

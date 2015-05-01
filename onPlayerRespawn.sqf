@@ -1,3 +1,4 @@
+diag_log format ["onPlayerRespawn for %s", name player];
 
 if (side player != west) then {
 	_classname = "NVGoggles";
@@ -10,8 +11,8 @@ if (side player != west) then {
 	player removeItem _classname;
 };
 
-
-player addPrimaryWeaponItem "acc_flashlight";
 if (player == blufor_hostage) then {
 	player execVM "prepHostage.sqf";
+} else {
+	player addPrimaryWeaponItem "acc_flashlight";
 };
