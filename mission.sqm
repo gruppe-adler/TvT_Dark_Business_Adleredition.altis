@@ -18,7 +18,8 @@ class Mission
 		"A3_Soft_F_Offroad_01",
 		"A3_Weapons_F_Ammoboxes",
 		"A3_Soft_F_Car",
-		"A3_Structures_F_Ind_Cargo"
+		"A3_Structures_F_Ind_Cargo",
+		"A3_Air_F_EPC_Plane_CAS_01"
 	};
 	addOnsAuto[]=
 	{
@@ -37,6 +38,7 @@ class Mission
 		"A3_Weapons_F_Ammoboxes",
 		"A3_Soft_F_Car",
 		"A3_Structures_F_Ind_Cargo",
+		"A3_Air_F_EPC_Plane_CAS_01",
 		"a3_map_altis"
 	};
 	randomSeed=13299095;
@@ -504,7 +506,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=48;
+		items=49;
 		class Item0
 		{
 			position[]={11571.051,23.7026,11922.541};
@@ -1013,6 +1015,20 @@ class Mission
 			vehicle="Land_CargoBox_V1_F";
 			skill=0.60000002;
 			text="blufor_arsenal";
+		};
+		class Item48
+		{
+			position[]={13099.418,45.646919,7316.4937};
+			azimut=175;
+			special="FLY";
+			id=91;
+			side="EMPTY";
+			vehicle="B_Plane_CAS_01_F";
+			skill=0.60000002;
+			health=0;
+			fuel=0;
+			ammo=0.14815561;
+			text="blufor_downed";
 		};
 	};
 	class Markers
