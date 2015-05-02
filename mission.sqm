@@ -46,6 +46,7 @@ class Mission
 	randomSeed=13299095;
 	class Intel
 	{
+		resistanceWest=0;
 		timeOfChanges=14400;
 		startWeather=0.07;
 		startFog=0.39999998;
