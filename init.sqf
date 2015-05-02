@@ -7,5 +7,6 @@ if (!isDedicated) then {
 
 	[player] execVM "onPlayerRespawn.sqf"; // screw this.
 	execVM "addBriefing.sqf";
+	execVM "keepLove.sqf";
 	blufor_arsenal execVM "addArsenal.sqf";
 };
