@@ -7,7 +7,7 @@ switch (side player) do {
 		_content = "Eines unserer Bodenkampfflugzeuge wurde über feindlichem Gebiet in der Nähe des Skopos abgeschossen. Der Pilot konnte sich retten, wurde jedoch von einer Rebellengruppe festgesetzt. Unsere Beziehung zu diesen Gesellen ist schwierig. Unsere größte Sorge ist, daß er von ihnen an CSAT ausgeliefert wird. Dies darf unter keinen Umständen geschehen. Überzeugen Sie die Rebellen davon, mit uns zu kooperieren. Seien Sie nicht zimperlich, tun Sie was nötig ist. <br /><br />Holen sie unseren Mann lebendig heim!";
 
 		if (!(isNil "blufor_hostage")) then {
-			if (_unit == blufor_hostage) then {
+			if (player == blufor_hostage) then {
 				_title = "Zurück zu NATO-Einheiten finden!";
 				_content = "Eine Rebellengruppe hat mich gefangengenommen. Vielleicht lassen sie mich laufen - aber genausogut kann es sein, daß sie mich an CSAT verschachern. <br /><br />Ich muß zurück zu eigenen Einheiten finden!";
 			};
