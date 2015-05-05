@@ -17,3 +17,14 @@ class Header
 	minPlayers = 15;
 	maxPlayers = 43;
 };
+
+class Params
+{
+	class DebugMode
+	{
+		title = "debug mode";
+		values[] = {0,1};
+		texts[] = {"off", "on"};
+		default = 0;
+	};
+};

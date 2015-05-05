@@ -1,3 +1,4 @@
+DEBUG_MODE = (paramsArray select 0) == 1;
 TF_NO_AUTO_LONG_RANGE_RADIO = true;
 
 execVM "spreadLove.sqf"; // so the hostage can board all vehicles. also, nice for testing.
