@@ -5,11 +5,11 @@ onLoadMissionTime = false;
 overviewPicture = "pics\hossi.jpg";
 overviewText = "Konflikt dreier Parteien um einen abgeschossenen Piloten. Im Dunkeln. Zum Glück gibt es Taschenlampen!";
 
-//Mission and map
-// disabledAI = 1;
+disabledAI = 1;
 enableDebugConsole = 1;
-respawn = "BIRD";
-respawnDelay = 3;
+
+respawnDelay = 9999999;
+#include "CSSA3\CSSA3_header.hpp"
 
 class Header
 {
