@@ -1,0 +1,1 @@
+#define debugLog(msg) [msg, "ga_dark_business", [true, false, false] ] call CBA_fnc_debug

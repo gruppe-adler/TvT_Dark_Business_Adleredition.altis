@@ -7,7 +7,7 @@ execVM "spreadLove.sqf"; // so the hostage can board all vehicles. also, nice fo
 if (!isDedicated) then {
 	waitUntil {!isNull player};
 
-	[player] execVM "prepPlayer.sqf";
+	execVM "prepPlayer.sqf";
 	execVM "addBriefing.sqf";
 	execVM "keepLove.sqf";
 	blufor_arsenal execVM "addArsenal.sqf";
