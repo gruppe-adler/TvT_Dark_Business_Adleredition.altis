@@ -15,7 +15,7 @@ class Header
 {
 	gameType = RPG;
 	minPlayers = 15;
-	maxPlayers = 43;
+	maxPlayers = 87;
 };
 
 class Params
@@ -26,5 +26,12 @@ class Params
 		values[] = {0,1};
 		texts[] = {"off", "on"};
 		default = 0;
+	};
+	class VirtualArsenalPlacements
+	{
+		title = "place Virtual Arsenal";
+		values[] = {0, 1, 7}; // bitmap: 1.. BLUFOR, 2..OPFOR, 4...IND
+		texts[] = {"For no one", "For BLUFOR", "for all factions"};
+		default = "WEST";
 	};
 };

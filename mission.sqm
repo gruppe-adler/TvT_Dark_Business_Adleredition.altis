@@ -1024,7 +1024,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=49;
+		items=51;
 		class Item0
 		{
 			position[]={11571.051,23.7026,11922.541};
@@ -1552,6 +1552,26 @@ class Mission
 			vehicle="Box_NATO_Wps_F";
 			leader=1;
 			skill=0.60000002;
+		};
+		class Item49
+		{
+			position[]={12311.475,123.84512,8876.0869};
+			azimut=330;
+			id=136;
+			side="EMPTY";
+			vehicle="Land_CargoBox_V1_F";
+			skill=0.60000002;
+			text="opfor_arsenal";
+		};
+		class Item50
+		{
+			position[]={11542.235,78.534142,7052.4043};
+			azimut=330;
+			id=137;
+			side="EMPTY";
+			vehicle="Land_CargoBox_V1_F";
+			skill=0.60000002;
+			text="ind_arsenal";
 		};
 	};
 	class Markers
