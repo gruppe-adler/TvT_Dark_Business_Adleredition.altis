@@ -15,6 +15,9 @@ if (_isNvgNotAllowed) then {
 
 	_unit unassignItem _classname;
 	_unit removeItem _classname;
+} else {
+	_unit additem "NVGoggles";
+	_unit assignitem "NVGoggles";
 };
 
 _unit addPrimaryWeaponItem "acc_flashlight";
