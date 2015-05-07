@@ -20,6 +20,30 @@ if (_isNvgNotAllowed) then {
 	_unit assignitem "NVGoggles";
 };
 
+
+if (_unit isKindOf  "B_Soldier_SL_F") then {
+	_unit removeWeapon (primaryWeapon _unit);
+	_unit addWeapon "arifle_MX_GL_F";
+	_unit addBackPack "B_TacticalPack_mcamo";
+	_unit addMagazines ["Chemlight_red", 5];
+};
+if (_unit isKindOf  "O_Soldier_SL_F") then {
+	_unit removeWeapon (primaryWeapon _unit);
+	_unit addWeapon "arifle_Katiba_GL_F";
+	_unit addBackPack "B_TacticalPack_ocamo";
+	_unit addMagazines ["UGL_FlareGreen_F", 10];
+	_unit addMagazines ["Chemlight_yellow", 5];
+};
+if (_unit isKindOf  "I_Soldier_SL_F") then {
+	_unit removeWeapon (primaryWeapon _unit);
+	_unit addWeapon "arifle_Mk20_GL_F";
+	_unit addBackPack "B_TacticalPack_rgr";
+	_unit addMagazines ["UGL_FlareGreen_F", 10];
+	_unit addMagazines ["Chemlight_green", 5];
+};
+
+
+
 _unit addPrimaryWeaponItem "acc_flashlight";
 
 if (!(isNil "blufor_hostage")) then {
