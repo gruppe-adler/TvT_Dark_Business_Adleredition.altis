@@ -357,6 +357,7 @@ class Mission
 					vehicle="B_Helipilot_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="MH-9 pilot";
 				};
 				class Item1
 				{
@@ -369,6 +370,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
+					description="MH-9 pilot";
 				};
 			};
 		};
@@ -655,7 +657,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="blufor_lead";
-					description="Chef";
+					description="Platoon lead";
 				};
 			};
 		};
