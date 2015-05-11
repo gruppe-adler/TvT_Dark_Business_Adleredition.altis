@@ -55,7 +55,7 @@ if (!(isNil "blufor_hostage")) then {
 	};
 };
 
-
+/*
 _nil = player addMPEventHandler [
 	"MPkilled",
 	{
@@ -64,3 +64,4 @@ _nil = player addMPEventHandler [
 		};
 	}
 ];
+*/
