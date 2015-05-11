@@ -20,6 +20,9 @@ if (_isNvgNotAllowed) then {
 	_unit assignitem "NVGoggles";
 };
 
+if (!ALLOW_40MM_HE) then {
+	_unit removeMagazines "1Rnd_HE_Grenade_shell";
+};
 
 if ((_unit isKindOf  "B_Soldier_TL_F") or (_unit isKindOf  "B_Soldier_SL_F") or (_unit isKindOf  "B_Officer_F")) then {
 	_unit removeWeapon (primaryWeapon _unit);

@@ -1,5 +1,7 @@
 _title = "";
 _content = "";
+_condition = "";
+_title = "";
 
 switch (side player) do {
 	case west: {
@@ -29,9 +31,9 @@ switch (side player) do {
 };
 
 player createDiaryRecord ["Diary", [_title, _content]];
-task_main_objective = player createSimpleTask [_title];
-task_main_objective setSimpleTaskDescription [_condition, _title];
 
+task_main_objective = player createSimpleTask [_title];
+task_main_objective setSimpleTaskDescription [_condition, _title, _title];
 player setCurrentTask task_main_objective;
 
 /*

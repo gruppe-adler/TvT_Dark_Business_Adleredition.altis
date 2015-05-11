@@ -34,4 +34,10 @@ class Params
 		texts[] = {"For no one", "For BLUFOR", "for all factions"};
 		default = "WEST";
 	};
+	class Allow40MmHe {
+		title = "Allow 40mm HE grenades";
+		values[] = {0, 1};
+		texts[] = {"no", "yes"};
+		default = 0";
+	};
 };
