@@ -17,10 +17,6 @@ if (!isDedicated) then {
 	execVM "keepLove.sqf";
 	execVM "addArsenal.sqf";
 };
-
-
-//if (!ALLOW_40MM_HE) then {
-//	blufor_munitions removeMagazines "1Rnd_HE_Grenade_shell";
-//	opfor_munitions removeMagazines "1Rnd_HE_Grenade_shell";
-//	ind_munitions removeMagazines "1Rnd_HE_Grenade_shell";
-//};
+if (isServer) then {
+	execVM "prepAmmoBoxes.sqf";
+};
