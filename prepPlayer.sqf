@@ -54,14 +54,3 @@ if (!(isNil "blufor_hostage")) then {
 		_unit execVM "prepHostage.sqf";
 	};
 };
-
-/*
-_nil = player addMPEventHandler [
-	"MPkilled",
-	{
-		if (!(isNil "TFAR_fnc_forceSpectator")) then {
-			[player, true] call TFAR_fnc_forceSpectator;
-		};
-	}
-];
-*/
