@@ -1096,12 +1096,14 @@ class Mission
 		items=51;
 		class Item0
 		{
-			position[]={11571.051,23.7026,11922.541};
+			position[]={11575.107,23.627476,11918.836};
+			azimut=135;
 			id=88;
 			side="EMPTY";
 			vehicle="B_Heli_Light_01_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
+			text="blufor_heli";
 		};
 		class Item1
 		{
@@ -1634,7 +1636,7 @@ class Mission
 		};
 		class Item50
 		{
-			position[]={11542.235,78.534142,7052.4043};
+			position[]={11543.107,78.223526,7046.5576};
 			azimut=330;
 			id=138;
 			side="EMPTY";

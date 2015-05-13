@@ -25,3 +25,5 @@ if (!ALLOW_40MM_HE) then {
 
 	[blufor_munitions, "3Rnd_HE_Grenade_shell"] call removeMagazinesCargoGlobal;
 };
+
+clearBackpackCargoGlobal blufor_heli;
