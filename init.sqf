@@ -2,9 +2,10 @@ DEBUG_MODE = (paramsArray select 0) == 1;
 VIRTUAL_ARSENAL_PLACEMENTS = (paramsArray select 1);
 ALLOW_40MM_HE = (paramsArray select 2) == 1;
 
-execVM "tfarSettings.sqf";
+
 
 if (isServer) then {
+	execVM "tfarSettings.sqf";
 	execVM "prepAmmoBoxes.sqf";
 	execVM "spreadLove.sqf"; // so the hostage can board all vehicles. also, nice for testing.
 };
