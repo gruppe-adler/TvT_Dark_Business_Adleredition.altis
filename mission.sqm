@@ -336,6 +336,7 @@ class Mission
 					id=24;
 					side="WEST";
 					vehicle="B_Pilot_F";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="SERGEANT";
@@ -390,6 +391,7 @@ class Mission
 					id=27;
 					side="EAST";
 					vehicle="O_officer_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -474,6 +476,7 @@ class Mission
 					id=34;
 					side="GUER";
 					vehicle="I_soldier_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
 				};
