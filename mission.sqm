@@ -1173,6 +1173,7 @@ class Mission
 			leader=1;
 			lock="LOCKED";
 			skill=0.60000002;
+			text="blufor_hemtt";
 		};
 		class Item2
 		{
