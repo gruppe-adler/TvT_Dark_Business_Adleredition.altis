@@ -8,6 +8,7 @@ if (isServer) then {
 	execVM "tfarSettings.sqf";
 	execVM "prepAmmoBoxes.sqf";
 	execVM "spreadLove.sqf"; // so the hostage can board all vehicles. also, nice for testing.
+	blufor_hemtt setVehicleLock "LOCKED";
 };
 
 if (!isDedicated) then {
