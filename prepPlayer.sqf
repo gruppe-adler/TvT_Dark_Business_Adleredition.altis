@@ -48,6 +48,10 @@ if ((_unit isKindOf  "I_Soldier_TL_F") or (_unit isKindOf  "I_Soldier_SL_F") or 
 };
 
 _unit addPrimaryWeaponItem "acc_flashlight";
+if (isClass(configFile >> "CfgWeapons" >> "ACE_EarPlugs")) then {
+	_unit addItem "ACE_EarPlugs";
+};
+
 
 if (!(isNil "blufor_hostage")) then {
 	if (_unit == blufor_hostage) then {
