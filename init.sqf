@@ -24,7 +24,7 @@ if (isServer) then {
 
 if (!isDedicated) then {
 	waitUntil {!isNull player};
-
+	enableSentences false;
 	[] execVM "CSSA3\CSSA3_init.sqf";
 	execVM "prepPlayer.sqf";
 	execVM "addBriefing.sqf";
