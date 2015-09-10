@@ -22,13 +22,55 @@
 				<English></English>
 				<German></German>
 			</Key>
-			<!--
+                        
+                        <Key ID="str_GRAD_debugMode">
+				<Original>debug mode</Original>
+				<English>debug mode</English>
+				<German>Debugmodus</German>
+			</Key>
+                        <Key ID="str_GRAD_placeVirtualArsenal">
+				<Original>place Virtual Arsenal</Original>
+				<English>place Virtual Arsenal</English>
+				<German>Virtual Arsenal setzen</German>
+			</Key>
+                        <Key ID="str_GRAD_allow40mm">
+				<Original>Allow 40mm HE grenades</Original>
+				<English>Allow 40mm HE grenades</English>
+				<German>40mm Explosivgranaten erlauben</German>
+			</Key>                        
+			<Key ID="str_GRAD_no">
+				<Original>no</Original>
+				<English>no</English>
+				<German>nein</German>
+			</Key>
+			<Key ID="str_GRAD_yes">
+				<Original>yes</Original>
+				<English>yes</English>
+				<German>ja</German>
+			</Key>
+			<Key ID="str_GRAD_none">
+				<Original>no one</Original>
+				<English>no one</English>
+				<German>niemanden</German>
+			</Key>
+			<Key ID="str_GRAD_blu">
+				<Original>BLUFOR</Original>
+				<English>BLUFOR</English>
+				<German>BLUFOR</German>
+			</Key>
+			<Key ID="str_GRAD_all">
+				<Original>everyone</Original>
+				<English>everyone</English>
+				<German>jeden</German>
+			</Key>                        
+                        <!--
 			<Key ID="">
 				<Original></Original>
 				<English></English>
 				<German></German>
 			</Key>
 			-->
+                        
 		</Container>
 		<Container name="briefings">
 			<Key ID="str_GRAD_BLUFOR_title">
