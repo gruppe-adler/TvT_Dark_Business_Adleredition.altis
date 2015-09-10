@@ -19,3 +19,23 @@ Local time is sometime in the night. BLUFOR have fancy shit (GPS, NVG), whereas 
 * OPFOR: get the hostage back to the OPFOR base (alive) 
 * IND: get OPFOR's ammo truck to the IND  base (alive)
 
+
+## Details
+
+### equipment
+
+* iron sights only
+* 40mm flares & chemlights for every side
+* BLU:
+    * one helicopter (MH-9)
+    * night vision
+* OPF, IND:    
+    * no night vision
+    * flash lights
+    * a few light vehicles available for IND and OPF
+
+
+### slot setup
+
+On every side, slots are organized for one Platoon as per Dslyecxi's TTP2.
+Additionally, BLU has 2 pilot slots for their MH-9, plus one slot for the captured pilot / hostage.

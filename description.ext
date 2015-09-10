@@ -1,9 +1,9 @@
 author = "Fusselwurm";
-OnLoadName = "Dark Business";
-onLoadMission = "Konflikt dreier Parteien um einen abgeschossenen Piloten";
+onLoadName = $STR_GRAD_onLoadName;
+onLoadMission = $STR_GRAD_onLoadMission;
 onLoadMissionTime = false;
 overviewPicture = "pics\hossi.jpg";
-overviewText = "Konflikt dreier Parteien um einen abgeschossenen Piloten. Im Dunkeln. Zum Glück gibt es Taschenlampen!";
+overviewText = $STR_GRAD_overviewText;
 
 disabledAI = 1;
 enableDebugConsole = 1;
@@ -15,29 +15,29 @@ class Header
 {
 	gameType = RPG;
 	minPlayers = 15;
-	maxPlayers = 87;
+	maxPlayers = 97;
 };
 
 class Params
 {
 	class DebugMode
 	{
-		title = "debug mode";
+		title = $STR_GRAD_debugMode;
 		values[] = {0,1};
-		texts[] = {"off", "on"};
+		texts[] = {$STR_GRAD_no, $STR_GRAD_yes};
 		default = 0;
 	};
 	class VirtualArsenalPlacements
 	{
-		title = "place Virtual Arsenal";
+		title = $STR_GRAD_placeVirtualArsenal;
 		values[] = {0, 1, 7}; // bitmap: 1.. BLUFOR, 2..OPFOR, 4...IND
-		texts[] = {"For no one", "For BLUFOR", "for all factions"};
+		texts[] = {$STR_GRAD_none, $STR_GRAD_blu, $STR_GRAD_all};
 		default = "WEST";
 	};
 	class Allow40MmHe {
-		title = "Allow 40mm HE grenades";
+		title = $STR_GRAD_allow40mm;
 		values[] = {0, 1};
-		texts[] = {"no", "yes"};
-		default = 0";
+		texts[] = {$STR_GRAD_no, $STR_GRAD_yes};
+		default = 0;
 	};
 };
