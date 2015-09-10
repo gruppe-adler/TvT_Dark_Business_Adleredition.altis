@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project name="TvT_DarkBusiness_project">
 	<Package name="TvT_DarkBusiness_package">
+        <Container name="description">
+			<Key ID="str_GRAD_onLoadName">
+				<Original>Dark Business (Adler Edition)</Original>
+				<English>Dark Business (Adler Edition)</English>
+				<German>Dark Business (Adleredition)</German>
+			</Key>
+			<Key ID="str_GRAD_onLoadMission">
+				<Original>3 way conflict over a downed pilot and a truck of ammunition</Original>
+				<English>3 way conflict over a downed pilot and a truck of ammunition</English>
+				<German>Dreierkonflikt um einen abgeschossenen Piloten und einen Munitionslaster</German>
+			</Key>
+			<Key ID="str_GRAD_overviewText">
+				<Original></Original>
+				<English></English>
+				<German>Konflikt dreier Parteien um einen abgeschossenen Piloten. Im Dunkeln. Zum Glück gibt es Taschenlampen!</German>
+			</Key>
+			<Key ID="str_GRAD_onLoadName">
+				<Original></Original>
+				<English></English>
+				<German></German>
+			</Key>
+			<!--
+			<Key ID="">
+				<Original></Original>
+				<English></English>
+				<German></German>
+			</Key>
+			-->
+		</Container>
 		<Container name="briefings">
 			<Key ID="str_GRAD_BLUFOR_title">
 				<Original>Rescue the downed pilot</Original>

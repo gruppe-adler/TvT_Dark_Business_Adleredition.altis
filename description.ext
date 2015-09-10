@@ -1,9 +1,9 @@
 author = "Fusselwurm";
-OnLoadName = "Dark Business";
-onLoadMission = "Konflikt dreier Parteien um einen abgeschossenen Piloten";
+onLoadName = $STR_GRAD_onLoadName;
+onLoadMission = $STR_GRAD_onLoadMission;
 onLoadMissionTime = false;
 overviewPicture = "pics\hossi.jpg";
-overviewText = "Konflikt dreier Parteien um einen abgeschossenen Piloten. Im Dunkeln. Zum Glück gibt es Taschenlampen!";
+overviewText = $STR_GRAD_overviewText;
 
 disabledAI = 1;
 enableDebugConsole = 1;
