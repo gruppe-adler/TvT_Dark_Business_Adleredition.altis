@@ -13,27 +13,21 @@
 				<German>Dreierkonflikt um einen abgeschossenen Piloten und einen Munitionslaster</German>
 			</Key>
 			<Key ID="str_GRAD_overviewText">
-				<Original></Original>
-				<English></English>
+				<Original>Three-way conflict over a downed pilot. In the dark. Luckily, there are flash lights!</Original>
+				<English>Three-way conflict over a downed pilot. In the dark. Luckily, there are flash lights!</English>
 				<German>Konflikt dreier Parteien um einen abgeschossenen Piloten. Im Dunkeln. Zum Glück gibt es Taschenlampen!</German>
-			</Key>
-			<Key ID="str_GRAD_onLoadName">
-				<Original></Original>
-				<English></English>
-				<German></German>
-			</Key>
-                        
-                        <Key ID="str_GRAD_debugMode">
+			</Key>                        
+			<Key ID="str_GRAD_debugMode">
 				<Original>debug mode</Original>
 				<English>debug mode</English>
 				<German>Debugmodus</German>
 			</Key>
-                        <Key ID="str_GRAD_placeVirtualArsenal">
+			<Key ID="str_GRAD_placeVirtualArsenal">
 				<Original>place Virtual Arsenal</Original>
 				<English>place Virtual Arsenal</English>
 				<German>Virtual Arsenal setzen</German>
 			</Key>
-                        <Key ID="str_GRAD_allow40mm">
+			<Key ID="str_GRAD_allow40mm">
 				<Original>Allow 40mm HE grenades</Original>
 				<English>Allow 40mm HE grenades</English>
 				<German>40mm Explosivgranaten erlauben</German>
@@ -62,15 +56,8 @@
 				<Original>everyone</Original>
 				<English>everyone</English>
 				<German>jeden</German>
-			</Key>                        
-                        <!--
-			<Key ID="">
-				<Original></Original>
-				<English></English>
-				<German></German>
-			</Key>
-			-->
-                        
+			</Key>          
+
 		</Container>
 		<Container name="briefings">
 			<Key ID="str_GRAD_BLUFOR_title">
