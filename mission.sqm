@@ -279,6 +279,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="opfor_lead";
+					description="Platoon leader";
 				};
 				class Item1
 				{
@@ -290,6 +291,7 @@ class Mission
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
+					description="Platoon Sergeant";
 				};
 				class Item2
 				{
@@ -321,6 +323,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="ind_lead";
+					description="Platoon leader";
 				};
 				class Item1
 				{
@@ -341,6 +344,7 @@ class Mission
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
+					description="Platoon Sergeant";
 				};
 			};
 		};
@@ -523,6 +527,7 @@ class Mission
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
+					description="Platoon Sergeant";
 				};
 				class Item2
 				{
@@ -535,7 +540,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="blufor_lead";
-					description="Platoon lead";
+					description="Platoon leader";
 				};
 				class Item3
 				{
