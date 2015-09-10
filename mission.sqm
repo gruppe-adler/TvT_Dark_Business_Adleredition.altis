@@ -22,7 +22,8 @@ class Mission
 		"A3_Air_F_EPC_Plane_CAS_01",
 		"A3_Soft_F_Gamma_TruckHeavy",
 		"A3_Structures_F_Heli_Items_Airport",
-		"A3_Structures_F_Items_Electronics"
+		"A3_Structures_F_Items_Electronics",
+		"A3_Structures_F_Civ_Camping"
 	};
 	addOnsAuto[]=
 	{
@@ -45,6 +46,7 @@ class Mission
 		"A3_Soft_F_Gamma_TruckHeavy",
 		"A3_Structures_F_Heli_Items_Airport",
 		"A3_Structures_F_Items_Electronics",
+		"A3_Structures_F_Civ_Camping",
 		"a3_map_altis"
 	};
 	randomSeed=13299095;
@@ -1151,7 +1153,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=64;
+		items=66;
 		class Item0
 		{
 			position[]={23175.406,3.1900001,18963.852};
@@ -1832,6 +1834,25 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			description="Platoon lead";
+		};
+		class Item64
+		{
+			position[]={17650.275,31.956011,10555.296};
+			special="NONE";
+			id=163;
+			side="EMPTY";
+			vehicle="Campfire_burning_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item65
+		{
+			position[]={17651.412,33.679317,10580.72};
+			id=164;
+			side="EMPTY";
+			vehicle="Land_FirePlace_F";
+			leader=1;
+			skill=0.60000002;
 		};
 	};
 	class Markers
