@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="TvT_DarkBusiness_project">
+	<Package name="TvT_DarkBusiness_package">
+		<Container name="briefings">
+			<Key ID="str_GRAD_BLUFOR_title">
+				<Original>Rescue the downed pilot</Original>
+				<English>Rescue the downed pilot</English>
+				<German>Abgeschossenen Piloten befreien</German>
+			</Key>
+			<Key ID="str_GRAD_BLUFOR_story">
+				<Original>One of our ground attack planes was shot down over enemy territory. The pilot survived the crash, but was subsequently captured by a rebel group. Our relations to these guys is… difficult. Our biggest concern is that they'll deliver him into the hands of CSAT. This must not happen. Convince the rebels to cooperate with us. Don't be squeamish, do what is necessary. &lt;br /&gt;&lt;br /&gt;Bring our guy home!</Original>
+				<English>One of our ground attack planes was shot down over enemy territory. The pilot survived the crash, but was subsequently captured by a rebel group. Our relations to these guys is… difficult. Our biggest concern is that they'll deliver him into the hands of CSAT. This must not happen. Convince the rebels to cooperate with us. Don't be squeamish, do what is necessary. &lt;br /&gt;&lt;br /&gt;Bring our guy home!</English>
+				<German>Eines unserer Bodenkampfflugzeuge wurde über feindlichem Gebiet abgeschossen. Der Pilot konnte sich retten, wurde jedoch von einer Rebellengruppe festgesetzt. Unsere Beziehung zu diesen Gesellen ist schwierig. Unsere größte Sorge ist, daß er von ihnen an CSAT ausgeliefert wird. Dies darf unter keinen Umständen geschehen. Überzeugen Sie die Rebellen davon, mit uns zu kooperieren. Seien Sie nicht zimperlich, tun Sie was nötig ist. &lt;br /&gt;&lt;br /&gt;Holen sie unseren Mann lebendig heim!</German>
+			</Key>
+			<Key ID="str_GRAD_BLUFOR_condition">
+				<Original>Bring the captured pilot back to your home base!</Original>
+				<English>Bring the captured pilot back to your home base!</English>
+				<German>Bringen Sie den gefangenen Piloten zurück zu Ihrer Heimatbasis!</German>
+			</Key>
+
+			<Key ID="str_GRAD_BLUFOR_hostage_condition">
+				<Original>Get back to your BLUFOR home base!</Original>
+				<English>Get back to your BLUFOR home base!</English>
+				<German>Finden Sie zurück zur BLUFOR-Heimatbasis!</German>
+			</Key>
+			<Key ID="str_GRAD_BLUFOR_hostage_story">
+				<Original>A rebel group has captured me. Maybe they'll let me go - but they may as well sell me off to CSAT. &lt;br /&gt;&lt;br /&gt; I have to find back to friendly forces!</Original>
+				<English>A rebel group has captured me. Maybe they'll let me go - but they may as well sell me off to CSAT. &lt;br /&gt;&lt;br /&gt; I have to find back to friendly forces!</English>
+				<German>Eine Rebellengruppe hat mich gefangengenommen. Vielleicht lassen sie mich laufen - aber genausogut kann es sein, daß sie mich an CSAT verschachern. <br /><br />Ich muß zurück zu eigenen Einheiten finden!</German>
+			</Key>
+
+			<Key ID="str_GRAD_BLUFOR_hostage_title">
+				<Original>Find NATO troops!</Original>
+				<English>Find NATO troops!</English>
+				<German>Zurück zu NATO-Einheiten finden!</German>
+			</Key>
+
+			<Key ID="str_GRAD_IND_title">
+				<Original>Capture an ammo truck</Original>
+				<English>Capture an ammo truck</English>
+				<German>Munitionstruck erbeuten</German>
+			</Key>
+			<Key ID="str_GRAD_IND_condition">
+				<Original>Get the ammo truck to your home base!</Original>
+				<English>Get the ammo truck to your home base!</English>
+				<German>Bringen Sie den Munitionstruck zu Ihrer Heimatbasis!</German>
+			</Key>
+			<Key ID="str_GRAD_IND_story">
+				<Original>Yesterday evening, a NATO plane was shot down by CSAT units. A watchful shepherd alerted us to a parachute. One of our teams was near, and after only a short search we could apprehend the pilot. What a happy day! As you all know, we have problems with ammunition supply. Pilots are worth a lot. CSAT units do have lots of ammunition, we know that much. With the pilot to bargain with, we might convince them to give us a truckload.&lt;br /&gt;&lt;br /&gt;Be careful, this game is dangerous!</Original>
+				<English>Yesterday evening, a NATO plane was shot down by CSAT units. A watchful shepherd alerted us to a parachute. One of our teams was near, and after only a short search we could apprehend the pilot. What a happy day! As you all know, we have problems with ammunition supply. Pilots are worth a lot. CSAT units do have lots of ammunition, we know that much. With the pilot to bargain with, we might convince them to give us a truckload.&lt;br /&gt;&lt;br /&gt;Be careful, this game is dangerous!</English>
+				<German>Gestern abend wurde ein NATO-Flugzeug von CSAT-Einheiten abgeschossen. Ein aufmerksamer Hirte meldete uns einen Fallschirmspringer. Eins unserer Teams war in der Nähe, und wir konnten nach nur kurzer Suche den Piloten unverletzt gefangennehmen. Was für ein Glückstag! Wie ihr alle wißt, haben wir Probleme mit der Munitionsbeschaffung. Piloten sind eine Menge wert. CSAT-Einheiten haben einen Haufen Munition, das  wissen wir - mit dem Piloten in der Hinterhand läßt sich vielleicht jemand davon überzeugen, uns einen LKW voll zu besorgen. &lt;br /&gt;&lt;br /&gt;Das Spiel ist gefährlich, seit auf der Hut!</German>
+			</Key>
+
+			<Key ID="str_GRAD_OPFOR_title">
+				<Original>Capture the enemey pilot</Original>
+				<English>Capture the enemey pilot</English>
+				<German>Feindlichen Piloten gefangennehmen</German>
+			</Key>
+			<Key ID="str_GRAD_OPFOR_story">
+				<Original>Our glorious forces shot down an air plane of the aggressor. Our patrols found a parachute and concluded that the pilot survived. We assume he was found by the rebels. Your task is to find this pilot and apprehend him. Do what is necessary. This mission is of utmost importance. Negotiate with the rebels, threaten them, shoot them, give them weapons - your concern is only to get the pilot into our hands alive.&lt;br /&gt;&lt;br /&gt;Failure is not an option!</Original>
+				<English>Our glorious forces shot down an air plane of the aggressor. Our patrols found a parachute and concluded that the pilot survived. We assume he was found by the rebels. Your task is to find this pilot and apprehend him. Do what is necessary. This mission is of utmost importance. Negotiate with the rebels, threaten them, shoot them, give them weapons - your concern is only to get the pilot into our hands alive.&lt;br /&gt;&lt;br /&gt;Failure is not an option!</English>
+				<German>Unsere ruhmreichen Streitkräfte haben ein Flugzeug des Aggressors zerstört. Unsere Patrouillen fanden in dem Gebiet einen Fallschirm, und schlossen daraus, daß der Pilot sich retten konnte. Wir vermuten, daß er bei den Rebellen Unterschlupf gefunden hat. Ihre Aufgabe ist es, diesen Piloten zu finden und in Gewahrsam zu nehmen. Tun Sie, was nötig ist. Dies ist eine Mission von höchster Wichtigkeit. Verhandeln Sie mit den Rebellen, drohen Sie ihnen, erschießen Sie sie oder geben Sie ihnen Waffen - über allem steht das Ziel, diesen Piloten lebend in unsere Hände zu bekommen. &lt;br /&gt;&lt;br /&gt;Scheitern ist keine Option!</German>
+			</Key>
+			<Key ID="str_GRAD_OPFOR_condition">
+				<Original>Bring the pilot to your home base alive</Original>
+				<English>Bring the pilot to your home base alive</English>
+				<German>Bringen Sie den Piloten lebendig zu Ihrer Heimatbasis!</German>
+			</Key>
+
+		</Container>
+	</Package>
+</Project>
+
