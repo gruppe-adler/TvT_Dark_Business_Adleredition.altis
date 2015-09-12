@@ -16,6 +16,7 @@ DB_updateTasks = {
 	{task_main_objective setTaskState OBJECTIVE_STATE_BLUFOR;} remoteExec ["BIS_fnc_call", WEST, true];
 	{task_main_objective setTaskState OBJECTIVE_STATE_IND;} remoteExec ["BIS_fnc_call", RESISTANCE, true];
 	{task_main_objective setTaskState OBJECTIVE_STATE_OPFOR;} remoteExec ["BIS_fnc_call", EAST, true];
+	{task_main_objective setTaskState 'CANCELED';} remoteExec ["BIS_fnc_call", CIVILIAN, true];
 };
 
 DB_endMission = {
@@ -24,6 +25,7 @@ DB_endMission = {
 	{["end1", (OBJECTIVE_STATE_BLUFOR == 'SUCCEEDED')] call BIS_fnc_endMission;} remoteExec ["BIS_fnc_call", WEST, true];
 	{["end1", (OBJECTIVE_STATE_IND == 'SUCCEEDED')] call BIS_fnc_endMission;} remoteExec ["BIS_fnc_call", RESISTANCE, true];
 	{["end1", (OBJECTIVE_STATE_OPFOR == 'SUCCEEDED')] call BIS_fnc_endMission;} remoteExec ["BIS_fnc_call", EAST, true];
+	{["end1", false] call BIS_fnc_endMission;} remoteExec ["BIS_fnc_call", CIV, true];
 	adminLog("mission end has been called for");
 };
 
