@@ -3,6 +3,8 @@
 DEBUG_MODE = (paramsArray select 0) == 1;
 VIRTUAL_ARSENAL_PLACEMENTS = (paramsArray select 1);
 ALLOW_40MM_HE = (paramsArray select 2) == 1;
+VICTORY_TIMEOUT = 900; // seconds
+
 
 if (isServer) then {
 	[] execVM "tfarSettings.sqf";
