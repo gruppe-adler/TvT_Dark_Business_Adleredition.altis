@@ -76,7 +76,48 @@
 			</Key>          
 		</Container>
 		<Container name="scenario_description">
-			<Key ID="str_GRAD_scenario_subject">
+			<Key ID="str_GRAD_scenario_background_title">
+				<Original>Background</Original>
+				<German>Hintergrund</German>
+			</Key>
+			<Key ID="str_GRAD_scenario_story_title">
+				<Original>Story</Original>
+				<German>Story</German>
+			</Key>
+			<Key ID="str_GRAD_scenario_environment_title">
+				<Original>Environment</Original>
+				<German>Situation</German>
+			</Key>
+			<Key ID="str_GRAD_scenario_equipment_title">
+				<Original>Equipment</Original>
+				<German>Ausrüstung</German>
+			</Key>
+			<Key ID="str_GRAD_scenario_background">
+				<Original>
+					&lt;br /&gt; In 2006, ShackTactical member Awoihjaweohr created the "Dark Business" mission.
+					&lt;br /&gt;
+					&lt;br /&gt; This mission you are currently playing is only an implementation of that mission basic scenario.
+					&lt;br /&gt;
+					&lt;br /&gt; I am not affiliated with ShackTac in any way.
+					&lt;br /&gt; Congratulations, you're playing a cheap rip-off ;)
+					&lt;br /&gt;
+					&lt;br /&gt; For the sources, see https://github.com/gruppe-adler/TvT_Dark_Business_Adleredition.altis
+					&lt;br /&gt;
+					&lt;br /&gt; -- Fusselwurm &lt;fusselwurm@gruppe-adler.de&gt;
+				</Original>
+				<German>
+					&lt;br /&gt; Im Jahr 2006 entwickelte ShackTactical-Mitglied Awoihjaweohr die "Dark Business"-Mission.
+					&lt;br /&gt;
+					&lt;br /&gt; Diese Mission hier ist lediglich eine Implementierung des Missionsprinzips.
+					&lt;br /&gt;
+					&lt;br /&gt; Ich stehe keiner Beziehung zu ShackTac oder Awoihjaweohr
+					&lt;br /&gt; Glückwunsch, du spielst nur eine billige Kopie ;)
+					&lt;br /&gt;
+					&lt;br /&gt; Quelltext siehe https://github.com/gruppe-adler/TvT_Dark_Business_Adleredition.altis
+					&lt;br /&gt;
+					&lt;br /&gt; -- Fusselwurm &lt;fusselwurm@gruppe-adler.de&gt;</German>
+			</Key>
+            <Key ID="str_GRAD_scenario_subject">
 				<Original>"Dark Business"?</Original>
 				<German>"Dark Business"?</German>
 			</Key>			
