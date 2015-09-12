@@ -7,13 +7,8 @@ publicVariable OBJECTIVE_STATE_BLUFOR;
 publicVariable OBJECTIVE_STATE_IND;
 publicVariable OBJECTIVE_STATE_OPFOR;
 
-
-waitUntil {
-	sleep 1;
-	(!isNil "blufor_hostage") && (!isNil "opfor_munitions_truck")
-};
-
 [] spawn {
+	waitUntil { sleep 1; (!isNil "blufor_hostage") };
 	while { true } do {
 		_status = 'dead';
 		if (alive blufor_hostage) then { _status = 'alive'; };
@@ -30,6 +25,7 @@ waitUntil {
 };
 
 [] spawn {
+	waitUntil { sleep 1; (!isNil "blufor_hostage") };
 	while { true } do {
 		_status = 'dead';
 		if (alive blufor_hostage) then { _status = 'alive'; };
@@ -46,6 +42,7 @@ waitUntil {
 };
 
 [] spawn {
+	waitUntil { sleep 1; (!isNil "opfor_munitions_truck") };
 	while { (opfor_munitions_truck distance2D ind_arsenal) > 50 } do {
 		sleep 10;
 	};
@@ -58,6 +55,7 @@ waitUntil {
 };
 
 [] spawn {
+	waitUntil { sleep 1; (!isNil "blufor_hostage") };
 	waitUntil { sleep 5; !alive blufor_hostage };
 	OBJECTIVE_STATE_BLUFOR = 'FAILED';
 	OBJECTIVE_STATE_OPFOR = 'FAILED';
@@ -67,6 +65,7 @@ waitUntil {
 };
 
 [] spawn {
+	waitUntil { sleep 1; (!isNil "opfor_munitions_truck") };
 	waitUntil { sleep 5; !alive opfor_munitions_truck };
 	OBJECTIVE_STATE_IND = 'FAILED';
 	publicVariable 'OBJECTIVE_STATE_IND';
