@@ -1,8 +1,9 @@
 author = "Fusselwurm";
+loadScreen = "pics\mission-title-512x256.jpg";
 onLoadName = $STR_GRAD_onLoadName;
 onLoadMission = $STR_GRAD_onLoadMission;
 onLoadMissionTime = false;
-overviewPicture = "pics\hossi.jpg";
+overviewPicture = "pics\mission-title-512x256.jpg";
 overviewText = $STR_GRAD_overviewText;
 
 disabledAI = 1;
@@ -13,7 +14,7 @@ respawnDelay = 9999999;
 
 class Header
 {
-	gameType = RPG;
+	gameType = Team;
 	minPlayers = 15;
 	maxPlayers = 97;
 };

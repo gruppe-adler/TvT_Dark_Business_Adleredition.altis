@@ -13,10 +13,51 @@
 				<German>Dreierkonflikt um einen abgeschossenen Piloten und einen Munitionslaster</German>
 			</Key>
 			<Key ID="str_GRAD_overviewText">
-				<Original>Three-way conflict over a downed pilot. In the dark. Luckily, there are flash lights!</Original>
-				<English>Three-way conflict over a downed pilot. In the dark. Luckily, there are flash lights!</English>
-				<German>Konflikt dreier Parteien um einen abgeschossenen Piloten. Im Dunkeln. Zum Glück gibt es Taschenlampen!</German>
-			</Key>                        
+				<Original>TvT scenario with three parties (or four, if you count the hostage). 
+					&lt;br /&gt; Story: 
+					&lt;br /&gt; A downed NATO (BLUFOR) pilot is held by rebels (IND). The other forces in the area want to apprehend (CSAT, i.e. OPFOR) or freee (NATO) him. The rebels need ammunition, which CSAT could provide in form of an ammo truck.
+					&lt;br /&gt; 
+					&lt;br /&gt;That's it. How the side leaders go about achieving their goals is up to them. Trade, fight, do both - only your objective matters.
+					&lt;br /&gt;
+					&lt;br /&gt; Environment/equipment:
+					&lt;br /&gt; * it is dark
+					&lt;br /&gt; * initially, you do not have any means of communication (encrypted radios) - you have to find partners/enemies in a large area
+					&lt;br /&gt; * NVG only for BLUFOR. IND,OPFOR use flares, flash lights etc
+					&lt;br /&gt; * unarmed wheeled (IND,OPFOR) or rotary wing (BLUFOR) vehicles only
+					&lt;br /&gt; * permadeath
+					&lt;br /&gt; * largely default loadouts
+				</Original>
+				<English>TvT scenario with three parties (or four, if you count the hostage). 
+					&lt;br /&gt; Story: 
+					&lt;br /&gt; A downed NATO (BLUFOR) pilot is held by rebels (IND). The other forces in the area want to apprehend (CSAT, i.e. OPFOR) or freee (NATO) him. The rebels need ammunition, which CSAT could provide in form of an ammo truck.
+					&lt;br /&gt; 
+					&lt;br /&gt;That's it. How the side leaders go about achieving their goals is up to them. Trade, fight, do both - only your objective matters.
+					&lt;br /&gt;
+					&lt;br /&gt; Environment/equipment:
+					&lt;br /&gt; * it is dark
+					&lt;br /&gt; * initially, you do not have any means of communication (encrypted radios) - you have to find partners/enemies in a large area
+					&lt;br /&gt; * NVG only for BLUFOR. IND,OPFOR use flares, flash lights etc
+					&lt;br /&gt; * unarmed wheeled (IND,OPFOR) or rotary wing (BLUFOR) vehicles only
+					&lt;br /&gt; * permadeath
+					&lt;br /&gt; * largely default loadouts
+				</English>
+				<German>TvT-Szenario mit drei Parteien (vier, wenn man die Geisel mitzählt). 
+					&lt;br /&gt; Story: 
+					&lt;br /&gt; Ein abgeschossener NATO (BLUFOR)-Pilot  wird von Rebellen (IND) gefangengehalten. Die anderen Kräfte möchten ihn festnehmen (CSAT, d.h. OPFOR) beziehungsweise befreien (NATO). Die Rebellen brauchen Munition, die CSAT ihnen in Form eines Munitions-LKW geben könnte.
+					&lt;br /&gt;
+					&lt;br /&gt; Das ist alles. Was die Führer der einzelnen Seiten tun, um ihr Ziel zu erreichen, bleibt ihnen überlassen. Handeln, kämpfen, oder beides - nur das Einsatzziel zählt.
+					&lt;br /&gt;
+					&lt;br /&gt; Umgebung/Ausrüstung:
+					&lt;br /&gt; * es ist dunkel
+					&lt;br /&gt; * anfangs gibt es keine Form der Kommunikation (Funkgeräte sind verschlüsselt) - Partner und Feinde müssen in einem recht großen Gebiet erstmal gefunden werden
+					&lt;br /&gt; * Nachtsichtgeräte nur für BLUFOR. IND,OPFOR benutzen Leuchtmittel, Tashenlampen usw.
+					&lt;br /&gt; * nur unbewaffnete Radfahrzeuge (IND,OPFOR) bzw Helikopter (BLUFOR)
+					&lt;br /&gt; * Permadeath / kein respawn
+					&lt;br /&gt; * Großenteils default-Ausrüstung
+
+				</German>
+			</Key>       
+            
 			<Key ID="str_GRAD_debugMode">
 				<Original>debug mode</Original>
 				<English>debug mode</English>
@@ -57,7 +98,49 @@
 				<English>everyone</English>
 				<German>jeden</German>
 			</Key>          
-
+		</Container>
+		<Container name="scenario_description">
+			<Key ID="str_GRAD_scenario_subject">
+				<Original>"Dark Business"?</Original>
+				<English>"Dark Business"?</English>
+				<German>"Dark Business"?</German>
+			</Key>			
+			<Key ID="str_GRAD_scenario_story">
+				<Original>A downed NATO (BLUFOR) pilot is held by rebels (IND). The other forces in the area want to apprehend (CSAT, i.e. OPFOR) or freee (NATO) him. The rebels need ammunition, which CSAT could provide in form of an ammo truck.
+					&lt;br /&gt; 
+					&lt;br /&gt;That's it. How the side leaders go about achieving their goals is up to them. Trade, fight, do both - only your objective matters.</Original>
+				<English>A downed NATO (BLUFOR) pilot is held by rebels (IND). The other forces in the area want to apprehend (CSAT, i.e. OPFOR) or freee (NATO) him. The rebels need ammunition, which CSAT could provide in form of an ammo truck.
+					&lt;br /&gt; 
+				&lt;br /&gt;That's it. How the side leaders go about achieving their goals is up to them. Trade, fight, do both - only your objective matters.</English>
+				<German>Ein abgeschossener NATO (BLUFOR)-Pilot  wird von Rebellen (IND) gefangengehalten. Die anderen Kräfte möchten ihn festnehmen (CSAT, d.h. OPFOR) beziehungsweise befreien (NATO). Die Rebellen brauchen Munition, die CSAT ihnen in Form eines Munitions-LKW geben könnte.
+					&lt;br /&gt;
+					&lt;br /&gt; Das ist alles. Was die Führer der einzelnen Seiten tun, um ihr Ziel zu erreichen, bleibt ihnen überlassen. Handeln, kämpfen, oder beides - nur das Einsatzziel zählt.
+				</German>
+			</Key>                 
+			<Key ID="str_GRAD_scenario_environment">
+				<Original>
+					&lt;br /&gt; * it is dark
+					&lt;br /&gt; * initially, you do not have any means of communication (encrypted radios) - you have to find partners/enemies in a large area
+					&lt;br /&gt; * permadeath
+				</Original>
+				<German>
+					&lt;br /&gt; * es ist dunkel
+					&lt;br /&gt; * anfangs gibt es keine Form der Kommunikation (Funkgeräte sind verschlüsselt) - Partner und Feinde müssen in einem recht großen Gebiet erstmal gefunden werden				
+					&lt;br /&gt; * Permadeath / kein respawn
+				</German>
+			</Key>                 
+			<Key ID="str_GRAD_scenario_equipment">
+				<Original>
+					&lt;br /&gt; * NVG only for BLUFOR. IND,OPFOR use flares, flash lights etc
+					&lt;br /&gt; * unarmed wheeled (IND,OPFOR) or rotary wing (BLUFOR) vehicles only
+					&lt;br /&gt; * largely default loadouts
+				</Original>		
+				<German>
+					&lt;br /&gt; * Nachtsichtgeräte nur für BLUFOR. IND,OPFOR benutzen Leuchtmittel, Tashenlampen usw.
+					&lt;br /&gt; * nur unbewaffnete Radfahrzeuge (IND,OPFOR) bzw Helikopter (BLUFOR)
+					&lt;br /&gt; * Großenteils default-Ausrüstung
+				</German>
+			</Key>     			
 		</Container>
 		<Container name="briefings">
 			<Key ID="str_GRAD_BLUFOR_title">

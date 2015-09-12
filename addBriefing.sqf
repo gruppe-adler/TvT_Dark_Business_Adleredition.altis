@@ -1,3 +1,8 @@
+player createDiarySubject ["scenario", localize "str_GRAD_scenario_subject"];
+player createDiaryRecord ["scenario", ["Story", localize "str_GRAD_scenario_story"]];
+player createDiaryRecord ["scenario", ["Environment", localize "str_GRAD_scenario_environment"]];
+player createDiaryRecord ["scenario", ["Equipment", localize "str_GRAD_scenario_equipment"]];
+
 _title = "";
 _content = "";
 _condition = "";
