@@ -39,14 +39,8 @@ task_main_objective = player createSimpleTask [_title];
 task_main_objective setSimpleTaskDescription [_condition, _title, _title];
 player setCurrentTask task_main_objective;
 
-/*
-
-task_main_objective setTaskState "SUCCEEDED";
-task_main_objective setTaskState "FAILED";
-task_main_objective setTaskState "CANCELED";
-
-*/
-
+task_survive = player createSimpleTask ['Dont die'];
+task_survive setSimpleTaskDescription ['Nobody wants to die. You dont want to die. Live!', 'Dont die', 'Dont die'];
 
 player createDiarySubject ["scenario", localize "str_GRAD_scenario_subject"];
 
