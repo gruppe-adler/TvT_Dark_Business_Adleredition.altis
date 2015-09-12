@@ -174,8 +174,10 @@
 				<German>Finden Sie zurück zur BLUFOR-Heimatbasis!</German>
 			</Key>
 			<Key ID="str_GRAD_BLUFOR_hostage_story">
-				<Original>A rebel group has captured me. Maybe they'll let me go - but they may as well sell me off to CSAT. &lt;br /&gt;&lt;br /&gt; I have to find back to friendly forces!</Original>
-				<German>Eine Rebellengruppe hat mich gefangengenommen. Vielleicht lassen sie mich laufen - aber genausogut kann es sein, daß sie mich an CSAT verschachern. <br /><br />Ich muß zurück zu eigenen Einheiten finden!</German>
+				<Original>A rebel group has captured me. Maybe they'll let me go - but they may as well sell me off to CSAT. &lt;br /&gt;&lt;br /&gt; I have to find back to friendly forces!
+				</Original>
+				<German>Eine Rebellengruppe hat mich gefangengenommen. Vielleicht lassen sie mich laufen - aber genausogut kann es sein, daß sie mich an CSAT verschachern.&lt;br /&gt;&lt;br /&gt;Ich muß zurück zu eigenen Einheiten finden!
+				</German>
 			</Key>
 			<Key ID="str_GRAD_BLUFOR_hostage_title">
 				<Original>Find NATO troops!</Original>
