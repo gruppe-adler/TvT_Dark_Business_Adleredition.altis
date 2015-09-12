@@ -136,11 +136,13 @@
 					&lt;br /&gt; * it is dark
 					&lt;br /&gt; * initially, you do not have any means of communication (encrypted radios) - you have to find partners/enemies in a large area
 					&lt;br /&gt; * permadeath
+					&lt;br /&gt; * all sides are set to "friendly", so for example hostage and rebels can ride the same car
 				</Original>
 				<German>
 					&lt;br /&gt; * es ist dunkel
 					&lt;br /&gt; * anfangs gibt es keine Form der Kommunikation (Funkgeräte sind verschlüsselt) - Partner und Feinde müssen in einem recht großen Gebiet erstmal gefunden werden				
 					&lt;br /&gt; * Permadeath / kein respawn
+					&lt;br /&gt; * alle Seiten sind auf "friendly" gesetzt, damit zB Geisel und Rebellen ins selbe Auto steigen können
 				</German>
 			</Key>                 
 			<Key ID="str_GRAD_scenario_equipment">
@@ -154,7 +156,13 @@
 					&lt;br /&gt; * nur unbewaffnete Radfahrzeuge (IND,OPFOR) bzw Helikopter (BLUFOR)
 					&lt;br /&gt; * Großenteils default-Ausrüstung
 				</German>
-			</Key>     			
+			</Key>  
+			<Key ID="str_GRAD_scenario_admin">
+				<Original>
+				</Original>		
+				<German>
+				</German>
+			</Key>  			
 		</Container>
 		<Container name="briefings">
 			<Key ID="str_GRAD_BLUFOR_title">
