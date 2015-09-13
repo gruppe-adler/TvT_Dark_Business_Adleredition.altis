@@ -48,10 +48,17 @@ if ((_unit isKindOf  "I_Soldier_TL_F") or (_unit isKindOf  "I_Soldier_SL_F") or 
 };
 
 _unit addPrimaryWeaponItem "acc_flashlight";
+
 if (isClass(configFile >> "CfgWeapons" >> "ACE_EarPlugs")) then {
 	_unit addItem "ACE_EarPlugs";
 };
 
+
+if (isClass(configFile >> "CfgMagazines" >> "ACE_HandFlare_White")) then {
+	if ((side player) != WEST) then {
+	_unit addItem "ACE_HandFlare_White";
+	};
+};
 
 if (!(isNil "blufor_hostage")) then {
 	if (_unit == blufor_hostage) then {
