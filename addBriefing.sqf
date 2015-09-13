@@ -1,3 +1,6 @@
+
+
+
 _title = "";
 _content = "";
 _condition = "";
@@ -36,10 +39,12 @@ task_main_objective = player createSimpleTask [_title];
 task_main_objective setSimpleTaskDescription [_condition, _title, _title];
 player setCurrentTask task_main_objective;
 
-/*
+task_survive = player createSimpleTask ['Dont die'];
+task_survive setSimpleTaskDescription ['Nobody wants to die. You dont want to die. Live!', 'Dont die', 'Dont die'];
 
-task_main_objective setTaskState "SUCCEEDED";
-task_main_objective setTaskState "FAILED";
-task_main_objective setTaskState "CANCELED";
+player createDiarySubject ["scenario", localize "str_GRAD_scenario_subject"];
 
-*/
+player createDiaryRecord ["scenario", [localize "str_GRAD_scenario_equipment_title", localize "str_GRAD_scenario_equipment"]];
+player createDiaryRecord ["scenario", [localize "str_GRAD_scenario_environment_title", localize "str_GRAD_scenario_environment"]];
+player createDiaryRecord ["scenario", [localize "str_GRAD_scenario_story_title", localize "str_GRAD_scenario_story"]];
+player createDiaryRecord ["scenario", [localize "str_GRAD_scenario_background_title", localize "str_GRAD_scenario_background"]];
