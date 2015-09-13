@@ -13,22 +13,34 @@ DB_publishTaskStates = {
 DB_updateTasks = {
 	call DB_publishTaskStates;
 	sleep 1;
-	{task_main_objective setTaskState OBJECTIVE_STATE_BLUFOR;} remoteExec ["BIS_fnc_call", WEST, true];
-	{task_main_objective setTaskState OBJECTIVE_STATE_IND;} remoteExec ["BIS_fnc_call", RESISTANCE, true];
-	{task_main_objective setTaskState OBJECTIVE_STATE_OPFOR;} remoteExec ["BIS_fnc_call", EAST, true];
-	
-	{task_main_objective setTaskState 'CANCELED';} remoteExec ["BIS_fnc_call", CIVILIAN, true];
-	{task_survive setTaskState 'FAILED';} remoteExec ["BIS_fnc_call", CIVILIAN, true];
+	{
+		_mainObjectiveState = 'CANCELED';
+		_taskSurviveState = 'SUCCEEDED';
+		if (!alive player) then {
+			_taskSurviveState = 'FAILED';
+		};
+		switch (side player) do {
+			case WEST: {_mainObjectiveState = OBJECTIVE_STATE_BLUFOR};
+			case RESISTANCE: {_mainObjectiveState = OBJECTIVE_STATE_IND};
+			case EAST: {_mainObjectiveState = OBJECTIVE_STATE_OPFOR};
+			default { _taskSurviveState = 'FAILED'};
+		};
+		task_main_objective setTaskState _mainObjectiveState;
+		task_survive setTaskState _taskSurviveState;
+	} remoteExec ["BIS_fnc_call", [WEST, EAST, CIVILIAN, RESISTANCE], true];
+
+	// interestingly, CSSA3 causes people to be CIV, BUT THE SERVER DOES NOT SEEM KNOW THAT, AT LEAST NOT FOR PURPOSES OF REMOTEEXEC TARGETING
+	// THIS DOESNT WORK:
+	// {task_main_objective setTaskState 'CANCELED';} remoteExec ["BIS_fnc_call", CIVILIAN, true];
 };
 
 DB_endMission = {
 	call DB_publishTaskStates;
-	{task_survive setTaskState 'SUCCEEDED';} remoteExec ["BIS_fnc_call", [EAST, WEST, RESISTANCE], true];
 	sleep 1;
-	{["end1", (OBJECTIVE_STATE_BLUFOR == 'SUCCEEDED')] call BIS_fnc_endMission;} remoteExec ["BIS_fnc_call", WEST, true];
-	{["end1", (OBJECTIVE_STATE_IND == 'SUCCEEDED')] call BIS_fnc_endMission;} remoteExec ["BIS_fnc_call", RESISTANCE, true];
-	{["end1", (OBJECTIVE_STATE_OPFOR == 'SUCCEEDED')] call BIS_fnc_endMission;} remoteExec ["BIS_fnc_call", EAST, true];
-	{["end1", false] call BIS_fnc_endMission;} remoteExec ["BIS_fnc_call", CIV, true];
+	{
+		["end1", ('SUCCEEDED' == (taskState task_main_objective) )] call BIS_fnc_endMission;
+	} remoteExec ["BIS_fnc_call", [WEST, EAST, CIVILIAN, RESISTANCE], true];
+
 	adminLog("mission end has been called for");
 };
 
