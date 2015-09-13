@@ -1163,6 +1163,7 @@ class Mission
 			leader=1;
 			lock="UNLOCKED";
 			skill=0.60000002;
+			text="opfor_ifrit";
 		};
 		class Item3
 		{
