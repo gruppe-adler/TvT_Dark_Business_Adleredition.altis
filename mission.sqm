@@ -401,7 +401,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={17645.104,33.16663,10571.904};
+					position[]={17663.926,32.655022,10566.844};
 					azimut=285;
 					special="NONE";
 					id=28;
@@ -513,7 +513,7 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={17649.42,33.211338,10567.668};
+					position[]={17652.125,33.181812,10567.58};
 					special="NONE";
 					id=35;
 					side="GUER";
@@ -526,7 +526,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={17647.08,33.193008,10567.197};
+					position[]={17649.785,33.171997,10567.109};
 					special="NONE";
 					id=36;
 					side="GUER";
@@ -537,7 +537,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={17650.018,33.138348,10569.643};
+					position[]={17652.723,33.108803,10569.555};
 					special="NONE";
 					id=37;
 					side="GUER";
@@ -548,7 +548,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={17648.156,33.174282,10569.234};
+					position[]={17650.861,33.14476,10569.146};
 					special="NONE";
 					id=38;
 					side="GUER";
@@ -1286,6 +1286,7 @@ class Mission
 			leader=1;
 			lock="UNLOCKED";
 			skill=0.60000002;
+			text="opfor_ifrit";
 		};
 		class Item3
 		{
@@ -1520,7 +1521,7 @@ class Mission
 		};
 		class Item23
 		{
-			position[]={17650.729,33.029949,10565.853};
+			position[]={17656.838,33.752052,10580.923};
 			azimut=55;
 			special="NONE";
 			id=122;
@@ -1531,7 +1532,7 @@ class Mission
 		};
 		class Item24
 		{
-			position[]={17648.82,32.896706,10564.753};
+			position[]={17654.756,33.61409,10579.357};
 			azimut=55;
 			special="NONE";
 			id=123;
@@ -1601,7 +1602,7 @@ class Mission
 		};
 		class Item30
 		{
-			position[]={17652.779,33.122837,10566.982};
+			position[]={17652.811,33.44809,10577.513};
 			azimut=330;
 			special="NONE";
 			id=129;
@@ -1995,7 +1996,7 @@ class Mission
 		};
 		class Item64
 		{
-			position[]={17650.275,31.956011,10555.296};
+			position[]={17649.752,31.977585,10555.703};
 			special="NONE";
 			id=163;
 			side="EMPTY";
