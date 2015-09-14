@@ -27,3 +27,40 @@ if (!ALLOW_40MM_HE) then {
 };
 
 clearBackpackCargoGlobal blufor_heli;
+
+
+fillBackpacks = {
+
+	_arsenal = _this select 0;
+	_cargoplox = _this select 1;
+
+	{
+		_backpack = firstBackpack _x;
+		if (_backpack isKindOf "Bag_Base") then {
+			{
+				_backpack addMagazines _x;
+			} forEach _cargoplox;
+		};
+	} forEach nearestObjects [_arsenal, ["weaponholder"], 50];
+};
+
+
+[
+	blufor_arsenal, [
+		["30Rnd_556x45_Stanag_Tracer_Yellow", 10]
+	]
+] call fillBackpacks;
+
+[
+	ind_arsenal, [
+		["30Rnd_556x45_Stanag_Tracer_Yellow", 10]
+	]
+] call fillBackpacks;
+
+
+
+[
+	opfor_arsenal, [
+		["30Rnd_556x45_Stanag_Tracer_Yellow", 10]
+	]
+] call fillBackpacks;
