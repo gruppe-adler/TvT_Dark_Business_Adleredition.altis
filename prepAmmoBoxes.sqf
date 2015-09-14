@@ -38,7 +38,7 @@ fillBackpacks = {
 		_backpack = firstBackpack _x;
 		if (_backpack isKindOf "Bag_Base") then {
 			{
-				_backpack addMagazines _x;
+				_backpack addItemCargoGlobal _x;
 			} forEach _cargoplox;
 		};
 	} forEach nearestObjects [_arsenal, ["weaponholder"], 50];
