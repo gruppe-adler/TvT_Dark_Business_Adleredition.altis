@@ -46,14 +46,19 @@ fillBackpacks = {
 
 
 [
-	blufor_arsenal, [
-		["30Rnd_556x45_Stanag_Tracer_Yellow", 10]
+	blufor_arsenal,
+	[
+		["30Rnd_65x39_caseless_mag_Tracer", 10],
+		["100Rnd_65x39_caseless_mag_Tracer", 4]
 	]
 ] call fillBackpacks;
 
 [
-	ind_arsenal, [
-		["30Rnd_556x45_Stanag_Tracer_Yellow", 10]
+	ind_arsenal,
+	[
+		["30Rnd_556x45_Stanag_Tracer_Yellow", 10],
+		["200Rnd_65x39_cased_Box_Tracer", 3],
+		["ACE_200Rnd_65x39_cased_Box_Tracer_Dim", 1]
 	]
 ] call fillBackpacks;
 
@@ -61,6 +66,7 @@ fillBackpacks = {
 
 [
 	opfor_arsenal, [
-		["30Rnd_556x45_Stanag_Tracer_Yellow", 10]
+		["30Rnd_65x39_caseless_green_mag_Tracer", 10],
+		["150Rnd_762x54_Box_Tracer", 4]
 	]
 ] call fillBackpacks;
