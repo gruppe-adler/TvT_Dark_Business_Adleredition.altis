@@ -215,6 +215,14 @@
 				<Original>Bring the pilot to your home base alive</Original>
 				<German>Bringen Sie den Piloten lebendig zu Ihrer Heimatbasis!</German>
 			</Key>
+			<Key ID="str_GRAD_task_dd_title">
+				<Original>Dont die</Original>
+				<German>Stirb nicht</German>
+			</Key>
+			<Key ID="str_GRAD_task_dd_desc">
+				<Original>Nobody wants to die. You dont want to die. Live!</Original>
+				<German>Niemand will sterben. Du willst nicht sterben. Überleb!</German>
+			</Key>			
 		</Container>
 	</Package>
 </Project>

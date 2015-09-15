@@ -39,8 +39,8 @@ task_main_objective = player createSimpleTask [_title];
 task_main_objective setSimpleTaskDescription [_condition, _title, _title];
 player setCurrentTask task_main_objective;
 
-task_survive = player createSimpleTask ['Dont die'];
-task_survive setSimpleTaskDescription ['Nobody wants to die. You dont want to die. Live!', 'Dont die', 'Dont die'];
+task_survive = player createSimpleTask ['dont_die'];
+task_survive setSimpleTaskDescription [localize "str_GRAD_task_dd_desc", localize "str_GRAD_task_dd_title", localize "str_GRAD_task_dd_title"];
 
 player createDiarySubject ["scenario", localize "str_GRAD_scenario_subject"];
 
