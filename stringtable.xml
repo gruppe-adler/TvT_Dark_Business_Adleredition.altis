@@ -3,12 +3,12 @@
 	<Package name="TvT_DarkBusiness_package">
         <Container name="description">
 			<Key ID="str_GRAD_onLoadName">
-				<Original>Dark Business (Adler Edition)</Original>
-				<German>Dark Business (Adleredition)</German>
+				<Original>Dark Business (Adler)</Original>
+				<German>Dark Business (Adler)</German>
 			</Key>
 			<Key ID="str_GRAD_onLoadMission">
-				<Original>3 way conflict over a downed pilot and a truck of ammunition</Original>
-				<German>Dreierkonflikt um einen abgeschossenen Piloten und einen Munitionslaster</German>
+				<Original>3 way conflict over a downed pilot and a truck of ammunition. An implementation of Awoihjaweohr's classical concept.</Original>
+				<German>Dreierkonflikt um einen abgeschossenen Piloten und einen Munitionslaster. Eine Implementierung des Klassiker von Awoihjaweohr</German>
 			</Key>
 			<Key ID="str_GRAD_overviewText">
 				<Original>TvT scenario with three parties (or four, if you count the hostage). 
