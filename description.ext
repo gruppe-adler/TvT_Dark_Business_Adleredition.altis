@@ -14,7 +14,7 @@ respawnDelay = 9999999;
 
 class Header
 {
-	gameType = Team;
+	gameType = RPG;
 	minPlayers = 15;
 	maxPlayers = 97;
 };
