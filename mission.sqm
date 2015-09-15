@@ -1988,13 +1988,15 @@ class Mission
 		class Item63
 		{
 			position[]={23184.52,3.1900001,18957.74};
+			azimut=180;
 			special="NONE";
 			id=162;
 			side="EMPTY";
 			vehicle="Land_FloodLight_F";
 			leader=1;
 			skill=0.60000002;
-			description="Platoon lead";
+			text="blu_floodlight";
+			init="blu_light = ""#lightpoint"" createVehicleLocal (getPos this);  blu_light setLightBrightness 0.8;  blu_light setLightAmbient [0.4, 0.0, 0.0];  blu_light setLightColor [0.6, 0.2, 0.2];  blu_light lightAttachObject [blu_floodlight, [0,0,0]];";
 		};
 		class Item64
 		{
