@@ -21,9 +21,7 @@ removeMagazinesCargoGlobal = {
 if (!ALLOW_40MM_HE) then {
 	{
 		[_x, "1Rnd_HE_Grenade_shell"] call removeMagazinesCargoGlobal;
-	} forEach [blufor_munitions, opfor_munitions, ind_munitions, opfor_ifrit];
-
-	[blufor_munitions, "3Rnd_HE_Grenade_shell"] call removeMagazinesCargoGlobal;
+	} forEach [opfor_ifrit];
 };
 
 clearBackpackCargoGlobal blufor_heli;
