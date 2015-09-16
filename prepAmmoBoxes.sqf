@@ -57,7 +57,6 @@ fillAssaultPacks = {
 	} forEach nearestObjects [_arsenal, ["weaponholder"], 50];
 };
 
-
 [
 	blufor_arsenal,
 	[
@@ -76,8 +75,6 @@ fillAssaultPacks = {
 	]
 ] call fillCarryAlls;
 
-
-
 [
 	opfor_arsenal, [
 		["30Rnd_65x39_caseless_green_mag_Tracer", 10],
@@ -91,7 +88,7 @@ fillAssaultPacks = {
 		_x, [
 			["ACE_epinephrine", 10],
 			["ACE_morphine", 20],
-			["ACE_personalAidKit", 40],
+			["ACE_fieldDressing", 60],
 			["ACE_bloodIV_500", 5]
 		]
 	] call fillAssaultPacks;
