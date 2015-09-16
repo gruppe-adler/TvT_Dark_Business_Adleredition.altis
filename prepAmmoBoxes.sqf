@@ -29,14 +29,29 @@ if (!ALLOW_40MM_HE) then {
 clearBackpackCargoGlobal blufor_heli;
 
 
-fillBackpacks = {
+fillCarryAlls = {
 
 	_arsenal = _this select 0;
 	_cargoplox = _this select 1;
 
 	{
 		_backpack = firstBackpack _x;
-		if (_backpack isKindOf "Bag_Base") then {
+		if ((_backpack isKindOf "Bag_Base") && !(_backpack isKindOf "B_AssaultPack_Base")) then {
+			{
+				_backpack addItemCargoGlobal _x;
+			} forEach _cargoplox;
+		};
+	} forEach nearestObjects [_arsenal, ["weaponholder"], 50];
+};
+
+fillAssaultPacks = {
+
+	_arsenal = _this select 0;
+	_cargoplox = _this select 1;
+
+	{
+		_backpack = firstBackpack _x;
+		if (_backpack isKindOf "B_AssaultPack_Base") then {
 			{
 				_backpack addItemCargoGlobal _x;
 			} forEach _cargoplox;
@@ -52,7 +67,7 @@ fillBackpacks = {
 		["100Rnd_65x39_caseless_mag_Tracer", 4],
 		["HandGrenade", 5]
 	]
-] call fillBackpacks;
+] call fillCarryAlls;
 
 [
 	ind_arsenal,
@@ -61,7 +76,7 @@ fillBackpacks = {
 		["200Rnd_65x39_cased_Box_Tracer", 3],
 		["HandGrenade", 5]
 	]
-] call fillBackpacks;
+] call fillCarryAlls;
 
 
 
@@ -71,4 +86,15 @@ fillBackpacks = {
 		["150Rnd_762x54_Box_Tracer", 4],
 		["HandGrenade", 5]
 	]
-] call fillBackpacks;
+] call fillCarryAlls;
+
+{
+	[
+		_x, [
+			["ACE_epinephrine", 10],
+			["ACE_morphine", 20],
+			["ACE_personalAidKit", 40],
+			["ACE_bloodIV_500", 5]
+		]
+	] call fillAssaultPacks;
+} forEach [blufor_arsenal, ind_arsenal, opfor_arsenal];
