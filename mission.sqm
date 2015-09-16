@@ -47,8 +47,8 @@ class Mission
 		"A3_Soft_F_Gamma_TruckHeavy",
 		"A3_Structures_F_Heli_Items_Airport",
 		"A3_Structures_F_Items_Electronics",
-		"A3_Structures_F_Civ_Camping",
 		"A3_Weapons_F_Beta_Ammoboxes",
+		"A3_Structures_F_Civ_Camping",
 		"a3_map_altis"
 	};
 	randomSeed=13299095;
@@ -948,7 +948,7 @@ class Mission
 				items=14;
 				class Item0
 				{
-					position[]={23024.477,48.576588,7260.4028};
+					position[]={23025.934,48.584965,7259.4707};
 					special="NONE";
 					id=71;
 					side="EAST";
@@ -960,7 +960,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={23022.234,48.5369,7259.063};
+					position[]={23023.164,48.536201,7258.3071};
 					special="NONE";
 					id=72;
 					side="EAST";
@@ -971,7 +971,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={23027.301,48.640503,7259.9087};
+					position[]={23028.758,48.627022,7258.9766};
 					special="NONE";
 					id=73;
 					side="EAST";
@@ -981,7 +981,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={23025.408,48.5634,7258.7173};
+					position[]={23026.865,48.531712,7257.7852};
 					special="NONE";
 					id=74;
 					side="EAST";
@@ -991,7 +991,7 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={23023.428,48.524605,7257.4351};
+					position[]={23024.271,48.518177,7256.4155};
 					special="NONE";
 					id=75;
 					side="EAST";
@@ -1001,7 +1001,7 @@ class Mission
 				};
 				class Item5
 				{
-					position[]={23029.709,48.531876,7256.7085};
+					position[]={23031.166,48.518394,7255.7764};
 					special="NONE";
 					id=76;
 					side="EAST";
@@ -1011,7 +1011,7 @@ class Mission
 				};
 				class Item6
 				{
-					position[]={23027.795,48.481472,7255.459};
+					position[]={23029.252,48.449772,7254.5269};
 					special="NONE";
 					id=77;
 					side="EAST";
@@ -1021,7 +1021,7 @@ class Mission
 				};
 				class Item7
 				{
-					position[]={23022.441,48.518044,7263.019};
+					position[]={23026.719,48.648102,7262.5249};
 					special="NONE";
 					id=78;
 					side="EAST";
@@ -1031,7 +1031,7 @@ class Mission
 				};
 				class Item8
 				{
-					position[]={23025.496,48.487267,7254.3794};
+					position[]={23026.953,48.455585,7253.4473};
 					special="NONE";
 					id=79;
 					side="EAST";
@@ -1041,7 +1041,7 @@ class Mission
 				};
 				class Item9
 				{
-					position[]={23024.418,48.511078,7255.8931};
+					position[]={23025.875,48.493309,7254.9609};
 					special="NONE";
 					id=80;
 					side="EAST";
@@ -1051,7 +1051,7 @@ class Mission
 				};
 				class Item10
 				{
-					position[]={23026.342,48.524162,7257.0273};
+					position[]={23027.799,48.492466,7256.0952};
 					special="NONE";
 					id=81;
 					side="EAST";
@@ -1061,7 +1061,7 @@ class Mission
 				};
 				class Item11
 				{
-					position[]={23021.51,48.524933,7261.1597};
+					position[]={23025.264,48.603741,7261.105};
 					special="NONE";
 					id=82;
 					side="EAST";
@@ -1073,7 +1073,7 @@ class Mission
 				};
 				class Item12
 				{
-					position[]={23026.227,48.628181,7261.3037};
+					position[]={23027.652,48.655392,7260.2563};
 					special="NONE";
 					id=83;
 					side="EAST";
@@ -1085,7 +1085,7 @@ class Mission
 				};
 				class Item13
 				{
-					position[]={23029.074,48.60144,7258.3384};
+					position[]={23030.531,48.58791,7257.4063};
 					special="NONE";
 					id=84;
 					side="EAST";
@@ -1251,7 +1251,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=83;
+		items=89;
 		class Item0
 		{
 			position[]={23175.406,3.1900001,18963.852};
@@ -2170,6 +2170,54 @@ class Mission
 			skill=0.60000002;
 			text="ind_lantern_1";
 			init="ind_light = ""#lightpoint"" createVehicleLocal (getPos this);  blu_light setLightBrightness 0.5;  blu_light setLightAmbient [0.3, 0.3, 0.0];  blu_light setLightColor [0.3, 0.3, 0.0];  blu_light lightAttachObject [ind_lantern_1, [0,0,0]];";
+		};
+		class Item83
+		{
+			position[]={23161.988,3.1900001,18957.34};
+			id=182;
+			side="EMPTY";
+			vehicle="B_AssaultPack_sgg";
+			skill=0.60000002;
+		};
+		class Item84
+		{
+			position[]={23161.957,3.1900001,18955.014};
+			id=183;
+			side="EMPTY";
+			vehicle="B_AssaultPack_sgg";
+			skill=0.60000002;
+		};
+		class Item85
+		{
+			position[]={17643.121,33.226742,10571.759};
+			id=184;
+			side="EMPTY";
+			vehicle="B_AssaultPack_sgg";
+			skill=0.60000002;
+		};
+		class Item86
+		{
+			position[]={17643.09,33.195236,10569.433};
+			id=185;
+			side="EMPTY";
+			vehicle="B_AssaultPack_sgg";
+			skill=0.60000002;
+		};
+		class Item87
+		{
+			position[]={23022.045,48.508583,7263.7363};
+			id=186;
+			side="EMPTY";
+			vehicle="B_AssaultPack_sgg";
+			skill=0.60000002;
+		};
+		class Item88
+		{
+			position[]={23022.014,48.527191,7261.438};
+			id=187;
+			side="EMPTY";
+			vehicle="B_AssaultPack_sgg";
+			skill=0.60000002;
 		};
 	};
 	class Markers
