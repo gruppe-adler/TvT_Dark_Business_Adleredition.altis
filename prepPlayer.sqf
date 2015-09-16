@@ -60,8 +60,12 @@ if (isClass(configFile >> "CfgMagazines" >> "ACE_HandFlare_White")) then {
 	};
 };
 
-if (!(isNil "blufor_hostage")) then {
-	if (_unit == blufor_hostage) then {
-		_unit execVM "prepHostage.sqf";
-	};
+if (!(isNil "blufor_hostage") && (_unit == blufor_hostage)) then {
+	_unit execVM "prepHostage.sqf";
+} else {
+	_unit addItem "ACE_personalAidKit";
+	_unit addItem "ACE_personalAidKit";
+	_unit addItem "ACE_personalAidKit";
+	_unit addItem "ACE_personalAidKit";
+	_unit addItem "ACE_personalAidKit";
 };
