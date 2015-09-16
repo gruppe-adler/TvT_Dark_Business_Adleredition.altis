@@ -1934,7 +1934,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="blu_floodlight";
-			init="blu_light = ""#lightpoint"" createVehicleLocal (getPos this);  blu_light setLightBrightness 0.8;  blu_light setLightAmbient [0.4, 0.0, 0.0];  blu_light setLightColor [0.6, 0.2, 0.2];  blu_light lightAttachObject [blu_floodlight, [0,0,0]];";
+			init="0 = [this, 0.8, [0.9, 0.1, 0.0]] execVM ""helpers\createLight.sqf"";";
 		};
 		class Item58
 		{
@@ -2107,7 +2107,7 @@ class Mission
 			vehicle="Land_Camping_Light_off_F";
 			skill=0.60000002;
 			text="ind_lantern_1";
-			init="ind_light = ""#lightpoint"" createVehicleLocal (getPos this);  blu_light setLightBrightness 0.5;  blu_light setLightAmbient [0.3, 0.3, 0.0];  blu_light setLightColor [0.3, 0.3, 0.0];  blu_light lightAttachObject [ind_lantern_1, [0,0,0]];";
+			init="0 = [this, 0.5, [0.8, 0.8, 0.0]] execVM ""helpers\createLight.sqf"";";
 		};
 		class Item77
 		{
