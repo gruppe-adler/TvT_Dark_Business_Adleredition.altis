@@ -1252,7 +1252,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=84;
+		items=85;
 		class Item0
 		{
 			position[]={23175.406,3.1900001,18963.852};
@@ -1445,6 +1445,8 @@ class Mission
 			leader=1;
 			lock="UNLOCKED";
 			skill=0.60000002;
+			text="ind_offroad_1";
+			init="[   this,   [""guerilla_12"",1],   [    ""HideDoor1"", 1,    ""HideDoor2"", 1,    ""HideGlass2"", 1,    ""HideDoor3"", 1,    ""Proxy"", 0,    ""Destruct"", 0   ]  ] call BIS_fnc_initVehicle;  ";
 		};
 		class Item16
 		{
@@ -2166,6 +2168,17 @@ class Mission
 			skill=0.60000002;
 			text="opfor_offroad_2";
 			init="this setObjectTexture [0, ""pics\offroad_01_ocamo.paa""];";
+		};
+		class Item84
+		{
+			position[]={17625.189,33.146404,10580.757};
+			azimut=280;
+			id=183;
+			side="EMPTY";
+			vehicle="C_Hatchback_01_F";
+			skill=0.60000002;
+			text="ind_hatchback_1";
+			init="[   this,   [""black"",1],   true  ] call BIS_fnc_initVehicle;";
 		};
 	};
 	class Markers
