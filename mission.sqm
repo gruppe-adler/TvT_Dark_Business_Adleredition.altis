@@ -1471,6 +1471,7 @@ class Mission
 			side="EMPTY";
 			vehicle="C_Offroad_01_F";
 			leader=1;
+			lock="UNLOCKED";
 			skill=0.60000002;
 		};
 		class Item18
@@ -1482,6 +1483,7 @@ class Mission
 			side="EMPTY";
 			vehicle="C_Hatchback_01_F";
 			leader=1;
+			lock="UNLOCKED";
 			skill=0.60000002;
 		};
 		class Item19
@@ -1503,6 +1505,7 @@ class Mission
 			id=119;
 			side="EMPTY";
 			vehicle="B_Plane_CAS_01_F";
+			lock="UNLOCKED";
 			skill=0.60000002;
 			health=0;
 			fuel=0;
@@ -2156,6 +2159,7 @@ class Mission
 			id=181;
 			side="EMPTY";
 			vehicle="B_G_Offroad_01_F";
+			lock="UNLOCKED";
 			skill=0.60000002;
 			text="opfor_offroad_1";
 			init="this setObjectTexture [0, ""pics\offroad_01_ocamo.paa""];";
@@ -2167,6 +2171,7 @@ class Mission
 			id=182;
 			side="EMPTY";
 			vehicle="B_G_Offroad_01_F";
+			lock="UNLOCKED";
 			skill=0.60000002;
 			text="opfor_offroad_2";
 			init="this setObjectTexture [0, ""pics\offroad_01_ocamo.paa""];";
@@ -2178,6 +2183,7 @@ class Mission
 			id=183;
 			side="EMPTY";
 			vehicle="C_Hatchback_01_F";
+			lock="UNLOCKED";
 			skill=0.60000002;
 			text="ind_hatchback_1";
 			init="[   this,   [""black"",1],   true  ] call BIS_fnc_initVehicle;";
