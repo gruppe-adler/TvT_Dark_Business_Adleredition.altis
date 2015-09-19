@@ -42,3 +42,14 @@ class Params
 		default = 0;
 	};
 };
+
+class ace_viewdistance_enabled {
+    value = 1;
+    typeName = "BOOL";
+    force = 1;
+};
+class ace_viewdistance_limitViewDistance {
+    value = 5000;
+    typeName = "SCALAR";
+    force = 1;
+};
