@@ -25,7 +25,8 @@ class Mission
 		"A3_Structures_F_Items_Electronics",
 		"A3_Structures_F_Civ_Camping",
 		"A3_Weapons_F_Beta_Ammoboxes",
-		"A3_Soft_F_Gamma_Offroad"
+		"A3_Soft_F_Gamma_Offroad",
+		"A3_Structures_F_System"
 	};
 	addOnsAuto[]=
 	{
@@ -50,6 +51,7 @@ class Mission
 		"A3_Weapons_F_Beta_Ammoboxes",
 		"A3_Structures_F_Civ_Camping",
 		"A3_Soft_F_Gamma_Offroad",
+		"A3_Structures_F_System",
 		"a3_map_altis"
 	};
 	randomSeed=13299095;
@@ -1252,7 +1254,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=85;
+		items=86;
 		class Item0
 		{
 			position[]={23175.406,3.1900001,18963.852};
@@ -2036,7 +2038,7 @@ class Mission
 		};
 		class Item69
 		{
-			position[]={23015.689,48.440559,7263.8433};
+			position[]={23004.082,48.265453,7257.1523};
 			special="NONE";
 			id=168;
 			side="EMPTY";
@@ -2045,7 +2047,7 @@ class Mission
 		};
 		class Item70
 		{
-			position[]={23017.723,48.432819,7263.7598};
+			position[]={23006.115,48.298584,7257.0688};
 			special="NONE";
 			id=169;
 			side="EMPTY";
@@ -2054,7 +2056,7 @@ class Mission
 		};
 		class Item71
 		{
-			position[]={23017.809,48.470772,7261.4595};
+			position[]={23006.201,48.253441,7254.7686};
 			special="NONE";
 			id=170;
 			side="EMPTY";
@@ -2063,7 +2065,7 @@ class Mission
 		};
 		class Item72
 		{
-			position[]={23015.805,48.472439,7261.4302};
+			position[]={23004.197,48.210007,7254.7393};
 			special="NONE";
 			id=171;
 			side="EMPTY";
@@ -2072,7 +2074,7 @@ class Mission
 		};
 		class Item73
 		{
-			position[]={23019.758,48.459503,7263.7886};
+			position[]={23008.15,48.317936,7257.0977};
 			special="NONE";
 			id=172;
 			side="EMPTY";
@@ -2081,7 +2083,7 @@ class Mission
 		};
 		class Item74
 		{
-			position[]={23019.902,48.499615,7261.4023};
+			position[]={23008.295,48.29063,7254.7114};
 			special="NONE";
 			id=173;
 			side="EMPTY";
@@ -2133,7 +2135,7 @@ class Mission
 		};
 		class Item80
 		{
-			position[]={23022.045,48.508583,7263.7363};
+			position[]={23010.438,48.345093,7257.0454};
 			id=179;
 			side="EMPTY";
 			vehicle="B_AssaultPack_sgg";
@@ -2141,7 +2143,7 @@ class Mission
 		};
 		class Item81
 		{
-			position[]={23022.014,48.527191,7261.438};
+			position[]={23010.406,48.316769,7254.7471};
 			id=180;
 			side="EMPTY";
 			vehicle="B_AssaultPack_sgg";
@@ -2179,6 +2181,16 @@ class Mission
 			skill=0.60000002;
 			text="ind_hatchback_1";
 			init="[   this,   [""black"",1],   true  ] call BIS_fnc_initVehicle;";
+		};
+		class Item85
+		{
+			position[]={23007.234,48.294346,7255.8457};
+			special="NONE";
+			id=184;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
 		};
 	};
 	class Markers
