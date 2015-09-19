@@ -2,7 +2,7 @@
 
 _unit = player;
 
-if (!(isNil "blufor_hostage") && (_unit == blufor_hostage)) then {
+if ("B_Pilot_F" == typeOf _unit) then {
 	_unit execVM "prepHostage.sqf";
 } else {
 	_unit execVM "prepFightingUnit.sqf";

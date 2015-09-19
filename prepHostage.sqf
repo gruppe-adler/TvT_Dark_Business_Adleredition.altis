@@ -1,3 +1,4 @@
+removeBackpack _this;
 removeAllWeapons _this;
 removeAllItems _this;
 removeAllAssignedItems _this;
