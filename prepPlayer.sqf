@@ -25,26 +25,37 @@ if (!ALLOW_40MM_HE) then {
 };
 
 if ((_unit isKindOf  "B_Soldier_TL_F") or (_unit isKindOf  "B_Soldier_SL_F") or (_unit isKindOf  "B_Officer_F")) then {
+	_unit removeMagazines "30Rnd_65x39_caseless_mag";
 	_unit removeWeapon (primaryWeapon _unit);
-	_unit addWeapon "arifle_MX_GL_F";
+
 	_unit addBackPack "B_TacticalPack_mcamo";
 	_unit addMagazines ["Chemlight_red", 5];
+	_unit addMagazines ["UGL_FlareRed_F", 7];
+
+	_unit addMagazines ["30Rnd_65x39_caseless_mag_Tracer", 7];
+	_unit addWeapon "arifle_MX_GL_F";
 };
 if ((_unit isKindOf  "O_Soldier_TL_F") or (_unit isKindOf  "O_Soldier_SL_F") or (_unit isKindOf  "O_Officer_F")) then {
+	_unit removeMagazines "30Rnd_65x39_caseless_green";
 	_unit removeWeapon (primaryWeapon _unit);
-	_unit addWeapon "arifle_Katiba_GL_F";
+
 	_unit addBackPack "B_TacticalPack_ocamo";
-	_unit addMagazines ["UGL_FlareGreen_F", 10];
+	_unit addMagazines ["UGL_FlareGreen_F", 7];
 	_unit addMagazines ["Chemlight_yellow", 5];
-	_unit addMagazines ["30Rnd_65x39_caseless_green_mag_Tracer", 5];
+
+	_unit addMagazines ["30Rnd_65x39_caseless_green_mag_Tracer", 7];
+	_unit addWeapon "arifle_Katiba_GL_F";
 };
 if ((_unit isKindOf  "I_Soldier_TL_F") or (_unit isKindOf  "I_Soldier_SL_F") or (_unit isKindOf  "I_Officer_F")) then {
+	_unit removeMagazines "30Rnd_556x45_Stanag";
 	_unit removeWeapon (primaryWeapon _unit);
-	_unit addWeapon "arifle_Mk20_GL_F";
+
 	_unit addBackPack "B_TacticalPack_rgr";
-	_unit addMagazines ["UGL_FlareYellow_F", 10];
+	_unit addMagazines ["UGL_FlareYellow_F", 7];
 	_unit addMagazines ["Chemlight_green", 5];
-	_unit addMagazines ["30Rnd_556x45_Stanag_Tracer_Yellow", 5];
+
+	_unit addMagazines ["30Rnd_556x45_Stanag_Tracer_Yellow", 7];
+	_unit addWeapon "arifle_Mk20_GL_F";
 };
 
 _unit addPrimaryWeaponItem "acc_flashlight";
