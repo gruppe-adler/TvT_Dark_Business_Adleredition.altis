@@ -18,11 +18,13 @@ removeMagazinesCargoGlobal = {
 
 //------------------------------------------------------
 
+/*
 if (!ALLOW_40MM_HE) then {
 	{
 		[_x, "1Rnd_HE_Grenade_shell"] call removeMagazinesCargoGlobal;
 	} forEach [];
 };
+*/
 
 clearBackpackCargoGlobal blufor_heli;
 
