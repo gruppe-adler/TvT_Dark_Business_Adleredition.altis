@@ -56,13 +56,14 @@ if (isClass(configFile >> "CfgWeapons" >> "ACE_EarPlugs")) then {
 
 if (isClass(configFile >> "CfgMagazines" >> "ACE_HandFlare_White")) then {
 	if ((side player) != WEST) then {
-	_unit addItem "ACE_HandFlare_White";
+		_unit addItem "ACE_HandFlare_White";
 	};
 };
 
 if (!(isNil "blufor_hostage") && (_unit == blufor_hostage)) then {
 	_unit execVM "prepHostage.sqf";
 } else {
+	_unit addItem "ACE_Flashlight_KSF1";
 	_unit addItem "ACE_fieldDressing";
 	_unit addItem "ACE_fieldDressing";
 	_unit addItem "ACE_fieldDressing";
