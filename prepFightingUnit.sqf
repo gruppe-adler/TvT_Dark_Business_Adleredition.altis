@@ -19,6 +19,29 @@ if (_isNvgNotAllowed) then {
 	_unit assignitem "NVGoggles";
 };
 
+_rank = rank _unit;
+if ((_rank == "PRIVATE") or (_rank == "CORPORAL")) then {
+	debugLog("ranking lower than sergeant - trying to remove gps...");
+	if ("ItemGPS" in (assignedItems _unit)) then {
+		debugLog("unassigning gps...");
+		_unit unassignItem "ItemGPS";
+	};
+	if ("ItemGPS" in (items _unit)) then {
+		debugLog("rewmoving gps...");
+		_unit removeItem "ItemGPS";
+	};
+} else {
+	debugLog("making sure unit has GPS...");
+	if (!("ItemGPS" in (assignedItems _unit))) then {
+		if (!("ItemGPS" in (items _unit))) then {
+			debugLog("adding gps...");
+			_unit addItem "ItemGPS";
+		};
+		debugLog("assigning gps...");
+		_unit assignItem "ItemGPS";
+	};
+};
+
 
 _shouldGetUGL = (
  	(_unit isKindOf  "B_Soldier_TL_F") or
