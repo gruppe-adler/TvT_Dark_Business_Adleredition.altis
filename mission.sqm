@@ -560,17 +560,6 @@ class Mission
 					skill=0.60000002;
 					text="ind_lead";
 				};
-				class Item2
-				{
-					position[]={17649.785,33.171997,10567.109};
-					special="NONE";
-					id=36;
-					side="GUER";
-					vehicle="I_medic_F";
-					player="PLAY CDG";
-					rank="CORPORAL";
-					skill=0.60000002;
-				};
 				class Item1
 				{
 					position[]={17654.148,33.140137,10568.102};
@@ -580,6 +569,18 @@ class Mission
 					vehicle="I_Soldier_repair_F";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
+					skill=0.60000002;
+					description="Platoon Sergeant";
+				};
+				class Item2
+				{
+					position[]={17649.785,33.171997,10567.109};
+					special="NONE";
+					id=36;
+					side="GUER";
+					vehicle="I_medic_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
 					skill=0.60000002;
 				};
 				class Item3
@@ -938,6 +939,7 @@ class Mission
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
+					description="Platoon Sergeant";
 				};
 				class Item3
 				{
