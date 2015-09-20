@@ -109,41 +109,6 @@ class Mission
 			class Vehicles
 			{
 				items=4;
-				class Item2
-				{
-					position[]={23169.328,3.1900001,18951.869};
-					azimut=105;
-					special="NONE";
-					id=53;
-					side="WEST";
-					vehicle="B_medic_F";
-					player="PLAY CDG";
-					skill=0.60000002;
-				};
-				class Item1
-				{
-					position[]={23167.623,3.1900001,18953.018};
-					azimut=120;
-					special="NONE";
-					id=54;
-					side="WEST";
-					vehicle="B_soldier_repair_F";
-					player="PLAY CDG";
-					rank="LIEUTENANT";
-					skill=0.60000002;
-					description="Platoon Sergeant";
-				};
-				class Item3
-				{
-					position[]={23166.137,3.1900001,18952.021};
-					azimut=120;
-					special="NONE";
-					id=55;
-					side="WEST";
-					vehicle="B_Soldier_F";
-					player="PLAY CDG";
-					skill=0.60000002;
-				};
 				class Item0
 				{
 					position[]={23168.373,3.1900001,18950.691};
@@ -157,6 +122,41 @@ class Mission
 					skill=0.60000002;
 					text="blufor_lead";
 					description="Platoon leader";
+				};				
+				class Item1
+				{
+					position[]={23167.623,3.1900001,18953.018};
+					azimut=120;
+					special="NONE";
+					id=54;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					description="Platoon Sergeant";
+				};
+				class Item2
+				{
+					position[]={23169.328,3.1900001,18951.869};
+					azimut=105;
+					special="NONE";
+					id=53;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+				class Item3
+				{
+					position[]={23166.137,3.1900001,18952.021};
+					azimut=120;
+					special="NONE";
+					id=55;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
 				};
 			};
 		};		
@@ -566,7 +566,7 @@ class Mission
 					special="NONE";
 					id=37;
 					side="GUER";
-					vehicle="I_Soldier_repair_F";
+					vehicle="I_Soldier_SL_F";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -935,7 +935,7 @@ class Mission
 					special="NONE";
 					id=32;
 					side="EAST";
-					vehicle="O_soldier_repair_F";
+					vehicle="O_Soldier_SL_F";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
