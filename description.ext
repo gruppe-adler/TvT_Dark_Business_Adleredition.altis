@@ -16,7 +16,7 @@ class Header
 {
 	gameType = RPG;
 	minPlayers = 15;
-	maxPlayers = 97;
+	maxPlayers = 99;
 };
 
 class Params
