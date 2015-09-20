@@ -64,7 +64,11 @@ fillAssaultPacks = {
 	[
 		["30Rnd_65x39_caseless_mag_Tracer", 10],
 		["100Rnd_65x39_caseless_mag_Tracer", 4],
-		["HandGrenade", 5]
+		["HandGrenade", 5],
+		["Chemlight_red", 2],
+		["SmokeShell", 2],
+		["SmokeShellRed", 2],
+		["SmokeShellBlue", 2]
 	]
 ] call fillCarryAlls;
 
@@ -73,7 +77,11 @@ fillAssaultPacks = {
 	[
 		["30Rnd_556x45_Stanag_Tracer_Yellow", 10],
 		["200Rnd_65x39_cased_Box_Tracer", 3],
-		["HandGrenade", 5]
+		["HandGrenade", 5],
+		["Chemlight_green", 2],
+		["SmokeShell", 2],
+		["SmokeShellGreen", 2],
+		["SmokeShellOrange", 2]
 	]
 ] call fillCarryAlls;
 
@@ -81,7 +89,11 @@ fillAssaultPacks = {
 	opfor_arsenal, [
 		["30Rnd_65x39_caseless_green_mag_Tracer", 10],
 		["150Rnd_762x54_Box_Tracer", 4],
-		["HandGrenade", 5]
+		["HandGrenade", 5],
+		["Chemlight_yellow", 2],
+		["SmokeShell", 2],
+		["SmokeShellYellow", 2],
+		["SmokeShellPurple", 2]
 	]
 ] call fillCarryAlls;
 
