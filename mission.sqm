@@ -140,7 +140,7 @@ class Mission
 					special="NONE";
 					id=55;
 					side="WEST";
-					vehicle="B_Soldier_A_F";
+					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -315,7 +315,7 @@ class Mission
 					special="NONE";
 					id=49;
 					side="WEST";
-					vehicle="B_Soldier_A_F";
+					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -349,7 +349,7 @@ class Mission
 					special="NONE";
 					id=50;
 					side="WEST";
-					vehicle="B_Soldier_A_F";
+					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -477,7 +477,7 @@ class Mission
 					special="NONE";
 					id=23;
 					side="WEST";
-					vehicle="B_Soldier_A_F";
+					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -488,7 +488,7 @@ class Mission
 					special="NONE";
 					id=24;
 					side="WEST";
-					vehicle="B_Soldier_A_F";
+					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -522,7 +522,7 @@ class Mission
 					special="NONE";
 					id=25;
 					side="WEST";
-					vehicle="B_Soldier_A_F";
+					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
