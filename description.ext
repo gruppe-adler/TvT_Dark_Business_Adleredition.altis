@@ -11,6 +11,7 @@ enableDebugConsole = 1;
 
 respawnDelay = 9999999;
 #include "CSSA3\CSSA3_header.hpp"
+#include "aceOptions.ext"
 
 class Header
 {
@@ -43,13 +44,3 @@ class Params
 	};
 };
 
-class ace_viewdistance_enabled {
-    value = 1;
-    typeName = "BOOL";
-    force = 1;
-};
-class ace_viewdistance_limitViewDistance {
-    value = 5000;
-    typeName = "SCALAR";
-    force = 1;
-};
