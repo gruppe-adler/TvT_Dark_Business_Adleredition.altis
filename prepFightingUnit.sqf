@@ -88,6 +88,8 @@ _isMachinegunner = (
 	(_unit isKindOf "O_Soldier_AR_F")
 );
 
+_isHeliPilot = ("B_Helipilot_F" == typeof _unit);
+
 
 
 _additionalExecutable = {};
@@ -105,6 +107,11 @@ switch (_side) do {
 			_primaryWeaponDefaultMagazines = "100Rnd_65x39_caseless_mag";
 			_addPrimaryMagazineType = "100Rnd_65x39_caseless_mag_Tracer";
 			 _addPrimaryMagazineCount = 4;
+		};
+		if (_isHeliPilot) then {
+			_primaryWeaponDefaultMagazines = "30Rnd_45ACP_Mag_SMG_01";
+			_addPrimaryMagazineType = "30Rnd_45ACP_Mag_SMG_01_tracer_green";
+			_addPrimaryMagazineCount = 5;
 		};
 
 		if (_shouldGetUGL) then {
