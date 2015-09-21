@@ -18,6 +18,14 @@ removeSmokes = {
 	];
 };
 
+ensureBinoculars = {
+	_unit = _this;
+	if ("Binocular" in (items _unit)) then {
+			_unit removeWeapon "Binocular";
+	};
+	_unit addWeapon "Binocular";
+};
+
 
 _unit = _this;
 _side = side _unit;
@@ -101,12 +109,14 @@ switch (_side) do {
 
 		if (_shouldGetUGL) then {
 			_additionalExecutable = {
+				_unit call ensureBinoculars;
 				_unit addMagazines ["UGL_FlareRed_F", 7];
 				_unit addMagazines ["Chemlight_red", 1];
 				_addPrimaryMagazineCount = 6;
 				_primaryWeapon = "arifle_MX_GL_F";
 				_unit call removeSmokes;
 				_unit addItem "SmokeShell";
+
 			};
 		};
 	};
@@ -122,6 +132,7 @@ switch (_side) do {
 
 		if (_shouldGetUGL) then {
 			_additionalExecutable = {
+				_unit call ensureBinoculars;
 				_unit addMagazines ["UGL_FlareYellow_F", 7];
 				_unit addMagazines ["Chemlight_green", 1];
 				_addPrimaryMagazineCount = 6;
@@ -143,6 +154,7 @@ switch (_side) do {
 
 		if (_shouldGetUGL) then {
 			_additionalExecutable = {
+				_unit call ensureBinoculars;
 				_unit addMagazines ["UGL_FlareGreen_F", 7];
 				_unit addMagazines ["Chemlight_yellow", 1];
 				_addPrimaryMagazineCount = 6;
