@@ -39,3 +39,23 @@ Local time is sometime in the night. BLUFOR have fancy shit (GPS, NVG), whereas 
 
 On every side, slots are organized for one Platoon as per Dslyecxi's TTP2.
 Additionally, BLU has 2 pilot slots for their MH-9, plus one slot for the captured pilot / hostage.
+
+## admin
+
+There are no triggers.
+There are some global variables that track the respective sides' main objective:
+
+```
+OBJECTIVE_STATE_BLUFOR = 'CREATED';
+OBJECTIVE_STATE_IND = 'CREATED';
+OBJECTIVE_STATE_OPFOR = 'CREATED';
+```
+
+Possible states are : `CREATED|CANCELED|SUCCEEDED|FAILED`
+
+To end the mission, the following commands may be executed *on the server*  (by a server admin on the console, obviously): 
+
+`call DB_updateTasks;` : publishes the global variables and updates the players' local tasks accordingly and
+`call DB_endMission;` : ends the mission for each  player according to their local task state .
+
+There are scripts that monitor the main objectives and update the task globals accordingly. If that breaks down for some reason, or to react to unusual things happening, you can set the globals manually to any state you wish, and then call the functions mentioned above.
