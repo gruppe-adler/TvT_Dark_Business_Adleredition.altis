@@ -81,7 +81,13 @@ _isMachinegunner = (
 _isHeliPilot = ("B_Helipilot_F" == typeof _unit);
 
 _vest = vest _unit;
+if (_vest == "") then {
+	_vest = myVest;
+};
 _uniform = uniform _unit;
+if (_uniform == "") then {
+	_uniform = myUniform;
+};
 _backpack = backpack _unit;
 if (_rank == "LIEUTENANT" || _rank == "CAPTAIN") then { // make sure to give everyone from 2nd in cmd upwards a LR radio
 	switch (playerSide) do {

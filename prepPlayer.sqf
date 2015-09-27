@@ -1,6 +1,12 @@
 #include "missionMacros.h";
 
 _unit = player;
+(isNil "myVest") then {
+	myVest = vest _unit;
+};
+(isNil "myUniform") then {
+	myUniform = uniform _unit;
+};
 
 _handle = nil; // scope...
 if ("B_Pilot_F" == typeOf _unit) then {
