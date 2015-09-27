@@ -224,6 +224,12 @@
 				<German>Niemand will sterben. Du willst nicht sterben. Überleb!</German>
 			</Key>			
 		</Container>
+		<Container name="ingame">
+			<Key ID="str_GRAD_gimmeLoadout">
+				<Original>re-equip</Original>
+				<German>neu ausrüsten</German>
+			</Key>
+		</Container>
 	</Package>
 
 	<Package name="MainHudCommon">

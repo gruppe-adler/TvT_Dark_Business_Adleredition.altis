@@ -4,6 +4,7 @@ DEBUG_MODE = (paramsArray select 0) == 1;
 VIRTUAL_ARSENAL_PLACEMENTS = (paramsArray select 1);
 ALLOW_40MM_HE = (paramsArray select 2) == 1;
 VICTORY_TIMEOUT = 900; // seconds
+RE_EQUIP_TIME = 900; // how long should re-equipment be possible  after mission start?
 
 if (isServer) then {
 	[] execVM "tfarSettings.sqf";
@@ -30,4 +31,5 @@ if (!isDedicated) then {
 	[] execVM "addBriefing.sqf";
 	[] execVM "keepLove.sqf";
 	[] execVM "addArsenal.sqf";
+	[] execVM "player\loadoutAction.sqf";
 };
