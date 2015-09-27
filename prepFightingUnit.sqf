@@ -201,9 +201,10 @@ switch (playerSide) do {
 
 _unit addMagazines [_addPrimaryMagazineType, _addPrimaryMagazineCount];
 _unit addWeapon _primaryWeapon;
+
 _unit addPrimaryWeaponItem "acc_flashlight";
 _unit addItem "ACE_Flashlight_KSF1";
-
+_unit addItem "ACE_morphine";
 [_unit, "ACE_fieldDressing", 5] call addItems;
 
 

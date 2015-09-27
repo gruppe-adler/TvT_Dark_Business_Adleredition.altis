@@ -23,7 +23,7 @@ if (isServer) then {
 
 };
 
-if (!isDedicated) then {
+if (hasInterface) then {
 	waitUntil {!isNull player};
 	enableSentences false;
 	[] execVM "CSSA3\CSSA3_init.sqf";
