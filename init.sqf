@@ -6,6 +6,8 @@ ALLOW_40MM_HE = (paramsArray select 2) == 1;
 VICTORY_TIMEOUT = 900; // seconds
 RE_EQUIP_TIME = 900; // how long should re-equipment be possible  after mission start?
 
+disableRemoteSensors true;
+
 if (isServer) then {
 	[] execVM "tfarSettings.sqf";
 	[] execVM "prepAmmoBoxes.sqf";
