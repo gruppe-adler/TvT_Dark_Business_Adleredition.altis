@@ -13,7 +13,7 @@ DB_publishTaskStates = {
 DB_updateTasks = {
 	call DB_publishTaskStates;
 	sleep 1;
-	{
+	_foo = {
 		_mainObjectiveState = 'CANCELED';
 		_taskSurviveState = 'SUCCEEDED';
 		if (!alive player) then {
@@ -27,7 +27,9 @@ DB_updateTasks = {
 		};
 		task_main_objective setTaskState _mainObjectiveState;
 		task_survive setTaskState _taskSurviveState;
-	} remoteExec ["BIS_fnc_call", [WEST, EAST, CIVILIAN, RESISTANCE], true];
+
+	};
+	_foo  remoteExec ["BIS_fnc_call", [WEST, EAST, CIVILIAN, RESISTANCE], true];
 
 	// interestingly, CSSA3 causes people to be CIV, BUT THE SERVER DOES NOT SEEM KNOW THAT, AT LEAST NOT FOR PURPOSES OF REMOTEEXEC TARGETING
 	// THIS DOESNT WORK:
@@ -37,9 +39,10 @@ DB_updateTasks = {
 DB_endMission = {
 	call DB_publishTaskStates;
 	sleep 1;
-	{
-		["end1", ('SUCCEEDED' == (taskState task_main_objective) )] call BIS_fnc_endMission;
-	} remoteExec ["BIS_fnc_call", [WEST, EAST, CIVILIAN, RESISTANCE], true];
+	_foo = {
+		["end1", ('SUCCEEDED' == (taskState task_main_objective) )] call BIS_fnc_endMission
+	};
+	_foo  remoteExec ["BIS_fnc_call", [WEST, EAST, CIVILIAN, RESISTANCE], true];
 
 	adminLog("mission end has been called for");
 };
