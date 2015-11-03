@@ -44,3 +44,26 @@ class Params
 	};
 };
 
+class CfgFunctions {
+	#include "modules\a3g-loadout\CfgFunctions.hpp"
+};
+
+class CfgLoadouts {
+	class AllUnits {
+		items[] = {"ACE_EarPlugs"};
+	};
+	class B_Pilot_F {
+		items[] = {"ACE_EarPlugs"};
+		backpack = "";
+		linkedItems[] = {};
+		magazines[] = {};
+		weapons[] = {};
+		headgear = "";
+		nvgoggles = "";
+		binoculars = "";
+		map = "";
+		gps = "";
+		compass = "";
+		watch = "";
+	};
+};
