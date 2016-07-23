@@ -1,10 +1,10 @@
 #include "missionMacros.h";
 
 _unit = player;
-(isNil "myVest") then {
+if (isNil "myVest") then {
 	myVest = vest _unit;
 };
-(isNil "myUniform") then {
+if (isNil "myUniform") then {
 	myUniform = uniform _unit;
 };
 
