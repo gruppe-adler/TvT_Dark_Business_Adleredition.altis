@@ -58,6 +58,7 @@ class CfgLoadouts {
 		linkedItems[] = {};
 		magazines[] = {};
 		weapons[] = {};
+		primaryWeaponAttachments[] = {"acc_flashlight"};
 		headgear = "";
 		binoculars = "";
 		backpack = "";
@@ -71,6 +72,8 @@ class CfgLoadouts {
 
 	class Blufor {
 		uniform = "U_B_CombatUniform_mcam";
+		primaryWeapon = "arifle_MX_F";
+		primaryWeaponAttachments[] = {"acc_flashlight"};
 		nvgoggles = "ACE_NVG_Gen1";
 		headgear = "H_HelmetSpecB";
 		vest = "V_PlateCarrierGL_mtp";
@@ -79,6 +82,7 @@ class CfgLoadouts {
 	class B_Pilot_F {
 		uniform = "U_B_PilotCoveralls";
 		items[] = {"ACE_EarPlugs"};
+		primaryWeaponAttachments[] = {};
 		headgear = "";
 		map = "";
 		gps = "";
@@ -157,6 +161,7 @@ class CfgLoadouts {
 		vest = "V_HarnessO_brn";
 		headgear = "H_HelmetLeaderO_ocamo";
 		primaryWeapon = "arifle_Katiba_GL_F";
+		primaryWeaponAttachments[] = {"acc_flashlight"};
 	};
 	class O_Officer_F {
 		uniform = "U_O_OfficerUniform_ocamo";
@@ -201,6 +206,7 @@ class CfgLoadouts {
 	class O_Soldier_F {
 		uniform = "U_O_CombatUniform_ocamo";
 		primaryWeapon = "arifle_Katiba_F";
+		primaryWeaponAttachments[] = {"acc_flashlight"};
 		magazines[] = {
 			"30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer",
 			"30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer",
@@ -212,6 +218,7 @@ class CfgLoadouts {
 	class O_Soldier_AR_F {
 		uniform = "U_O_CombatUniform_ocamo";
 		primaryWeapon = "LMG_Zafir_F";
+		primaryWeaponAttachments[] = {"acc_flashlight"};
 		magazines[] = {
 			"Chemlight_green", "Chemlight_green",
 			"SmokeShell", "SmokeShell",
@@ -221,12 +228,14 @@ class CfgLoadouts {
 
 	class Independent {
 		primaryWeapon = "arifle_TRG21_F";
+		primaryWeaponAttachments[] = {"acc_flashlight"};
 		vest = "V_Chestrig_oli";
 		headgear = "H_HelmetIA";
 	};
 	class I_Officer_F {
 		uniform = "U_I_OfficerUniform";
 		primaryWeapon = "arifle_TRG21_GL_F";
+		primaryWeaponAttachments[] = {"acc_flashlight"};
 		gps = "ItemGPS";
 		magazines[] = {
 			"30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red",
@@ -243,6 +252,7 @@ class CfgLoadouts {
 	class I_Soldier_SL_F {
 		uniform = "U_I_OfficerUniform";
 		primaryWeapon = "arifle_TRG21_GL_F";
+		primaryWeaponAttachments[] = {"acc_flashlight"};
 		gps = "ItemGPS";
 		magazines[] = {
 			"30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red",
@@ -258,6 +268,7 @@ class CfgLoadouts {
 	class I_Soldier_TL_F {
 		uniform = "U_I_CombatUniform";
 		primaryWeapon = "arifle_TRG21_GL_F";
+		primaryWeaponAttachments[] = {"acc_flashlight"};
 		magazines[] = {
 			"30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red",
 			"30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red",
@@ -285,6 +296,7 @@ class CfgLoadouts {
 	class I_Soldier_AR_F {
 		uniform = "U_I_CombatUniform";
 		primaryWeapon = "LMG_Mk200_F";
+		primaryWeaponAttachments[] = {"acc_flashlight"};
 		magazines[] = {
 			"Chemlight_green", "Chemlight_green",
 			"SmokeShell", "SmokeShell",
