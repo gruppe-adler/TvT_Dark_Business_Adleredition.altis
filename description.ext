@@ -51,7 +51,9 @@ class CfgFunctions {
 class CfgLoadouts {
 	class AllUnits {
 		items[] = {
-			"ACE_EarPlugs", "ACE_Flashlight_KSF1", "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing"
+			"ACE_EarPlugs",
+			"ACE_Flashlight_KSF1",
+			"ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing"
 		};
 		linkedItems[] = {};
 		magazines[] = {};
@@ -61,6 +63,7 @@ class CfgLoadouts {
 		backpack = "";
 		gps = "";
 		nvgoggles = "";
+		goggles = "";
 		map = "ItemMap";
 		compass = "ItemCompass";
 		watch = "ItemWatch";
@@ -87,32 +90,66 @@ class CfgLoadouts {
 	class B_Officer_F {
 		primaryWeapon = "arifle_MX_GL_F";
 		binoculars = "ACE_Vector";
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","HandGrenade","Chemlight_red","Chemlight_red","Chemlight_red","Chemlight_red","Chemlight_red","Chemlight_red","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F"};
+		magazines[] = {
+			"30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer",
+			"30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer",
+			"SmokeShell", "SmokeShell",
+			"Chemlight_red", "Chemlight_red", "Chemlight_red", "Chemlight_red", "Chemlight_red",
+			"UGL_FlareRed_F", "UGL_FlareRed_F", "UGL_FlareRed_F", "UGL_FlareRed_F", "UGL_FlareRed_F",
+			"UGL_FlareRed_F", "UGL_FlareRed_F", "UGL_FlareRed_F", "UGL_FlareRed_F", "UGL_FlareRed_F"
+		};
 	};
 	class B_Soldier_SL_F {
 		primaryWeapon = "arifle_MX_GL_F";
 		binoculars = "ACE_Vector";
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","HandGrenade","Chemlight_red","Chemlight_red","Chemlight_red","Chemlight_red","Chemlight_red","Chemlight_red","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F"};
+		magazines[] = {
+			"30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer",
+			"30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer",
+			"SmokeShell", "SmokeShell", "HandGrenade",
+			"Chemlight_red", "Chemlight_red", "Chemlight_red", "Chemlight_red", "Chemlight_red",
+			"UGL_FlareRed_F", "UGL_FlareRed_F", "UGL_FlareRed_F", "UGL_FlareRed_F", "UGL_FlareRed_F",
+			"UGL_FlareRed_F", "UGL_FlareRed_F", "UGL_FlareRed_F", "UGL_FlareRed_F", "UGL_FlareRed_F"
+		};
 
 	};
 	class B_Soldier_TL_F {
 		primaryWeapon = "arifle_MX_GL_F";
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","HandGrenade","Chemlight_red","Chemlight_red","Chemlight_red","Chemlight_red","Chemlight_red","Chemlight_red","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F"};
 		gps = "ItemGPS";
+		magazines[] = {
+			"30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer",
+			"30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer",
+			"SmokeShell", "SmokeShell", "HandGrenade",
+			"Chemlight_red", "Chemlight_red", "Chemlight_red", "Chemlight_red", "Chemlight_red",
+			"UGL_FlareRed_F", "UGL_FlareRed_F", "UGL_FlareRed_F", "UGL_FlareRed_F", "UGL_FlareRed_F",
+			"UGL_FlareRed_F", "UGL_FlareRed_F", "UGL_FlareRed_F", "UGL_FlareRed_F", "UGL_FlareRed_F"
+		};
 	};
 	class B_Soldier_F {
 		primaryWeapon = "arifle_MX_F";
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","Chemlight_red","Chemlight_red","Chemlight_red","Chemlight_red","Chemlight_red","Chemlight_red","SmokeShell","SmokeShell","HandGrenade","HandGrenade","HandGrenade"};
+		magazines[] = {
+			"30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer",
+			"30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer",
+			"30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_mag_Tracer",
+			"Chemlight_red", "Chemlight_red",
+			"SmokeShell", "SmokeShell", "SmokeShell", "SmokeShell",
+			"HandGrenade", "HandGrenade", "HandGrenade", "HandGrenade"
+		};
 	};
 	class B_Soldier_AR_F {
 		primaryWeapon = "arifle_MX_SW_F";
-		magazines[] = {"HandGrenade","Chemlight_red","Chemlight_red","Chemlight_red","Chemlight_red","Chemlight_red","Chemlight_red","SmokeShell","SmokeShell","100Rnd_65x39_caseless_mag_Tracer","100Rnd_65x39_caseless_mag_Tracer","100Rnd_65x39_caseless_mag_Tracer","100Rnd_65x39_caseless_mag_Tracer","100Rnd_65x39_caseless_mag_Tracer","100Rnd_65x39_caseless_mag_Tracer","100Rnd_65x39_caseless_mag_Tracer","100Rnd_65x39_caseless_mag_Tracer","100Rnd_65x39_caseless_mag_Tracer"};
+		magazines[] = {
+			"100Rnd_65x39_caseless_mag_Tracer", "100Rnd_65x39_caseless_mag_Tracer", "100Rnd_65x39_caseless_mag_Tracer", "100Rnd_65x39_caseless_mag_Tracer", "100Rnd_65x39_caseless_mag_Tracer",
+			"100Rnd_65x39_caseless_mag_Tracer",
+			"SmokeShell",
+			"Chemlight_red", "Chemlight_red",
+		};
 	};
 	class B_Helipilot_F {
 		uniform = "U_B_HeliPilotCoveralls";
 		primaryWeapon = "SMG_01_F";
-		magazines[] = {"30Rnd_45ACP_Mag_SMG_01_Tracer_Green","30Rnd_45ACP_Mag_SMG_01_Tracer_Green","30Rnd_45ACP_Mag_SMG_01_Tracer_Green","Chemlight_red"};
+		magazines[] = {"30Rnd_45ACP_Mag_SMG_01_Tracer_Green", "30Rnd_45ACP_Mag_SMG_01_Tracer_Green", "30Rnd_45ACP_Mag_SMG_01_Tracer_Green", "Chemlight_red"};
 		headgear = "H_PilotHelmetHeli_B";
+		vest = "";
 	};
 
 	class Opfor {
@@ -122,33 +159,68 @@ class CfgLoadouts {
 		primaryWeapon = "arifle_Katiba_GL_F";
 	};
 	class O_Officer_F {
-		uniform = "U_O_CombatUniform_ocamo";
+		uniform = "U_O_OfficerUniform_ocamo";
 		gps = "ItemGPS";
 		binoculars = "Binocular";
-		magazines[] = {"SmokeShell","HandGrenade","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","Chemlight_green","Chemlight_green","Chemlight_green","Chemlight_green"};
+		magazines[] = {
+			"30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer",
+			"30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer",
+			"SmokeShell", "SmokeShell",
+			"Chemlight_green", "Chemlight_green", "Chemlight_green", "Chemlight_green", "Chemlight_green",
+			"UGL_FlareGreen_F", "UGL_FlareGreen_F", "UGL_FlareGreen_F", "UGL_FlareGreen_F", "UGL_FlareGreen_F",
+			"UGL_FlareGreen_F", "UGL_FlareGreen_F", "UGL_FlareGreen_F", "UGL_FlareGreen_F", "UGL_FlareGreen_F"
+		};
 	};
 	class O_Soldier_SL_F {
-		uniform = "U_O_CombatUniform_ocamo";
+		uniform = "U_O_OfficerUniform_ocamo";
 		binoculars = "Binocular";
 		gps = "ItemGPS";
-		magazines[] = {"SmokeShell","HandGrenade","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","Chemlight_green","Chemlight_green","Chemlight_green","Chemlight_green"};
+		magazines[] = {
+			"30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer",
+			"30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer",
+			"SmokeShell", "SmokeShell",
+			"HandGrenade",
+			"Chemlight_green", "Chemlight_green", "Chemlight_green", "Chemlight_green", "Chemlight_green",
+			"UGL_FlareGreen_F", "UGL_FlareGreen_F", "UGL_FlareGreen_F", "UGL_FlareGreen_F", "UGL_FlareGreen_F",
+			"UGL_FlareGreen_F", "UGL_FlareGreen_F", "UGL_FlareGreen_F", "UGL_FlareGreen_F", "UGL_FlareGreen_F"
+		};
 	};
 	class O_Soldier_TL_F {
 		uniform = "U_O_CombatUniform_ocamo";
-		magazines[] = {"SmokeShell","HandGrenade","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareGreen_F","Chemlight_green","Chemlight_green","Chemlight_green","Chemlight_green"};
+		magazines[] = {
+			"30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer",
+			"30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer",
+			"30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer",
+			"SmokeShell", "SmokeShell",
+			"HandGrenade",
+			"Chemlight_green", "Chemlight_green", "Chemlight_green", "Chemlight_green", "Chemlight_green",
+			"UGL_FlareGreen_F", "UGL_FlareGreen_F", "UGL_FlareGreen_F", "UGL_FlareGreen_F", "UGL_FlareGreen_F",
+			"UGL_FlareGreen_F", "UGL_FlareGreen_F", "UGL_FlareGreen_F",
+		};
 	};
 	class O_Soldier_F {
 		uniform = "U_O_CombatUniform_ocamo";
 		primaryWeapon = "arifle_Katiba_F";
-		magazines[] = {"SmokeShell","HandGrenade","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","HandGrenade","HandGrenade","HandGrenade","SmokeShellYellow","Chemlight_green","Chemlight_green","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer","30Rnd_65x39_caseless_green_mag_Tracer"};
+		magazines[] = {
+			"30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer",
+			"30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_65x39_caseless_green_mag_Tracer",
+			"Chemlight_green", "Chemlight_green",
+			"SmokeShell", "SmokeShell", "SmokeShell", "SmokeShell",
+			"HandGrenade", "HandGrenade", "HandGrenade", "HandGrenade"
+		};
 	};
 	class O_Soldier_AR_F {
 		uniform = "U_O_CombatUniform_ocamo";
 		primaryWeapon = "LMG_Zafir_F";
-		magazines[] = {"SmokeShell","HandGrenade","SmokeShellYellow","150Rnd_762x54_Box_Tracer","150Rnd_762x54_Box_Tracer","Chemlight_green","Chemlight_green","Chemlight_green","Chemlight_green","150Rnd_762x54_Box_Tracer","150Rnd_762x54_Box_Tracer"};
+		magazines[] = {
+			"Chemlight_green", "Chemlight_green",
+			"SmokeShell", "SmokeShell",
+			"150Rnd_762x54_Box_Tracer", "150Rnd_762x54_Box_Tracer", "150Rnd_762x54_Box_Tracer", "150Rnd_762x54_Box_Tracer"
+		};
 	};
 
 	class Independent {
+		primaryWeapon = "arifle_TRG21_F";
 		vest = "V_Chestrig_oli";
 		headgear = "H_HelmetIA";
 	};
@@ -156,28 +228,67 @@ class CfgLoadouts {
 		uniform = "U_I_OfficerUniform";
 		primaryWeapon = "arifle_TRG21_GL_F";
 		gps = "ItemGPS";
-		magazines[] = {"Chemlight_green","Chemlight_green","Chemlight_green","Chemlight_green","Chemlight_green","Chemlight_green","SmokeShellYellow","Chemlight_green","Chemlight_green","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","Chemlight_green","Chemlight_green","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red"};
+		magazines[] = {
+			"30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red",
+			"Chemlight_green", "Chemlight_green", "Chemlight_green", "Chemlight_green", "Chemlight_green",
+			"Chemlight_green", "Chemlight_green", "Chemlight_green", "Chemlight_green", "Chemlight_green",
+			"SmokeShell", "SmokeShell",
+			"UGL_FlareYellow_F", "UGL_FlareYellow_F", "UGL_FlareYellow_F", "UGL_FlareYellow_F", "UGL_FlareYellow_F",
+			"UGL_FlareYellow_F", "UGL_FlareYellow_F", "UGL_FlareYellow_F", "UGL_FlareYellow_F", "UGL_FlareYellow_F",
+			"UGL_FlareYellow_F", "UGL_FlareYellow_F"
+		};
+
 	};
 	class I_Soldier_SL_F {
 		uniform = "U_I_OfficerUniform";
 		primaryWeapon = "arifle_TRG21_GL_F";
 		gps = "ItemGPS";
-		magazines[] = {"Chemlight_green","Chemlight_green","Chemlight_green","Chemlight_green","Chemlight_green","Chemlight_green","SmokeShellYellow","Chemlight_green","Chemlight_green","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","Chemlight_green","Chemlight_green","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red"};
+		magazines[] = {
+			"30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red",
+			"Chemlight_green", "Chemlight_green", "Chemlight_green", "Chemlight_green", "Chemlight_green",
+			"SmokeShell", "SmokeShell",
+			"UGL_FlareYellow_F", "UGL_FlareYellow_F", "UGL_FlareYellow_F", "UGL_FlareYellow_F", "UGL_FlareYellow_F",
+			"UGL_FlareYellow_F", "UGL_FlareYellow_F", "UGL_FlareYellow_F", "UGL_FlareYellow_F", "UGL_FlareYellow_F",
+			"UGL_FlareYellow_F", "UGL_FlareYellow_F",
+			"HandGrenade"
+		};
 	};
 	class I_Soldier_TL_F {
 		uniform = "U_I_CombatUniform";
 		primaryWeapon = "arifle_TRG21_GL_F";
-		magazines[] = {"Chemlight_green","Chemlight_green","Chemlight_green","Chemlight_green","Chemlight_green","Chemlight_green","SmokeShellYellow","Chemlight_green","Chemlight_green","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","Chemlight_green","Chemlight_green","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","UGL_FlareYellow_F","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red"};
+		magazines[] = {
+			"30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red",
+			"Chemlight_green", "Chemlight_green", "Chemlight_green", "Chemlight_green", "Chemlight_green",
+			"SmokeShell", "SmokeShell",
+			"UGL_FlareYellow_F", "UGL_FlareYellow_F", "UGL_FlareYellow_F", "UGL_FlareYellow_F", "UGL_FlareYellow_F",
+			"UGL_FlareYellow_F", "UGL_FlareYellow_F", "UGL_FlareYellow_F", "UGL_FlareYellow_F", "UGL_FlareYellow_F",
+			"HandGrenade", "HandGrenade"
+		};
 	};
 	class I_Soldier_F {
 		uniform = "U_I_CombatUniform";
 		backpack = "B_AssaultPack_khk";
-		weapons[] = {"Binocular","arifle_TRG21_F","Throw","Put"};
-		magazines[] = {"Chemlight_green","Chemlight_green","Chemlight_green","Chemlight_green","Chemlight_green","Chemlight_green","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","SmokeShellYellow","Chemlight_green","Chemlight_green","30Rnd_556x45_Stanag","Chemlight_green","Chemlight_green"};
+		weapons[] = {"Binocular", "arifle_TRG21_F", "Throw", "Put"};
+		magazines[] = {
+			"30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red",
+			"Chemlight_green", "Chemlight_green",
+			"SmokeShell", "SmokeShell", "SmokeShell", "SmokeShell",
+			"HandGrenade", "HandGrenade", "HandGrenade", "HandGrenade"
+		};
 	};
-	class I_Soldier_AR {
+	class I_Soldier_AR_F {
 		uniform = "U_I_CombatUniform";
 		primaryWeapon = "LMG_Mk200_F";
-		magazines[] = {"Chemlight_green","Chemlight_green","Chemlight_green","Chemlight_green","Chemlight_green","Chemlight_green","SmokeShellYellow","Chemlight_green","Chemlight_green","200Rnd_65x39_cased_Box_Tracer","200Rnd_65x39_cased_Box_Tracer","Chemlight_green","Chemlight_green","200Rnd_65x39_cased_Box_Tracer","200Rnd_65x39_cased_Box_Tracer"};
+		magazines[] = {
+			"Chemlight_green", "Chemlight_green",
+			"SmokeShell", "SmokeShell",
+			"200Rnd_65x39_cased_Box_Tracer", "200Rnd_65x39_cased_Box_Tracer", "200Rnd_65x39_cased_Box_Tracer"
+		};
 	};
 };

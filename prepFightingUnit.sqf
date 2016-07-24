@@ -1,6 +1,9 @@
 #include "missionMacros.h";
 
+_unit = player;
+
 _backpack = "";
+_rank = rank _unit;
 if (_rank == "LIEUTENANT" || _rank == "CAPTAIN") then { // make sure to give everyone from 2nd in cmd upwards a LR radio
 	switch (playerSide) do {
 		case west: {_backpack = TF_defaultWestBackpack;};
