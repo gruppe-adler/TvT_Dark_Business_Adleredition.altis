@@ -1,0 +1,21 @@
+{
+    "author": "Moritz Schmidt <fusselwurm@gmail.com>",
+    "contributors": [{
+        "name": "Moritz Schmidt",
+        "email": "fusselwurm@gmail.com"
+    }],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gruppe-adler/TvT_Dark_Business_Adleredition.altis"
+    },
+    "bugs": {
+        "url": "https://github.com/gruppe-adler/TvT_Dark_Business_Adleredition.altis/issues"
+    },
+    "keywords": [
+        "arma3",
+        "tvt"
+    ],
+    "dependencies": {
+        "a3g-loadout": "gruppe-adler/a3g-loadout#master"
+    }
+}
