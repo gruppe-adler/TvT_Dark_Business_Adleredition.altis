@@ -282,8 +282,8 @@ class CfgLoadouts {
 	};
 	class I_Soldier_F {
 		uniform = "U_I_CombatUniform";
-		backpack = "B_AssaultPack_khk";
-		weapons[] = {"Binocular", "arifle_TRG21_F", "Throw", "Put"};
+		primaryWeapon = "arifle_TRG21_F";
+		primaryWeaponAttachments[] = {"acc_flashlight"};
 		magazines[] = {
 			"30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red",
 			"30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red",
