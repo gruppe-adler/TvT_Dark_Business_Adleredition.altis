@@ -1,26 +1,13 @@
 language: python
+cache:
+  directories:
+    - $HOME/usr/bin
 python:
 - '3.4'
 node_js:
 - 6
-before_script:
-- mkdir -p tools
-- wget http://gruppe-adler.de/api/travis/sqf_validator.py
-- sed -i -e 's/addons//g' sqf_validator.py
-- mv sqf_validator.py tools/
-- git clone https://github.com/KoffeinFlummi/armake
-- pushd armake
-- make
-- sudo make install
-- popd
-- rm -rf armake
 script:
-- python3 tools/sqf_validator.py
-- rm tools/sqf_validator.py
-- npm install
-- mkdir build
-- armake build -x build.sh -x ".git/*" -x cpbo.exe -x .travis.yml -x .gitattributes -x .gitignore . build/TvT_Dark_Business_Adleredition-$TRAVIS_TAG.Altis.pbo
-- ls -la build/
+- npm run-script build
 notifications:
   slack: gruppe-adler:WUbRswFJEqy55XKuLhtXTlOf
   template:
@@ -31,7 +18,7 @@ deploy:
   provider: releases
   api_key: "$GITHUB_ACCESS_TOKEN"
   file:
-    - "build/TvT_Dark_Business_Adleredition-$TRAVIS_TAG.Altis.pbo"
+    - "build/TvT_Dark_Business_Adleredition-${TRAVIS_TAG}.Altis.pbo"
   skip_cleanup: true
   on:
     tags: true
