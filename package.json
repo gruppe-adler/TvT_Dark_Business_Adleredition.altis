@@ -1,6 +1,6 @@
 {
     "author": "Moritz Schmidt <fusselwurm@gmail.com>",
-    "version": "2.2.0",
+    "version": "2.2.1",
     "contributors": [{
         "name": "Moritz Schmidt",
         "email": "fusselwurm@gmail.com"
@@ -17,7 +17,8 @@
         "tvt"
     ],
     "scripts": {
-      "build": "./build/build.sh"
+        "build": "./build/build.sh",
+        "preinstall": "rm .git/hooks/post-commit; ln -s ../../build/post-commit-create-tag.sh .git/hooks/post-commit"
 
    },
     "dependencies": {
