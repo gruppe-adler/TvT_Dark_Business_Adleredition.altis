@@ -234,6 +234,7 @@ class CfgLoadouts {
 	};
 	class I_Officer_F {
 		uniform = "U_I_OfficerUniform";
+		binoculars = "Binocular";
 		primaryWeapon = "arifle_TRG21_GL_F";
 		primaryWeaponAttachments[] = {"acc_flashlight"};
 		gps = "ItemGPS";
@@ -251,6 +252,7 @@ class CfgLoadouts {
 	};
 	class I_Soldier_SL_F {
 		uniform = "U_I_OfficerUniform";
+		binoculars = "Binocular";
 		primaryWeapon = "arifle_TRG21_GL_F";
 		primaryWeaponAttachments[] = {"acc_flashlight"};
 		gps = "ItemGPS";
