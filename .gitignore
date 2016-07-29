@@ -1,2 +1,5 @@
 pics/Thumbs.db
 node_modules
+bin/*.pbo
+build/armake
+build/sqf_validator.py
