@@ -28,7 +28,6 @@ if (isServer) then {
 if (hasInterface) then {
 	waitUntil {!isNull player};
 	enableSentences false;
-	[] execVM "CSSA3\CSSA3_init.sqf";
 	[] execVM "prepPlayer.sqf";
 	[] execVM "addBriefing.sqf";
 	[] execVM "keepLove.sqf";

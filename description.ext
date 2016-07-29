@@ -9,8 +9,10 @@ overviewText = $STR_GRAD_overviewText;
 disabledAI = 1;
 enableDebugConsole = 1;
 
+respawn = 3;
 respawnDelay = 9999999;
-#include "CSSA3\CSSA3_header.hpp"
+respawnTemplates[] = {"ace_spectator"};
+
 #include "aceOptions.ext"
 
 class Header
