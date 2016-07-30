@@ -21,4 +21,5 @@ deploy:
     - "bin/TvT_Dark_Business_Adleredition-${TRAVIS_TAG}.Altis.pbo"
   skip_cleanup: true
   on:
-    tags: true
+    all_branches: true
+    
