@@ -7,6 +7,8 @@ python:
 node_js:
 - 6
 script:
+- export TAG=`node -e 'console.log(JSON.parse(require("fs").readFileSync("package.json")).version)'`
+- if [[ ${TRAVIS_TAG} != "" ]]; then export TAG=${TRAVIS_TAG}; fi
 - npm run-script build
 notifications:
   slack: gruppe-adler:WUbRswFJEqy55XKuLhtXTlOf
@@ -18,7 +20,7 @@ deploy:
   provider: releases
   api_key: "$GITHUB_ACCESS_TOKEN"
   file:
-    - "bin/TvT_Dark_Business_Adleredition-${TRAVIS_TAG}.Altis.pbo"
+    - "bin/TvT_Dark_Business_Adleredition-${TAG}.Altis.pbo"
   skip_cleanup: true
   on:
     all_branches: true

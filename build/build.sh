@@ -5,7 +5,6 @@ currentdir=`dirname $0`
 
 SQF_VALIDATOR="$HOME/usr/bin/sqf_validator.py"
 ARMAKE="$HOME/usr/bin/armake"
-TAG=$TRAVIS_TAG
 if [[ $TAG == "" ]]
 then
 	TAG=`node -e 'console.log(JSON.parse(require("fs").readFileSync("package.json")).version)'`
