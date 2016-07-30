@@ -21,4 +21,4 @@ fi
 
 python3 "$SQF_VALIDATOR"
 
-"$ARMAKE" build -f -x "build/*" -x ".git/*" -x "cpbo.exe" -x ".travis.yml" -x ".gitattributes" -x ".gitignore" . "$currentdir/../bin/TvT_Dark_Business_Adleredition-$TAG.Altis.pbo"
+"$ARMAKE" build -i "$currentdir" -x "build/*" -x ".git/*" -x "cpbo.exe" -x ".travis.yml" -x ".gitattributes" -x ".gitignore" . "$currentdir/../bin/TvT_Dark_Business_Adleredition-$TAG.Altis.pbo"
