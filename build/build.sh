@@ -12,13 +12,13 @@ fi
 
 if [[ ! -f "$SQF_VALIDATOR" ]]
 then
-	"$currentdir/install_sqf_validator.sh" "$SQF_VALIDATOR" || exit 1
+	"$currentdir/install_sqf_validator.sh" "$SQF_VALIDATOR"
 fi
 if [[ ! -f "$ARMAKE" ]]
 then
-	"$currentdir/install_armake.sh" "$ARMAKE" || exit 2
+	"$currentdir/install_armake.sh" "$ARMAKE"
 fi
 
-python3 $SQF_VALIDATOR
+python3 ""$SQF_VALIDATOR"
 
 "$ARMAKE" build -f -x "build/*" -x ".git/*" -x cpbo.exe -x .travis.yml -x .gitattributes -x .gitignore . "$currentdir/../bin/TvT_Dark_Business_Adleredition-$TAG.Altis.pbo"
