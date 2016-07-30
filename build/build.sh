@@ -2,7 +2,6 @@
 
 currentdir=`dirname $0`
 
-
 SQF_VALIDATOR="$HOME/usr/bin/sqf_validator.py"
 ARMAKE="$HOME/usr/bin/armake"
 TAG="$TRAVIS_TAG"
@@ -21,7 +20,5 @@ then
 fi
 
 python3 $SQF_VALIDATOR
-
-npm install
 
 "$ARMAKE" build -f -x "build/*" -x ".git/*" -x cpbo.exe -x .travis.yml -x .gitattributes -x .gitignore . "$currentdir/../bin/TvT_Dark_Business_Adleredition-$TAG.Altis.pbo"
