@@ -11,7 +11,7 @@ disableRemoteSensors true;
 if (isServer) then {
 	[] execVM "tfarSettings.sqf";
 	[] execVM "prepAmmoBoxes.sqf";
-	[] execVM "spreadLove.sqf"; // so the hostage can board all vehicles. also, nice for testing.
+	[] execVM "setAllSidesFriendly.sqf";
 	[] execVM "victoryHints.sqf";
 
 	blufor_hemtt setVehicleLock "LOCKED";
@@ -30,7 +30,6 @@ if (hasInterface) then {
 	enableSentences false;
 	[] execVM "prepPlayer.sqf";
 	[] execVM "addBriefing.sqf";
-	[] execVM "keepLove.sqf";
 	[] execVM "addArsenal.sqf";
 	[] execVM "player\loadoutAction.sqf";
 };

@@ -1,9 +1,11 @@
 #include "missionMacros.h";
 
 _unit = player;
-_handle = nil; // scope...
+
+_unit addEventhandler ["HandleRating", {0}]; // prevent geting labeled as ROGUE when killing enemies (which are 'friendly' here)
+
 if ("B_Pilot_F" == typeOf _unit) then {
-	_handle = _unit execVM "prepHostage.sqf";
+	_unit execVM "prepHostage.sqf";
 } else {
-	_handle = _unit execVM "prepFightingUnit.sqf";
+	_unit execVM "prepFightingUnit.sqf";
 };
