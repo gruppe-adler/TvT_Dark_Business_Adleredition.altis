@@ -15,6 +15,7 @@ respawnTemplates[] = {"ace_spectator"};
 
 #define MODULES_DIRECTORY node_modules
 
+#include "missionMacros.h"
 #include "aceOptions.ext"
 #include "a3g-loadout.ext"
 
