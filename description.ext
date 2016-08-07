@@ -13,12 +13,6 @@ respawn = 3;
 respawnDelay = 9999999;
 respawnTemplates[] = {"ace_spectator"};
 
-#define MODULES_DIRECTORY node_modules
-
-#include "missionMacros.h"
-#include "aceOptions.ext"
-#include "a3g-loadout.ext"
-
 class Header
 {
 	gameType = RPG;
@@ -49,3 +43,10 @@ class Params
 		default = 0;
 	};
 };
+
+#define MODULES_DIRECTORY node_modules
+
+#include "missionMacros.h"
+#include "aceOptions.h"
+#include "loadouts.h"
+
