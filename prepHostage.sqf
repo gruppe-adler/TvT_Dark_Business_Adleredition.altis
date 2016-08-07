@@ -4,7 +4,7 @@ _this spawn {
 	removeBackpack _this;
 };
 
-_unit addEventHandler ["GetOutMan", {
+_this addEventHandler ["GetOutMan", {
         params ["_unit", "", "_vehicle"];
 
         if ((side _unit != side _vehicle) && (speed _vehicle > 0)) then {
