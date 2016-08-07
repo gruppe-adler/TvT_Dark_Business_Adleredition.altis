@@ -24,4 +24,4 @@ python3 $SQF_VALIDATOR
 
 npm install
 
-$ARMAKE build -f -x "build/*" -x ".git/*" -x cpbo.exe -x .travis.yml -x .gitattributes -x .gitignore . "bin/TvT_Dark_Business_Adleredition-${TAG}.Altis.pbo"
+$ARMAKE build -f -x "bin/*" -x "build/*" -x ".git/*" -x cpbo.exe -x .travis.yml -x .gitattributes -x .gitignore . "bin/TvT_Dark_Business_Adleredition-${TAG}.Altis.pbo"
