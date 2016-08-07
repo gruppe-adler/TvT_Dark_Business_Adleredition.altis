@@ -1,6 +1,6 @@
 {
     "author": "Moritz Schmidt <fusselwurm@gmail.com>",
-    "version": "2.4.1",
+    "version": "2.4.2",
     "contributors": [{
         "name": "Moritz Schmidt",
         "email": "fusselwurm@gmail.com"
@@ -22,6 +22,6 @@
 
    },
     "dependencies": {
-        "grad-loadout": "^1.0.0"
+        "grad-loadout": "^1.0.3"
     }
 }
