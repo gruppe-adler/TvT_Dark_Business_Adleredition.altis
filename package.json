@@ -22,6 +22,6 @@
 
    },
     "dependencies": {
-        "a3g-loadout": "~1.0"
+        "grad-loadout": "^1.0.0"
     }
 }
