@@ -6,7 +6,7 @@ onLoadMissionTime = false;
 overviewPicture = "pics\mission-title-512x256.jpg";
 overviewText = $STR_GRAD_overviewText;
 
-disabledAI = 1;
+disabledAI = 0;
 enableDebugConsole = 1;
 
 respawn = 3;
