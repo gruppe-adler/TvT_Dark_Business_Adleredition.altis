@@ -38,7 +38,7 @@ class CfgLoadouts {
     };
     class B_Pilot_F {
         uniform = "U_B_PilotCoveralls";
-        items[] = {"ACE_EarPlugs"};
+        primaryWeapon = "";
         primaryWeaponAttachments[] = {};
         headgear = "";
         map = "";
@@ -46,6 +46,16 @@ class CfgLoadouts {
         compass = "";
         watch = "";
         nvgoggles = "";
+        vest = "";
+    };
+    class B_Helipilot_F {
+        uniform = "U_B_HeliPilotCoveralls";
+        primaryWeapon = "SMG_01_F";
+        magazines[] = {
+            LIST_3("30Rnd_45ACP_Mag_SMG_01_Tracer_Green"),
+            "Chemlight_red"
+        };
+        headgear = "H_PilotHelmetHeli_B";
         vest = "";
     };
     class B_Officer_F {
@@ -97,16 +107,6 @@ class CfgLoadouts {
             "SmokeShell",
             LIST_2("Chemlight_red")
         };
-    };
-    class B_Helipilot_F {
-        uniform = "U_B_HeliPilotCoveralls";
-        primaryWeapon = "SMG_01_F";
-        magazines[] = {
-            LIST_3("30Rnd_45ACP_Mag_SMG_01_Tracer_Green"),
-            "Chemlight_red"
-        };
-        headgear = "H_PilotHelmetHeli_B";
-        vest = "";
     };
 
     class Opfor {
