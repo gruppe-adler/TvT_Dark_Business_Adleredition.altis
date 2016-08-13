@@ -22,6 +22,6 @@
 
    },
     "dependencies": {
-        "grad-loadout": "^1.0.3"
+        "grad-loadout": "^2.0.0"
     }
 }
