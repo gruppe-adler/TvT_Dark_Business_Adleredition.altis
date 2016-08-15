@@ -4485,7 +4485,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="#loggedAdmin";
+							value="#adminLogged";
 						};
 					};
 				};
