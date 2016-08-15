@@ -3827,7 +3827,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="#loggeadAdmin";
+							value="#adminLogged";
 						};
 					};
 				};
