@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=488;
+		nextID=489;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4972.4673,1485.3364,-261.05231};
-		dir[]={0.68789691,-0.52880144,0.49735895};
-		up[]={0.42870796,0.84860516,0.30996233};
-		aside[]={0.58596659,1.045868e-006,-0.81044453};
+		pos[]={2018.9968,43.216698,5112.5391};
+		dir[]={0.28331295,-0.95897079,0.017927166};
+		up[]={0.95705229,0.2835145,0.060560778};
+		aside[]={0.063160785,-1.1171651e-006,-0.9981004};
 	};
 };
 binarizationWanted=0;
@@ -29,12 +29,16 @@ addons[]=
 	"A3_Soft_F_Offroad_01",
 	"A3_Soft_F_Gamma_Hatchback_01",
 	"A3_Air_F_EPC_Plane_CAS_01",
+	"ace_realisticnames",
 	"A3_Soft_F_Quadbike_01",
 	"A3_Soft_F_Beta_Truck_02",
 	"A3_Structures_F_Ind_Cargo",
+	"ace_cargo",
 	"A3_Weapons_F_Ammoboxes",
 	"A3_Structures_F_Civ_Camping",
 	"A3_Characters_F",
+	"ace_gforces",
+	"ace_parachute",
 	"A3_Air_F_Heli_Light_01",
 	"A3_Soft_F_Beta_Truck_01",
 	"A3_Structures_F_Heli_Items_Airport",
@@ -42,13 +46,15 @@ addons[]=
 	"A3_Soft_F_EPC_Truck_03",
 	"A3_Structures_F_Walls",
 	"A3_Soft_F_Gamma_Truck_02",
-	"A3_Structures_F_System"
+	"ace_rearm",
+	"A3_Structures_F_System",
+	"A3_Modules_F_Curator_Curator"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=12;
+		items=16;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -100,36 +106,64 @@ class AddonsMetaData
 		};
 		class Item7
 		{
+			className="ace_cargo";
+			name="ACE3 - Cargo";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item8
+		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item8
+		class Item9
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item9
+		class Item10
+		{
+			className="ace_parachute";
+			name="ACE3 - Parachute";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item11
 		{
 			className="A3_Air_F";
 			name="Arma 3 Alpha - Aircrafts";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item10
+		class Item12
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item11
+		class Item13
 		{
 			className="A3_Soft_F_EPC";
 			name="Arma 3 Win Episode - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item14
+		{
+			className="ace_rearm";
+			name="ACE3 - Rearm";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item15
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -167,7 +201,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=132;
+		items=133;
 		class Item0
 		{
 			dataType="Marker";
@@ -606,14 +640,14 @@ class Mission
 					};
 					id=217;
 					type="B_Pilot_F";
-					atlOffset=0.73954582;
+					atlOffset=0.37631035;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=216;
-			atlOffset=0.73954582;
+			atlOffset=0.37631035;
 		};
 		class Item24
 		{
@@ -1407,7 +1441,7 @@ class Mission
 			};
 			id=322;
 			type="PortableHelipadLight_01_red_F";
-			atlOffset=0.0015144348;
+			atlOffset=0.0015153885;
 		};
 		class Item35
 		{
@@ -1578,7 +1612,7 @@ class Mission
 			};
 			id=331;
 			type="B_Carryall_mcamo";
-			atlOffset=0.0013074875;
+			atlOffset=0.0013084412;
 		};
 		class Item44
 		{
@@ -1901,7 +1935,7 @@ class Mission
 					};
 					id=349;
 					type="B_medic_F";
-					atlOffset=0.00028991699;
+					atlOffset=0.00028896332;
 				};
 				class Item2
 				{
@@ -2205,7 +2239,7 @@ class Mission
 					};
 					id=365;
 					type="B_Soldier_TL_F";
-					atlOffset=0.0043773651;
+					atlOffset=0.0043764114;
 				};
 				class Item3
 				{
@@ -2282,7 +2316,7 @@ class Mission
 					};
 					id=369;
 					type="B_Soldier_TL_F";
-					atlOffset=0.0043745041;
+					atlOffset=0.0043735504;
 				};
 				class Item7
 				{
@@ -4424,6 +4458,115 @@ class Mission
 			};
 			id=487;
 			type="Land_CncWall4_F";
+		};
+		class Item132
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={2031.752,20.503393,5111.1958};
+			};
+			id=488;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="#loggedAdmin";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				nAttributes=5;
+			};
 		};
 	};
 };
