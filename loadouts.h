@@ -59,6 +59,7 @@ class Loadouts {
     class Type {
         class B_Pilot_F {
             uniform = "U_B_PilotCoveralls";
+            vest = "";
             backpack = "";
             primaryWeapon = "";
             primaryWeaponAttachments[] = {};
@@ -68,7 +69,7 @@ class Loadouts {
             compass = "";
             watch = "";
             nvgoggles = "";
-            vest = "";
+            radio = "";
         };
         class B_Helipilot_F {
             uniform = "U_B_HeliPilotCoveralls";
