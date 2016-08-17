@@ -8,6 +8,9 @@ RE_EQUIP_TIME = 900; // how long should re-equipment be possible  after mission 
 
 disableRemoteSensors true;
 
+ tf_no_auto_long_range_radio = true;
+ tf_give_personal_radio_to_regular_soldier = false;
+
 if (isServer) then {
 	[] execVM "tfarSettings.sqf";
 	[] execVM "prepAmmoBoxes.sqf";

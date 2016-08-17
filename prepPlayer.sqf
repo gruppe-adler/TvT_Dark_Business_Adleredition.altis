@@ -19,9 +19,12 @@ _unit addEventHandler ["InventoryOpened", {
 
 }];
 
-
 if ("B_Pilot_F" == typeOf _unit) then {
-	_unit execVM "prepHostage.sqf";
-} else {
-	_unit execVM "prepFightingUnit.sqf";
+    _this addEventHandler ["GetOutMan", {
+            params ["_unit", "", "_vehicle"];
+
+            if ((side _unit != side _vehicle) && (speed _vehicle > 0)) then {
+                [_vehicle, "hostage jumped out"] remoteExec ["vehicleChat", 0];
+            };
+    }];
 };

@@ -4,6 +4,7 @@ class CfgFunctions {
 class Loadouts {
     baseDelay = 0;
     perPlayerDelay = 1;
+    handleRadios = 1;
 
     class AllUnits {
         items[] = {
@@ -35,6 +36,7 @@ class Loadouts {
             headgear = "H_HelmetSpecB";
             vest = "V_PlateCarrierGL_mtp";
             gps = "ItemGPS";
+            radio = "tf_anprc152";
         };
         class Opfor {
             uniform = "U_O_CombatUniform_ocamo";
@@ -42,12 +44,14 @@ class Loadouts {
             headgear = "H_HelmetLeaderO_ocamo";
             primaryWeapon = "arifle_Katiba_GL_F";
             primaryWeaponAttachments[] = {"acc_flashlight"};
+            radio = "tf_fadak";
         };
         class Independent {
             primaryWeapon = "arifle_TRG21_F";
             primaryWeaponAttachments[] = {"acc_flashlight"};
             vest = "V_Chestrig_oli";
             headgear = "H_HelmetIA";
+            radio = "tf_anprc148jem";
         };
     };
 
@@ -55,6 +59,7 @@ class Loadouts {
     class Type {
         class B_Pilot_F {
             uniform = "U_B_PilotCoveralls";
+            backpack = "";
             primaryWeapon = "";
             primaryWeaponAttachments[] = {};
             headgear = "";
@@ -76,6 +81,7 @@ class Loadouts {
             vest = "";
         };
         class B_Officer_F {
+            backpack = "tf_rt1523g";
             primaryWeapon = "arifle_MX_GL_F";
             binoculars = "ACE_Vector";
             magazines[] = {
@@ -86,6 +92,7 @@ class Loadouts {
             };
         };
         class B_Soldier_SL_F {
+            backpack = "tf_rt1523g";
             primaryWeapon = "arifle_MX_GL_F";
             binoculars = "ACE_Vector";
             magazines[] = {
@@ -128,6 +135,7 @@ class Loadouts {
 
         class O_Officer_F {
             uniform = "U_O_OfficerUniform_ocamo";
+            backpack = "tf_mr3000";
             gps = "ItemGPS";
             binoculars = "Binocular";
             magazines[] = {
@@ -139,6 +147,7 @@ class Loadouts {
         };
         class O_Soldier_SL_F {
             uniform = "U_O_OfficerUniform_ocamo";
+            backpack = "tf_mr3000";
             binoculars = "Binocular";
             gps = "ItemGPS";
             magazines[] = {
@@ -184,6 +193,7 @@ class Loadouts {
 
         class I_Officer_F {
             uniform = "U_I_OfficerUniform";
+            backpack = "tf_anprc155";
             binoculars = "Binocular";
             primaryWeapon = "arifle_TRG21_GL_F";
             primaryWeaponAttachments[] = {"acc_flashlight"};
@@ -198,6 +208,7 @@ class Loadouts {
         };
         class I_Soldier_SL_F {
             uniform = "U_I_OfficerUniform";
+            backpack = "tf_anprc155";
             binoculars = "Binocular";
             primaryWeapon = "arifle_TRG21_GL_F";
             primaryWeaponAttachments[] = {"acc_flashlight"};
