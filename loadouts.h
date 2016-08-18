@@ -195,7 +195,7 @@ class Loadouts {
             gps = "ItemGPS";
             magazines[] = {
                 LIST_10("30Rnd_556x45_Stanag_Tracer_Yellow"),
-                LIST_10("Chemlight_green"),
+                LIST_10("Chemlight_yellow"),
                 LIST_2("SmokeShell"),
                 LIST_12("UGL_FlareYellow_F")
             };
@@ -209,7 +209,7 @@ class Loadouts {
             gps = "ItemGPS";
             magazines[] = {
                 LIST_10("30Rnd_556x45_Stanag_Tracer_Yellow"),
-                LIST_5("Chemlight_green"),
+                LIST_5("Chemlight_yellow"),
                 LIST_2("SmokeShell"),
                 LIST_12("UGL_FlareYellow_F"),
                 "HandGrenade"
@@ -220,7 +220,7 @@ class Loadouts {
             primaryWeapon = "arifle_TRG21_GL_F";
             magazines[] = {
                 LIST_12("30Rnd_556x45_Stanag_Tracer_Yellow"),
-                LIST_5("Chemlight_green"),
+                LIST_5("Chemlight_yellow"),
                 LIST_2("SmokeShell"),
                 LIST_10("UGL_FlareYellow_F"),
                 LIST_2("HandGrenade")
@@ -231,7 +231,7 @@ class Loadouts {
             primaryWeapon = "arifle_TRG21_F";
             magazines[] = {
                 LIST_12("30Rnd_556x45_Stanag_Tracer_Yellow"),
-                LIST_2("Chemlight_green"),
+                LIST_2("Chemlight_yellow"),
                 LIST_4("SmokeShell"),
                 LIST_4("HandGrenade")
             };
@@ -240,7 +240,7 @@ class Loadouts {
             uniform = "U_I_CombatUniform";
             primaryWeapon = "LMG_Mk200_F";
             magazines[] = {
-                LIST_2("Chemlight_green"),
+                LIST_2("Chemlight_yellow"),
                 LIST_2("SmokeShell"),
                 LIST_3("200Rnd_65x39_cased_Box_Tracer")
             };
