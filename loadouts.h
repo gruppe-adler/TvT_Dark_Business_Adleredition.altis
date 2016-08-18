@@ -72,7 +72,7 @@ class Loadouts {
             uniform = "U_B_HeliPilotCoveralls";
             primaryWeapon = "SMG_01_F";
             magazines[] = {
-                LIST_3("30Rnd_45ACP_Mag_SMG_01_Tracer_Green"),
+                LIST_3("30Rnd_45ACP_Mag_SMG_01_Tracer_Red"),
                 "Chemlight_red"
             };
             headgear = "H_PilotHelmetHeli_B";
@@ -194,7 +194,7 @@ class Loadouts {
             primaryWeapon = "arifle_TRG21_GL_F";
             gps = "ItemGPS";
             magazines[] = {
-                LIST_10("30Rnd_556x45_Stanag_Tracer_Red"),
+                LIST_10("30Rnd_556x45_Stanag_Tracer_Yellow"),
                 LIST_10("Chemlight_green"),
                 LIST_2("SmokeShell"),
                 LIST_12("UGL_FlareYellow_F")
@@ -208,7 +208,7 @@ class Loadouts {
             primaryWeapon = "arifle_TRG21_GL_F";
             gps = "ItemGPS";
             magazines[] = {
-                LIST_10("30Rnd_556x45_Stanag_Tracer_Red"),
+                LIST_10("30Rnd_556x45_Stanag_Tracer_Yellow"),
                 LIST_5("Chemlight_green"),
                 LIST_2("SmokeShell"),
                 LIST_12("UGL_FlareYellow_F"),
@@ -219,7 +219,7 @@ class Loadouts {
             uniform = "U_I_CombatUniform";
             primaryWeapon = "arifle_TRG21_GL_F";
             magazines[] = {
-                LIST_12("30Rnd_556x45_Stanag_Tracer_Red"),
+                LIST_12("30Rnd_556x45_Stanag_Tracer_Yellow"),
                 LIST_5("Chemlight_green"),
                 LIST_2("SmokeShell"),
                 LIST_10("UGL_FlareYellow_F"),
@@ -230,7 +230,7 @@ class Loadouts {
             uniform = "U_I_CombatUniform";
             primaryWeapon = "arifle_TRG21_F";
             magazines[] = {
-                LIST_12("30Rnd_556x45_Stanag_Tracer_Red"),
+                LIST_12("30Rnd_556x45_Stanag_Tracer_Yellow"),
                 LIST_2("Chemlight_green"),
                 LIST_4("SmokeShell"),
                 LIST_4("HandGrenade")
