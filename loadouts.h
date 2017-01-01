@@ -7,14 +7,14 @@ class Loadouts {
     handleRadios = 1;
 
     class AllUnits {
-        items[] = {
+        addItemsToUniform[] = {
             "ACE_EarPlugs",
             "ACE_Flashlight_KSF1",
             LIST_5("ACE_fieldDressing")
         };
-        linkedItems[] = {};
-        magazines[] = {};
-        weapons[] = {};
+        primaryWeapon = "";
+        secondaryWeapon = "";
+        handgunWeapon = "";
         primaryWeaponAttachments[] = {"acc_flashlight"};
         headgear = "";
         binoculars = "";
@@ -74,7 +74,7 @@ class Loadouts {
         class B_Helipilot_F {
             uniform = "U_B_HeliPilotCoveralls";
             primaryWeapon = "SMG_01_F";
-            magazines[] = {
+            addItemsToVest[] = {
                 LIST_3("30Rnd_45ACP_Mag_SMG_01_Tracer_Green"),
                 "Chemlight_red"
             };
@@ -85,7 +85,7 @@ class Loadouts {
             backpack = "tf_rt1523g";
             primaryWeapon = "arifle_MX_GL_F";
             binoculars = "ACE_Vector";
-            magazines[] = {
+            addItemsToVest[] = {
                 LIST_10("30Rnd_65x39_caseless_mag_Tracer"),
                 LIST_2("SmokeShell"),
                 LIST_5("Chemlight_red"),
@@ -96,7 +96,7 @@ class Loadouts {
             backpack = "tf_rt1523g";
             primaryWeapon = "arifle_MX_GL_F";
             binoculars = "ACE_Vector";
-            magazines[] = {
+            addItemsToVest[] = {
                 LIST_10("30Rnd_65x39_caseless_mag_Tracer"),
                 LIST_2("SmokeShell"),
                 "HandGrenade",
@@ -108,7 +108,7 @@ class Loadouts {
         class B_Soldier_TL_F {
             primaryWeapon = "arifle_MX_GL_F";
             gps = "ItemGPS";
-            magazines[] = {
+            addItemsToVest[] = {
                 LIST_10("30Rnd_65x39_caseless_mag_Tracer"),
                 LIST_2("SmokeShell"),
                 "HandGrenade",
@@ -118,7 +118,7 @@ class Loadouts {
         };
         class B_Soldier_F {
             primaryWeapon = "arifle_MX_F";
-            magazines[] = {
+            addItemsToVest[] = {
                 LIST_15("30Rnd_65x39_caseless_mag_Tracer"),
                 LIST_4("SmokeShell"),
                 LIST_4("HandGrenade"),
@@ -127,7 +127,7 @@ class Loadouts {
         };
         class B_Soldier_AR_F {
             primaryWeapon = "arifle_MX_SW_F";
-            magazines[] = {
+            addItemsToVest[] = {
                 LIST_6("100Rnd_65x39_caseless_mag_Tracer"),
                 "SmokeShell",
                 LIST_2("Chemlight_red")
@@ -139,7 +139,7 @@ class Loadouts {
             backpack = "tf_mr3000";
             gps = "ItemGPS";
             binoculars = "Binocular";
-            magazines[] = {
+            addItemsToVest[] = {
                 LIST_10("30Rnd_65x39_caseless_green_mag_Tracer"),
                 LIST_2("SmokeShell"),
                 LIST_5("Chemlight_green"),
@@ -151,7 +151,7 @@ class Loadouts {
             backpack = "tf_mr3000";
             binoculars = "Binocular";
             gps = "ItemGPS";
-            magazines[] = {
+            addItemsToVest[] = {
                 LIST_10("30Rnd_65x39_caseless_green_mag_Tracer"),
                 LIST_2("SmokeShell"),
                 "HandGrenade",
@@ -161,7 +161,7 @@ class Loadouts {
         };
         class O_Soldier_TL_F {
             uniform = "U_O_CombatUniform_ocamo";
-            magazines[] = {
+            addItemsToVest[] = {
                 LIST_10("30Rnd_65x39_caseless_green_mag_Tracer"),
                 LIST_2("SmokeShell"),
                 "HandGrenade",
@@ -173,7 +173,7 @@ class Loadouts {
             uniform = "U_O_CombatUniform_ocamo";
             primaryWeapon = "arifle_Katiba_F";
             primaryWeaponAttachments[] = {"acc_flashlight"};
-            magazines[] = {
+            addItemsToVest[] = {
                 LIST_10("30Rnd_65x39_caseless_green_mag_Tracer"),
                 LIST_2("SmokeShell"),
                 LIST_5("HandGrenade"),
@@ -184,7 +184,7 @@ class Loadouts {
             uniform = "U_O_CombatUniform_ocamo";
             primaryWeapon = "LMG_Zafir_F";
             primaryWeaponAttachments[] = {"acc_flashlight"};
-            magazines[] = {
+            addItemsToVest[] = {
                 LIST_2("Chemlight_green"),
                 LIST_2("SmokeShell"),
                 LIST_4("150Rnd_762x54_Box_Tracer")
@@ -199,7 +199,7 @@ class Loadouts {
             primaryWeapon = "arifle_TRG21_GL_F";
             primaryWeaponAttachments[] = {"acc_flashlight"};
             gps = "ItemGPS";
-            magazines[] = {
+            addItemsToVest[] = {
                 LIST_10("30Rnd_556x45_Stanag_Tracer_Red"),
                 LIST_10("Chemlight_green"),
                 LIST_2("SmokeShell"),
@@ -214,7 +214,7 @@ class Loadouts {
             primaryWeapon = "arifle_TRG21_GL_F";
             primaryWeaponAttachments[] = {"acc_flashlight"};
             gps = "ItemGPS";
-            magazines[] = {
+            addItemsToVest[] = {
                 LIST_10("30Rnd_556x45_Stanag_Tracer_Red"),
                 LIST_5("Chemlight_green"),
                 LIST_2("SmokeShell"),
@@ -226,7 +226,7 @@ class Loadouts {
             uniform = "U_I_CombatUniform";
             primaryWeapon = "arifle_TRG21_GL_F";
             primaryWeaponAttachments[] = {"acc_flashlight"};
-            magazines[] = {
+            addItemsToVest[] = {
                 LIST_12("30Rnd_556x45_Stanag_Tracer_Red"),
                 LIST_5("Chemlight_green"),
                 LIST_2("SmokeShell"),
@@ -238,7 +238,7 @@ class Loadouts {
             uniform = "U_I_CombatUniform";
             primaryWeapon = "arifle_TRG21_F";
             primaryWeaponAttachments[] = {"acc_flashlight"};
-            magazines[] = {
+            addItemsToVest[] = {
                 LIST_12("30Rnd_556x45_Stanag_Tracer_Red"),
                 LIST_2("Chemlight_green"),
                 LIST_4("SmokeShell"),
@@ -249,7 +249,7 @@ class Loadouts {
             uniform = "U_I_CombatUniform";
             primaryWeapon = "LMG_Mk200_F";
             primaryWeaponAttachments[] = {"acc_flashlight"};
-            magazines[] = {
+            addItemsToVest[] = {
                 LIST_2("Chemlight_green"),
                 LIST_2("SmokeShell"),
                 LIST_3("200Rnd_65x39_cased_Box_Tracer")
