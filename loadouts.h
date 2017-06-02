@@ -5,6 +5,7 @@ class Loadouts {
     baseDelay = 0;
     perPlayerDelay = 1;
     handleRadios = 1;
+    resetLoadout = 1;
 
     class AllUnits {
         addItemsToUniform[] = {
@@ -12,16 +13,7 @@ class Loadouts {
             "ACE_Flashlight_KSF1",
             LIST_5("ACE_fieldDressing")
         };
-        primaryWeapon = "";
-        secondaryWeapon = "";
-        handgunWeapon = "";
-        primaryWeaponAttachments[] = {"acc_flashlight"};
-        headgear = "";
-        binoculars = "";
-        backpack = "";
-        gps = "";
-        nvgoggles = "";
-        goggles = "";
+        primaryWeaponPointer = "acc_flashlight";
         map = "ItemMap";
         compass = "ItemCompass";
         watch = "ItemWatch";
@@ -31,6 +23,7 @@ class Loadouts {
         class Blufor {
             uniform = "U_B_CombatUniform_mcam";
             primaryWeapon = "arifle_MX_F";
+            primaryWeaponOptics = "optic_aco";
             nvgoggles = "ACE_NVG_Gen1";
             headgear = "H_HelmetSpecB";
             vest = "V_PlateCarrierGL_mtp";
@@ -42,10 +35,12 @@ class Loadouts {
             vest = "V_HarnessO_brn";
             headgear = "H_HelmetLeaderO_ocamo";
             primaryWeapon = "arifle_Katiba_GL_F";
+            primaryWeaponOptics = "optic_aco_grn";
             radio = "tf_fadak";
         };
         class Independent {
             primaryWeapon = "arifle_TRG21_F";
+            primaryWeaponOptics = "optic_aco";
             vest = "V_Chestrig_oli";
             headgear = "H_HelmetIA";
             radio = "tf_anprc148jem";
@@ -169,7 +164,6 @@ class Loadouts {
         class O_Soldier_F {
             uniform = "U_O_CombatUniform_ocamo";
             primaryWeapon = "arifle_Katiba_F";
-            primaryWeaponAttachments[] = {"acc_flashlight"};
             addItemsToVest[] = {
                 LIST_10("30Rnd_65x39_caseless_green_mag_Tracer"),
                 LIST_2("SmokeShell"),
