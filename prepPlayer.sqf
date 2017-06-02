@@ -20,7 +20,7 @@ _unit addEventHandler ["InventoryOpened", {
 }];
 
 if ("B_Pilot_F" == typeOf _unit) then {
-    _this addEventHandler ["GetOutMan", {
+    _unit addEventHandler ["GetOutMan", {
             params ["_unit", "", "_vehicle"];
 
             if ((side _unit != side _vehicle) && (speed _vehicle > 0)) then {
