@@ -17,15 +17,6 @@ if (isServer) then {
 	[] execVM "setAllSidesFriendly.sqf";
 	[] execVM "victoryHints.sqf";
 
-	blufor_hemtt setVehicleLock "LOCKED";
-	blufor_heli addEventHandler [
-		"Killed",
-		{
-			adminLog("Dark Business: BLUFOR Helicopter destroyed. Unlocking HEMTT...");
-			blufor_hemtt setVehicleLock "UNLOCKED";
-		}
-	];
-
 };
 
 if (hasInterface) then {
