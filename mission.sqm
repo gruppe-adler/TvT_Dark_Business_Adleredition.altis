@@ -41,7 +41,6 @@ addons[]=
 	"A3_Structures_F_System",
 	"A3_Characters_F",
 	"ace_gforces",
-	"ace_nouniformrestrictions",
 	"ace_parachute",
 	"A3_Modules_F_Curator_Curator",
 	"RHS_US_A2_AirImport",
@@ -994,8 +993,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				skill=0.60000002;
-				description="Platoon lead";
 			};
 			id=49;
 			type="PortableHelipadLight_01_blue_F";
@@ -1011,8 +1008,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				skill=0.60000002;
-				description="Platoon lead";
 			};
 			id=50;
 			type="PortableHelipadLight_01_blue_F";
@@ -1028,8 +1023,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				skill=0.60000002;
-				description="Platoon lead";
 			};
 			id=51;
 			type="PortableHelipadLight_01_blue_F";
@@ -1045,8 +1038,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				skill=0.60000002;
-				description="Platoon lead";
 			};
 			id=52;
 			type="PortableHelipadLight_01_blue_F";
@@ -1062,8 +1053,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				skill=0.60000002;
-				description="Platoon lead";
 			};
 			id=53;
 			type="PortableHelipadLight_01_red_F";
@@ -1079,8 +1068,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				skill=0.60000002;
-				description="Platoon lead";
 			};
 			id=54;
 			type="PortableHelipadLight_01_red_F";
@@ -1096,8 +1083,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				skill=0.60000002;
-				description="Platoon lead";
 			};
 			id=55;
 			type="PortableHelipadLight_01_red_F";
@@ -1113,8 +1098,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				skill=0.60000002;
-				description="Platoon lead";
 			};
 			id=56;
 			type="PortableHelipadLight_01_red_F";
@@ -1130,8 +1113,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				skill=0.60000002;
-				description="Platoon lead";
 			};
 			id=57;
 			type="PortableHelipadLight_01_red_F";
@@ -1147,8 +1128,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				skill=0.60000002;
-				description="Platoon lead";
 			};
 			id=58;
 			type="PortableHelipadLight_01_red_F";
@@ -1164,8 +1143,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				skill=0.60000002;
-				description="Platoon lead";
 			};
 			id=59;
 			type="PortableHelipadLight_01_red_F";
@@ -1181,8 +1158,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				skill=0.60000002;
-				description="Platoon lead";
 			};
 			id=60;
 			type="PortableHelipadLight_01_red_F";
@@ -5387,6 +5362,7 @@ class Mission
 			class Attributes
 			{
 				init="call{this setObjectTextureGlobal [0, ""rhsusf\addons\rhsusf_a2port_air\UH60M\Data\uh60m_fuselage_co.paa""]; " \n "    this setObjectTextureGlobal [1, ""rhsusf\addons\rhsusf_a2port_air\UH60M\Data\uh60m_engine_co.paa""];}";
+                lock="UNLOCKED";
 			};
 			id=556;
 			type="RHS_UH60M_MEV2_d";
@@ -5479,6 +5455,7 @@ class Mission
 			{
 				textures="standard";
 				aiRadarUsage=230884;
+                lock="UNLOCKED";
 			};
 			id=562;
 			type="rhsgref_nat_ural";
@@ -5608,6 +5585,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+                lock="UNLOCKED";
 			};
 			id=564;
 			type="rhsgref_nat_ural_open";
@@ -5626,6 +5604,7 @@ class Mission
 			class Attributes
 			{
 				textures="standard";
+                lock="UNLOCKED";
 			};
 			id=567;
 			type="rhsgref_nat_ural";
@@ -5754,7 +5733,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				aiRadarUsage=230884;
+                lock="UNLOCKED";
 			};
 			id=570;
 			type="rhsgref_nat_uaz_open";
@@ -5773,6 +5752,7 @@ class Mission
 			class Attributes
 			{
 				name="opfor_munitions_truck";
+                lock="UNLOCKED";
 			};
 			id=574;
 			type="RHS_Ural_Fuel_MSV_01";
@@ -6045,7 +6025,7 @@ class Mission
 			class Attributes
 			{
 				textures="cdf";
-				aiRadarUsage=243715;
+				lock="UNLOCKED";
 			};
 			id=579;
 			type="rhsgref_cdf_gaz66";
@@ -6148,6 +6128,7 @@ class Mission
 			class Attributes
 			{
 				textures="cdf";
+                lock="UNLOCKED";
 			};
 			id=582;
 			type="rhsgref_cdf_gaz66o";
@@ -6306,6 +6287,7 @@ class Mission
 			class Attributes
 			{
 				textures="Camo2";
+                lock="UNLOCKED";
 			};
 			id=599;
 			type="rhsgref_cdf_reg_uaz";
@@ -6435,6 +6417,7 @@ class Mission
 			class Attributes
 			{
 				textures="Camo2";
+                lock="UNLOCKED";
 			};
 			id=600;
 			type="rhsgref_cdf_reg_uaz";
@@ -6565,6 +6548,7 @@ class Mission
 			class Attributes
 			{
 				aiRadarUsage=230884;
+                lock="UNLOCKED";
 			};
 			id=601;
 			type="rhsgref_nat_uaz_open";
