@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=602;
+		nextID=614;
 	};
 	class MarkerIDProvider
 	{
@@ -54,7 +54,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=20;
+		items=19;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -134,61 +134,54 @@ class AddonsMetaData
 		};
 		class Item11
 		{
-			className="ace_nouniformrestrictions";
-			name="ACE3 - No Uniform Restrictions";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item12
-		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item13
+		class Item12
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item14
+		class Item13
 		{
 			className="RHS_US_A2_AirImport";
 			name="RHSUSF A2 Air Ports";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item15
+		class Item14
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item16
+		class Item15
 		{
 			className="A3_Structures_F_EPB";
 			name="Arma 3 Adapt Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item17
+		class Item16
 		{
 			className="rhsgref_c_vehicles_ret";
 			name="GREF Vehicle Retextures";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item18
+		class Item17
 		{
 			className="rhs_c_a2port_car";
 			name="A2 ported cars";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item19
+		class Item18
 		{
 			className="ace_compat_rhs_afrf3";
 			name="ACE3 - RHS AFRF Compatibility";
@@ -226,7 +219,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=123;
+		items=124;
 		class Item0
 		{
 			dataType="Marker";
@@ -1674,7 +1667,6 @@ class Mission
 						rank="CAPTAIN";
 						name="blufor_lead";
 						description="Platoon leader";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=94;
@@ -3874,8 +3866,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={23037.668,48.508957,7253.084};
-						angles[]={6.2312322,2.8504543,0.015998369};
+						position[]={23037.67,48.508972,7253.084};
+						angles[]={6.2312269,2.8504543,0.016004669};
 					};
 					side="East";
 					flags=4;
@@ -3886,7 +3878,68 @@ class Mission
 					};
 					id=494;
 					type="O_Soldier_AT_F";
-					atlOffset=0.01701355;
+					atlOffset=0.016998291;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=3;
+					};
 				};
 				class Item3
 				{
@@ -5361,8 +5414,8 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				lock="UNLOCKED";
 				init="call{this setObjectTextureGlobal [0, ""rhsusf\addons\rhsusf_a2port_air\UH60M\Data\uh60m_fuselage_co.paa""]; " \n "    this setObjectTextureGlobal [1, ""rhsusf\addons\rhsusf_a2port_air\UH60M\Data\uh60m_engine_co.paa""];}";
-                lock="UNLOCKED";
 			};
 			id=556;
 			type="RHS_UH60M_MEV2_d";
@@ -5453,9 +5506,9 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				lock="UNLOCKED";
 				textures="standard";
 				aiRadarUsage=230884;
-                lock="UNLOCKED";
 			};
 			id=562;
 			type="rhsgref_nat_ural";
@@ -5585,7 +5638,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-                lock="UNLOCKED";
+				lock="UNLOCKED";
 			};
 			id=564;
 			type="rhsgref_nat_ural_open";
@@ -5603,8 +5656,8 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				lock="UNLOCKED";
 				textures="standard";
-                lock="UNLOCKED";
 			};
 			id=567;
 			type="rhsgref_nat_ural";
@@ -5733,7 +5786,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-                lock="UNLOCKED";
+				lock="UNLOCKED";
 			};
 			id=570;
 			type="rhsgref_nat_uaz_open";
@@ -5751,8 +5804,8 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				lock="UNLOCKED";
 				name="opfor_munitions_truck";
-                lock="UNLOCKED";
 			};
 			id=574;
 			type="RHS_Ural_Fuel_MSV_01";
@@ -6024,8 +6077,8 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				textures="cdf";
 				lock="UNLOCKED";
+				textures="cdf";
 			};
 			id=579;
 			type="rhsgref_cdf_gaz66";
@@ -6127,8 +6180,8 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				lock="UNLOCKED";
 				textures="cdf";
-                lock="UNLOCKED";
 			};
 			id=582;
 			type="rhsgref_cdf_gaz66o";
@@ -6286,8 +6339,8 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				lock="UNLOCKED";
 				textures="Camo2";
-                lock="UNLOCKED";
 			};
 			id=599;
 			type="rhsgref_cdf_reg_uaz";
@@ -6416,8 +6469,8 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				lock="UNLOCKED";
 				textures="Camo2";
-                lock="UNLOCKED";
 			};
 			id=600;
 			type="rhsgref_cdf_reg_uaz";
@@ -6547,11 +6600,426 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				lock="UNLOCKED";
 				aiRadarUsage=230884;
-                lock="UNLOCKED";
 			};
 			id=601;
 			type="rhsgref_nat_uaz_open";
+		};
+		class Item123
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8511.4111,79.326393,25317.586};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						skill=0.2;
+						ammo=0;
+						description="spectator";
+						isPlayable=1;
+					};
+					id=611;
+					type="C_Soldier_VR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01GREVR";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8507.7324,80.190811,25306.285};
+					};
+					side="Civilian";
+					flags=5;
+					class Attributes
+					{
+						skill=0.2;
+						ammo=0;
+						description="spectator";
+						isPlayable=1;
+					};
+					id=605;
+					type="C_Soldier_VR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01GREVR";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8498.4033,80.687492,25306.549};
+					};
+					side="Civilian";
+					flags=5;
+					class Attributes
+					{
+						skill=0.2;
+						ammo=0;
+						description="spectator";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=613;
+					type="C_Soldier_VR_F";
+					atlOffset=-0.064002991;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01GREVR";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8523.8936,79.697708,25306.549};
+					};
+					side="Civilian";
+					flags=5;
+					class Attributes
+					{
+						skill=0.2;
+						ammo=0;
+						description="spectator";
+						isPlayable=1;
+					};
+					id=607;
+					type="C_Soldier_VR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01GREVR";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8515.8789,80.333458,25306.416};
+					};
+					side="Civilian";
+					flags=5;
+					class Attributes
+					{
+						skill=0.2;
+						ammo=0;
+						description="spectator";
+						isPlayable=1;
+					};
+					id=609;
+					type="C_Soldier_VR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01GREVR";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=610;
 		};
 	};
 };
