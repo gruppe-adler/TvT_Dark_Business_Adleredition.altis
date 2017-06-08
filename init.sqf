@@ -16,6 +16,7 @@ if (isServer) then {
 	[] execVM "prepAmmoBoxes.sqf";
 	[] execVM "setAllSidesFriendly.sqf";
 	[] execVM "victoryHints.sqf";
+	["Initialize", [true]] call BIS_fnc_dynamicGroups;
 
 };
 
@@ -26,4 +27,5 @@ if (hasInterface) then {
 	[] execVM "addBriefing.sqf";
 	[] execVM "addArsenal.sqf";
 	[] execVM "player\loadoutAction.sqf";
+	["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
 };
