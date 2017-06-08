@@ -45,7 +45,7 @@ class Loadouts {
             primaryWeaponOptics = "optic_aco";
             primaryWeaponPointer = "rhs_acc_2dpZenit";
             vest = "V_Chestrig_oli";
-            headgear = "rhsgref_helmet_M1_bare";
+            headgear = "rhsgref_helmet_pasgt_woodland";
             radio = "tf_anprc148jem";
         };
     };
@@ -67,7 +67,7 @@ class Loadouts {
             radio = "";
         };
         class B_Helipilot_F {
-            uniform = "U_B_HeliPilotCoveralls";
+            uniform = "U_B_PilotCoveralls";
             primaryWeapon = "rhs_weap_m16a4_carryhandle";
             addItemsToVest[] = {
                 LIST_3("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
@@ -78,7 +78,7 @@ class Loadouts {
         };
         class B_Officer_F {
             backpack = "tf_rt1523g";
-            primaryWeapon = "rhs_weap_m16a4_carryhandle";
+            primaryWeapon = "rhs_weap_m16a4_carryhandle_M203";
             binoculars = "ACE_Vector";
             addItemsToVest[] = {
                 LIST_10("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
@@ -89,7 +89,7 @@ class Loadouts {
         };
         class B_Soldier_SL_F {
             backpack = "tf_rt1523g";
-            primaryWeapon = "rhs_weap_m16a4_carryhandle";
+            primaryWeapon = "rhs_weap_m16a4_carryhandle_M203";
             binoculars = "ACE_Vector";
             addItemsToVest[] = {
                 LIST_10("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
@@ -101,7 +101,7 @@ class Loadouts {
 
         };
         class B_Soldier_TL_F {
-            primaryWeapon = "rhs_weap_m16a4_carryhandle_M203";
+            primaryWeapon = "rhs_weap_m16a4_carryhandle";
             gps = "ItemGPS";
             addItemsToVest[] = {
                 LIST_10("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
@@ -112,7 +112,7 @@ class Loadouts {
             };
         };
         class B_Soldier_F {
-            primaryWeapon = "arifle_MX_F";
+            primaryWeapon = "rhs_weap_m16a4_carryhandle";
             addItemsToVest[] = {
                 LIST_15("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
                 LIST_4("SmokeShell"),
@@ -121,33 +121,35 @@ class Loadouts {
             };
         };
         class B_Soldier_AR_F {
-            primaryWeapon = "arifle_MX_SW_F";
+            primaryWeapon = "rhs_weap_m249_pip_L_para";
             addItemsToVest[] = {
-                LIST_6("100Rnd_65x39_caseless_mag_Tracer"),
+                LIST_6("rhs_200rnd_556x45_T_SAW"),
                 "SmokeShell",
                 LIST_2("Chemlight_red")
             };
         };
 
         class O_Officer_F {
-            uniform = "U_O_OfficerUniform_ocamo";
             backpack = "tf_mr3000";
             gps = "ItemGPS";
             binoculars = "Binocular";
+            primaryWeapon = "arifle_AK12_GL_F";
+            headgear = "rhs_beret_milp";
             addItemsToVest[] = {
-                LIST_10("30Rnd_762x39_Mag_Tracer_F"),
+                LIST_10("30Rnd_762x39_Mag_Tracer_Green_F"),
                 LIST_2("SmokeShell"),
                 LIST_5("Chemlight_green"),
                 LIST_10("UGL_FlareGreen_F")
             };
         };
         class O_Soldier_SL_F {
-            uniform = "U_O_OfficerUniform_ocamo";
             backpack = "tf_mr3000";
             binoculars = "Binocular";
+            primaryWeapon = "arifle_AK12_GL_F";
+            headgear = "H_Bandanna_khk_hs";
             gps = "ItemGPS";
             addItemsToVest[] = {
-                LIST_10("30Rnd_762x39_Mag_Tracer_F"),
+                LIST_10("30Rnd_762x39_Mag_Tracer_Green_F"),
                 LIST_2("SmokeShell"),
                 "HandGrenade",
                 LIST_5("Chemlight_green"),
@@ -155,9 +157,9 @@ class Loadouts {
             };
         };
         class O_Soldier_TL_F {
-            uniform = "U_O_CombatUniform_ocamo";
+            primaryWeapon = "arifle_AK12_GL_F";
             addItemsToVest[] = {
-                LIST_10("30Rnd_762x39_Mag_Tracer_F"),
+                LIST_10("30Rnd_762x39_Mag_Tracer_Green_F"),
                 LIST_2("SmokeShell"),
                 "HandGrenade",
                 LIST_5("Chemlight_green"),
@@ -165,34 +167,32 @@ class Loadouts {
             };
         };
         class O_Soldier_F {
-            uniform = "U_O_CombatUniform_ocamo";
-            primaryWeapon = "arifle_Katiba_F";
             addItemsToVest[] = {
-                LIST_10("30Rnd_762x39_Mag_Tracer_F"),
+                LIST_10("30Rnd_762x39_Mag_Tracer_Green_F"),
                 LIST_2("SmokeShell"),
                 LIST_5("HandGrenade"),
                 LIST_2("Chemlight_green")
             };
         };
         class O_Soldier_AR_F {
-            uniform = "U_O_CombatUniform_ocamo";
-            primaryWeapon = "LMG_Zafir_F";
+            primaryWeapon = "rhs_weap_pkm";
             addItemsToVest[] = {
                 LIST_2("Chemlight_green"),
                 LIST_2("SmokeShell"),
-                LIST_4("150Rnd_762x54_Box_Tracer")
+                LIST_4("rhs_100Rnd_762x54mmR_green")
             };
         };
 
 
         class I_Officer_F {
-            uniform = "U_I_OfficerUniform";
+            uniform = "rhsgref_uniform_woodland";
             backpack = "tf_anprc155";
             binoculars = "Binocular";
-            primaryWeapon = "arifle_TRG21_GL_F";
+            primaryWeapon = "arifle_AK12_GL_F";
+            headgear = "rhs_beret_mp1";
             gps = "ItemGPS";
             addItemsToVest[] = {
-                LIST_10("30Rnd_762x39_Mag_Tracer_Green_F"),
+                LIST_10("30Rnd_762x39_Mag_Tracer_Yellow_F"),
                 LIST_10("Chemlight_yellow"),
                 LIST_2("SmokeShell"),
                 LIST_12("UGL_FlareYellow_F")
@@ -200,13 +200,14 @@ class Loadouts {
 
         };
         class I_Soldier_SL_F {
-            uniform = "U_I_OfficerUniform";
+            uniform = "rhsgref_uniform_woodland";
             backpack = "tf_anprc155";
             binoculars = "Binocular";
-            primaryWeapon = "arifle_TRG21_GL_F";
+            primaryWeapon = "arifle_AK12_GL_F";
+            headgear = "H_MilCap_tna_F";
             gps = "ItemGPS";
             addItemsToVest[] = {
-                LIST_10("30Rnd_762x39_Mag_Tracer_Green_F"),
+                LIST_10("30Rnd_762x39_Mag_Tracer_Yellow_F"),
                 LIST_5("Chemlight_yellow"),
                 LIST_2("SmokeShell"),
                 LIST_12("UGL_FlareYellow_F"),
@@ -214,10 +215,10 @@ class Loadouts {
             };
         };
         class I_Soldier_TL_F {
-            uniform = "U_I_CombatUniform";
-            primaryWeapon = "arifle_TRG21_GL_F";
+            uniform = "rhsgref_uniform_woodland";
+            primaryWeapon = "arifle_AK12_GL_F";
             addItemsToVest[] = {
-                LIST_12("30Rnd_762x39_Mag_Tracer_Green_F"),
+                LIST_12("30Rnd_762x39_Mag_Tracer_Yellow_F"),
                 LIST_5("Chemlight_yellow"),
                 LIST_2("SmokeShell"),
                 LIST_10("UGL_FlareYellow_F"),
@@ -225,18 +226,19 @@ class Loadouts {
             };
         };
         class I_Soldier_F {
-            uniform = "U_I_CombatUniform";
-            primaryWeapon = "arifle_TRG21_F";
+            uniform = "rhsgref_uniform_woodland";
+            primaryWeapon = "arifle_AK12_F";
             addItemsToVest[] = {
-                LIST_12("30Rnd_762x39_Mag_Tracer_Green_F"),
+                LIST_12("30Rnd_762x39_Mag_Tracer_Yellow_F"),
                 LIST_2("Chemlight_yellow"),
                 LIST_4("SmokeShell"),
                 LIST_4("HandGrenade")
             };
         };
         class I_Soldier_AR_F {
-            uniform = "U_I_CombatUniform";
+            uniform = "rhsgref_uniform_woodland";
             primaryWeapon = "LMG_Mk200_F";
+            primaryWeaponAttachments = "bipod_03_F_blk";
             addItemsToVest[] = {
                 LIST_2("Chemlight_yellow"),
                 LIST_2("SmokeShell"),
