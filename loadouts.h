@@ -22,7 +22,7 @@ class Loadouts {
     class Side {
         class Blufor {
             uniform = "rhs_uniform_g3_blk";
-            primaryWeapon = "arifle_MX_F";
+            primaryWeapon = "rhs_weap_m16a4_carryhandle";
             primaryWeaponOptics = "optic_aco";
             nvgoggles = "ACE_NVG_Gen1";
             headgear = "rhsusf_protech_helmet_rhino_ess";
@@ -74,7 +74,6 @@ class Loadouts {
                 "Chemlight_red"
             };
             headgear = "H_PilotHelmetHeli_B";
-            vest = "";
         };
         class B_Officer_F {
             backpack = "tf_rt1523g";
