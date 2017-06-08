@@ -23,9 +23,20 @@ if (isServer) then {
 if (hasInterface) then {
 	waitUntil {!isNull player};
 	enableSentences false;
-	[] execVM "prepPlayer.sqf";
-	[] execVM "addBriefing.sqf";
-	[] execVM "addArsenal.sqf";
-	[] execVM "player\loadoutAction.sqf";
-	["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
+    if (side player == civilian) then {
+
+        // [[player], "helpers\server\addPlayerToZeus.sqf"] remoteExec ["execVM", 2, false];
+        [{
+            [] execVM "player\moveToSpec.sqf";
+        }, [], 15] call CBA_fnc_waitAndExecute;
+
+
+    } else  {
+    	[] execVM "prepPlayer.sqf";
+    	[] execVM "addBriefing.sqf";
+    	[] execVM "addArsenal.sqf";
+    	[] execVM "player\loadoutAction.sqf";
+        [] execVM "player\moveToSpecAction.sqf";
+    	["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
+    };
 };
