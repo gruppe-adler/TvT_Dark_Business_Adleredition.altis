@@ -192,7 +192,7 @@ class Loadouts {
             headgear = "rhs_beret_mp1";
             gps = "ItemGPS";
             addItemsToVest[] = {
-                LIST_10("30Rnd_762x39_Mag_Tracer_Yellow_F"),
+                LIST_10("30Rnd_762x39_Mag_Tracer_F"),
                 LIST_10("Chemlight_yellow"),
                 LIST_2("SmokeShell"),
                 LIST_12("UGL_FlareYellow_F")
@@ -207,7 +207,7 @@ class Loadouts {
             headgear = "H_MilCap_tna_F";
             gps = "ItemGPS";
             addItemsToVest[] = {
-                LIST_10("30Rnd_762x39_Mag_Tracer_Yellow_F"),
+                LIST_10("30Rnd_762x39_Mag_Tracer_F"),
                 LIST_5("Chemlight_yellow"),
                 LIST_2("SmokeShell"),
                 LIST_12("UGL_FlareYellow_F"),
@@ -218,7 +218,7 @@ class Loadouts {
             uniform = "rhsgref_uniform_woodland";
             primaryWeapon = "arifle_AK12_GL_F";
             addItemsToVest[] = {
-                LIST_12("30Rnd_762x39_Mag_Tracer_Yellow_F"),
+                LIST_12("30Rnd_762x39_Mag_Tracer_F"),
                 LIST_5("Chemlight_yellow"),
                 LIST_2("SmokeShell"),
                 LIST_10("UGL_FlareYellow_F"),
@@ -229,7 +229,7 @@ class Loadouts {
             uniform = "rhsgref_uniform_woodland";
             primaryWeapon = "arifle_AK12_F";
             addItemsToVest[] = {
-                LIST_12("30Rnd_762x39_Mag_Tracer_Yellow_F"),
+                LIST_12("30Rnd_762x39_Mag_Tracer_F"),
                 LIST_2("Chemlight_yellow"),
                 LIST_4("SmokeShell"),
                 LIST_4("HandGrenade")
