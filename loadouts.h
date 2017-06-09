@@ -75,7 +75,7 @@ class Loadouts {
         };
         class B_Officer_F {
             backpack = "tf_rt1523g_black";
-            headgear "H_Beret_02";
+            headgear = "H_Beret_02";
             primaryWeapon = "rhs_weap_m16a4_carryhandle_M203";
             binoculars = "ACE_Vector";
             addItemsToVest[] = {
