@@ -6,7 +6,6 @@ class Loadouts {
 
     class AllUnits {
         addItemsToUniform[] = {
-            "ACE_EarPlugs",
             "ACE_Flashlight_KSF1",
             LIST_5("ACE_fieldDressing")
         };
