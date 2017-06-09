@@ -1,6 +1,3 @@
-class CfgFunctions {
-    #include "node_modules\grad-loadout\cfgFunctions.hpp"
-};
 class Loadouts {
     baseDelay = 0;
     perPlayerDelay = 1;

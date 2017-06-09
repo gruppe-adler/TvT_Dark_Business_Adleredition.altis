@@ -22,6 +22,7 @@
 
    },
     "dependencies": {
-        "grad-loadout": "^4.1.0"
+        "grad-loadout": "^4.1.0",
+        "blue-hud": "^1.0.0"
     }
 }
