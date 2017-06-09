@@ -74,7 +74,8 @@ class Loadouts {
             headgear = "H_PilotHelmetHeli_B";
         };
         class B_Officer_F {
-            backpack = "tf_rt1523g";
+            backpack = "tf_rt1523g_black";
+            headgear "H_Beret_02";
             primaryWeapon = "rhs_weap_m16a4_carryhandle_M203";
             binoculars = "ACE_Vector";
             addItemsToVest[] = {
@@ -85,7 +86,8 @@ class Loadouts {
             };
         };
         class B_Soldier_SL_F {
-            backpack = "tf_rt1523g";
+            backpack = "tf_rt1523g_black";
+            headgear = "H_Booniehat_khk_hs";
             primaryWeapon = "rhs_weap_m16a4_carryhandle_M203";
             binoculars = "ACE_Vector";
             addItemsToVest[] = {
@@ -127,7 +129,7 @@ class Loadouts {
         };
 
         class O_Officer_F {
-            backpack = "tf_mr3000";
+            backpack = "tf_mr3000_rhs";
             gps = "ItemGPS";
             binoculars = "Binocular";
             primaryWeapon = "arifle_AK12_GL_F";
@@ -140,7 +142,7 @@ class Loadouts {
             };
         };
         class O_Soldier_SL_F {
-            backpack = "tf_mr3000";
+            backpack = "tf_mr3000_rhs";
             binoculars = "Binocular";
             primaryWeapon = "arifle_AK12_GL_F";
             headgear = "H_Bandanna_khk_hs";
@@ -164,7 +166,7 @@ class Loadouts {
             };
         };
         class O_Medic_F {
-            uniform = "rhsgref_uniform_woodland";
+            headgear = "rhs_6b27m_green";
             primaryWeapon = "arifle_AK12_F";
             addItemsToVest[] = {
                 LIST_12("30Rnd_762x39_Mag_Tracer_F"),
@@ -174,6 +176,7 @@ class Loadouts {
             };
         };
         class O_Soldier_F {
+            headgear = "rhs_6b27m_green_ess";
             addItemsToVest[] = {
                 LIST_10("30Rnd_762x39_Mag_Tracer_Green_F"),
                 LIST_2("SmokeShell"),
@@ -192,7 +195,6 @@ class Loadouts {
 
 
         class I_Officer_F {
-            uniform = "rhsgref_uniform_woodland";
             backpack = "tf_anprc155";
             binoculars = "Binocular";
             primaryWeapon = "arifle_AK12_GL_F";
@@ -207,7 +209,6 @@ class Loadouts {
 
         };
         class I_Soldier_SL_F {
-            uniform = "rhsgref_uniform_woodland";
             backpack = "tf_anprc155";
             binoculars = "Binocular";
             primaryWeapon = "arifle_AK12_GL_F";
@@ -222,7 +223,6 @@ class Loadouts {
             };
         };
         class I_Soldier_TL_F {
-            uniform = "rhsgref_uniform_woodland";
             primaryWeapon = "arifle_AK12_GL_F";
             addItemsToVest[] = {
                 LIST_12("30Rnd_762x39_Mag_Tracer_F"),
@@ -233,7 +233,6 @@ class Loadouts {
             };
         };
         class I_Soldier_F {
-            uniform = "rhsgref_uniform_woodland";
             primaryWeapon = "arifle_AK12_F";
             addItemsToVest[] = {
                 LIST_12("30Rnd_762x39_Mag_Tracer_F"),
@@ -243,7 +242,6 @@ class Loadouts {
             };
         };
         class I_Medic_F {
-            uniform = "rhsgref_uniform_woodland";
             primaryWeapon = "arifle_AK12_F";
             addItemsToVest[] = {
                 LIST_12("30Rnd_762x39_Mag_Tracer_F"),
@@ -253,7 +251,6 @@ class Loadouts {
             };
         };
         class I_Soldier_AR_F {
-            uniform = "rhsgref_uniform_woodland";
             primaryWeapon = "LMG_Mk200_F";
             primaryWeaponAttachments = "bipod_03_F_blk";
             addItemsToVest[] = {
