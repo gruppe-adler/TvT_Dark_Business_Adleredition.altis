@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={17632.061,53.345848,10605.915};
-		dir[]={-0.68341643,-0.38527387,-0.62012208};
-		up[]={-0.28533775,0.92278963,-0.25891194};
-		aside[]={-0.67199481,7.2908006e-007,0.74058431};
+		pos[]={17595.922,35.672642,10576.967};
+		dir[]={0.37898552,-0.62466615,-0.68284512};
+		up[]={0.30314359,0.78087842,-0.54619592};
+		aside[]={-0.8744095,1.4016405e-007,-0.48530918};
 	};
 };
 binarizationWanted=0;
@@ -41,6 +41,7 @@ addons[]=
 	"A3_Structures_F_System",
 	"A3_Characters_F",
 	"ace_gforces",
+	"ace_nouniformrestrictions",
 	"ace_parachute",
 	"A3_Modules_F_Curator_Curator",
 	"RHS_US_A2_AirImport",
@@ -54,7 +55,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=19;
+		items=20;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -134,54 +135,61 @@ class AddonsMetaData
 		};
 		class Item11
 		{
+			className="ace_nouniformrestrictions";
+			name="ACE3 - No Uniform Restrictions";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item12
+		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item12
+		class Item13
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item13
+		class Item14
 		{
 			className="RHS_US_A2_AirImport";
 			name="RHSUSF A2 Air Ports";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item14
+		class Item15
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item15
+		class Item16
 		{
 			className="A3_Structures_F_EPB";
 			name="Arma 3 Adapt Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item16
+		class Item17
 		{
 			className="rhsgref_c_vehicles_ret";
 			name="GREF Vehicle Retextures";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item17
+		class Item18
 		{
 			className="rhs_c_a2port_car";
 			name="A2 ported cars";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item18
+		class Item19
 		{
 			className="ace_compat_rhs_afrf3";
 			name="ACE3 - RHS AFRF Compatibility";
@@ -1798,8 +1806,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17660.611,32.791454,10569.563};
-						angles[]={6.1927657,5.6620498,0.0013372133};
+						position[]={17660.611,32.791538,10569.563};
+						angles[]={6.19276,5.6620574,0.0013439035};
 					};
 					side="Independent";
 					flags=6;
@@ -1808,11 +1816,71 @@ class Mission
 						skill=0.60000002;
 						rank="CAPTAIN";
 						name="ind_lead";
-						isPlayable=1;
+						isPlayer=1;
 					};
 					id=132;
 					type="I_officer_F";
-					atlOffset=-8.392334e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=3;
+					};
 				};
 				class Item1
 				{
@@ -1877,7 +1945,6 @@ class Mission
 			{
 			};
 			id=131;
-			atlOffset=-8.392334e-005;
 		};
 		class Item84
 		{
@@ -6787,7 +6854,6 @@ class Mission
 						skill=0.2;
 						ammo=0;
 						description="spectator";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=613;
