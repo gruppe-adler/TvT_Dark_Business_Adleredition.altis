@@ -9,7 +9,6 @@ class Loadouts {
             "ACE_Flashlight_KSF1",
             LIST_5("ACE_fieldDressing")
         };
-        primaryWeaponPointer = "acc_flashlight";
         map = "ItemMap";
         compass = "ItemCompass";
         watch = "ItemWatch";
@@ -20,7 +19,7 @@ class Loadouts {
             uniform = "rhs_uniform_g3_blk";
             primaryWeapon = "rhs_weap_m16a4_carryhandle";
             primaryWeaponOptics = "optic_aco";
-            primaryWeaponAttachments = "acc_flashlight";
+            primaryWeaponPointer = "acc_flashlight";
             nvgoggles = "ACE_NVG_Gen1";
             headgear = "rhsusf_protech_helmet_rhino_ess";
             vest = "V_TacVest_oli";
@@ -33,14 +32,14 @@ class Loadouts {
             headgear = "rhs_6b27m_green_ess_bala";
             primaryWeapon = "arifle_AK12_F";
             primaryWeaponOptics = "optic_aco_grn";
-            primaryWeaponAttachments = "rhs_acc_perst3";
+            primaryWeaponPointer = "rhs_acc_perst3";
             radio = "tf_fadak";
         };
         class Independent {
             uniform = "rhsgref_uniform_woodland";
             primaryWeapon = "arifle_AK12_F";
             primaryWeaponOptics = "optic_aco";
-            primaryWeaponAttachments = "rhs_acc_perst3";
+            primaryWeaponPointer = "rhs_acc_perst3";
             vest = "V_TacChestrig_cbr_F";
             headgear = "rhsgref_helmet_pasgt_woodland";
             radio = "tf_anprc148jem";
@@ -54,7 +53,8 @@ class Loadouts {
             vest = "";
             backpack = "";
             primaryWeapon = "";
-            primaryWeaponAttachments[] = {};
+            primaryWeaponPointer = "";
+            primaryWeaponOptics = "";
             headgear = "";
             map = "";
             gps = "";
@@ -251,7 +251,7 @@ class Loadouts {
         };
         class I_Soldier_AR_F {
             primaryWeapon = "LMG_Mk200_F";
-            primaryWeaponAttachments = "bipod_03_F_blk";
+            primaryWeaponUnderbarrel = "bipod_03_F_blk";
             addItemsToVest[] = {
                 LIST_2("Chemlight_yellow"),
                 LIST_2("SmokeShell"),
