@@ -19,10 +19,11 @@ class Loadouts {
             uniform = "rhs_uniform_g3_blk";
             primaryWeapon = "rhs_weap_m16a4_carryhandle";
             primaryWeaponOptics = "optic_aco";
-            primaryWeaponPointer = "acc_flashlight";
+            primaryWeaponPointer = "rhsusf_acc_anpeq15a";
             nvgoggles = "ACE_NVG_Gen1";
             headgear = "rhsusf_protech_helmet_rhino_ess";
             vest = "V_TacVest_oli";
+            addItemsToVest[] = {"acc_flashlight"};
             gps = "ItemGPS";
             radio = "tf_anprc152";
         };
@@ -32,14 +33,14 @@ class Loadouts {
             headgear = "rhs_6b27m_green_ess_bala";
             primaryWeapon = "arifle_AK12_F";
             primaryWeaponOptics = "optic_aco_grn";
-            primaryWeaponPointer = "rhs_acc_perst3";
+            primaryWeaponPointer = "acc_flashlight";
             radio = "tf_fadak";
         };
         class Independent {
             uniform = "rhsgref_uniform_woodland";
             primaryWeapon = "arifle_AK12_F";
             primaryWeaponOptics = "optic_aco";
-            primaryWeaponPointer = "rhs_acc_perst3";
+            primaryWeaponPointer = "acc_flashlight";
             vest = "V_TacChestrig_cbr_F";
             headgear = "rhsgref_helmet_pasgt_woodland";
             radio = "tf_anprc148jem";
