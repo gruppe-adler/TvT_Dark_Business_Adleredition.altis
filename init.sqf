@@ -1,6 +1,6 @@
 #include "missionMacros.h"
 
-DEBUG_MODE = ("DebugMode" call BIS_fnc_getParamValue) == 1;
+DEBUG_MODE = ("DebugMode" call BIS_fnc_getParamValue) == 1; DEBUG_MODE = true;
 VIRTUAL_ARSENAL_PLACEMENTS = ("VirtualArsenalPlacements" call BIS_fnc_getParamValue);
 VICTORY_TIMEOUT = 900; // seconds
 RE_EQUIP_TIME = 900; // how long should re-equipment be possible after mission start?
@@ -15,6 +15,7 @@ if (isServer) then {
     [] execVM "server\init\prepAmmoBoxes.sqf";
     [] execVM "server\init\setAllSidesFriendly.sqf";
     [] execVM "server\init\victoryHints.sqf";
+    [] execVM "server\init\makeUnitsEditableForZeus.sqf";
 
     ["Initialize", [true]] call BIS_fnc_dynamicGroups;
 
@@ -28,7 +29,6 @@ if (hasInterface) then {
 
     if (side player == civilian) then { // spectators
 
-        // [[player], "helpers\server\addPlayerToZeus.sqf"] remoteExec ["execVM", 2, false];
         [{
             [] execVM "player\moveToSpec.sqf";
         }, [], 15] call CBA_fnc_waitAndExecute;
