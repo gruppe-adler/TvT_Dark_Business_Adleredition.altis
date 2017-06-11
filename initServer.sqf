@@ -1,1 +1,0 @@
-execVM "helpers\removeInventory.sqf";

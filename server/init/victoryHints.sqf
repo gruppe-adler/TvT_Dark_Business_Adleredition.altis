@@ -1,4 +1,4 @@
-#include "missionMacros.h"
+#include "..\..\missionMacros.h"
 
 OBJECTIVE_STATE_BLUFOR = 'CREATED';
 OBJECTIVE_STATE_IND = 'CREATED';
@@ -111,4 +111,3 @@ call DB_publishTaskStates;
 	call DB_publishTaskStates;
 	adminLog("Dark Business: OPFOR ammo truck is destroyed!");
 };
-

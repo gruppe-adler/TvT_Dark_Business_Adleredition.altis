@@ -36,12 +36,6 @@ class Params
 		texts[] = {$STR_GRAD_none, $STR_GRAD_blu, $STR_GRAD_all};
 		default = 1;
 	};
-	class Allow40MmHe {
-		title = $STR_GRAD_allow40mm;
-		values[] = {0, 1};
-		texts[] = {$STR_GRAD_no, $STR_GRAD_yes};
-		default = 0;
-	};
 };
 
 #define MODULES_DIRECTORY node_modules

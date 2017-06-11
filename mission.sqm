@@ -8,18 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=614;
+		nextID=617;
 	};
 	class MarkerIDProvider
 	{
-		nextID=5;
+		nextID=6;
 	};
 	class Camera
 	{
-		pos[]={17639.66,35.925339,10563.111};
-		dir[]={-0.59170347,-0.37743038,-0.71243727};
-		up[]={-0.24117467,0.92601871,-0.29038325};
-		aside[]={-0.76933455,1.4011166e-006,0.63895518};
+		pos[]={17549.035,1764.3116,11966.263};
+		dir[]={0.34471992,-0.78803188,0.5102306};
+		up[]={0.44116443,0.61562496,0.65297765};
+		aside[]={0.82868016,3.4773257e-007,-0.55986702};
 	};
 };
 binarizationWanted=0;
@@ -212,7 +212,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=100;
+		items=103;
 		class Item0
 		{
 			dataType="Marker";
@@ -6671,6 +6671,51 @@ class Mission
 			{
 			};
 			id=610;
+		};
+		class Item100
+		{
+			dataType="Marker";
+			position[]={19660.416,0,8984.0156};
+			name="marker_area_operation";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorUNKNOWN";
+			alpha=0.30024752;
+			a=2000;
+			b=2000;
+			angle=45;
+			id=614;
+			atlOffset=-73.61824;
+		};
+		class Item101
+		{
+			dataType="Marker";
+			position[]={16880.311,8.0834961,11747.187};
+			name="marker_area_greenfor";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGUER";
+			alpha=0.30024752;
+			a=2000;
+			b=2000;
+			angle=45;
+			id=615;
+			atlOffset=-15.664787;
+		};
+		class Item102
+		{
+			dataType="Marker";
+			position[]={22457.387,0,6190.9341};
+			name="marker_area_redfor";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorEAST";
+			alpha=0.30024752;
+			a=2000;
+			b=2000;
+			angle=45;
+			id=616;
+			atlOffset=53.933727;
 		};
 	};
 };
