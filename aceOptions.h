@@ -16,7 +16,7 @@ class ACE_Settings {
         force = 1;
     };
     class ace_spectator_filterUnits {
-        value = 0;
+        value = 3;
         typeName = "SCALAR";
         force = 1;
     };

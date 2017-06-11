@@ -37,6 +37,7 @@ if (hasInterface) then {
     	[] execVM "addArsenal.sqf";
     	[] execVM "player\loadoutAction.sqf";
         [] execVM "player\moveToSpecAction.sqf";
+        [] execVM "helpers\patchAceCommonSpectatorCheck.sqf";
     	["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
     };
 };
