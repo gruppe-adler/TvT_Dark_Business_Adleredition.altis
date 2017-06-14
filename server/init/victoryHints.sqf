@@ -4,6 +4,10 @@ OBJECTIVE_STATE_BLUFOR = 'CREATED';
 OBJECTIVE_STATE_IND = 'CREATED';
 OBJECTIVE_STATE_OPFOR = 'CREATED';
 
+VICTORY_CLAIMS = [];
+
+publicVariable 'VICTORY_CLAIMS';
+
 DB_publishTaskStates = {
 	publicVariable 'OBJECTIVE_STATE_BLUFOR';
 	publicVariable 'OBJECTIVE_STATE_IND';
@@ -123,7 +127,7 @@ DB_createInAreaPresenceTrigger = {
             {
                 _status = 'dead';
                 if (alive blufor_hostage) then { _status = 'alive'; };
-                _msg = format ["Dark Business: BLUFOR hostage reached OPFOR base %1!", _status];
+                _msg = format ["Dark Business: BLUFOR hostage is deep in OPFOR area %1!", _status];
     			OBJECTIVE_STATE_OPFOR = 'SUCCEEDED';
                 if (_status == "dead") then {
                     OBJECTIVE_STATE_OPFOR = 'CANCELED';
@@ -147,7 +151,7 @@ DB_createInAreaPresenceTrigger = {
                 (opfor_munitions_truck in thisList)
             },
             {
-                _msg = format ["Dark Business: Ammotruck reached IND base %1!", "alive"];
+                _msg = format ["Dark Business: Fuel truck is deep in IND area %1!", "alive"];
                 OBJECTIVE_STATE_IND = 'SUCCEEDED';
                 call DB_publishTaskStates;
                 adminLog(_msg);

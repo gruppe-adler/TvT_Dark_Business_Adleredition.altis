@@ -40,6 +40,7 @@ if (hasInterface) then {
         [] execVM "player\addArsenal.sqf";
         [] execVM "player\loadoutAction.sqf";
         [] execVM "player\moveToSpecAction.sqf";
+        [] execVM "player\addClaimVictoryAction.sqf";
 
         [] execVM "helpers\patchAceCommonSpectatorCheck.sqf";
 
