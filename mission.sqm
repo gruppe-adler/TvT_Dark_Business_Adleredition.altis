@@ -6738,7 +6738,6 @@ class Mission
 			{
 				position[]={15549.404,-0.92890167,15279.695};
 			};
-			isPlayer=1;
 			isPlayable=1;
 			id=624;
 			type="VirtualSpectator_F";
@@ -6816,7 +6815,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -7177,12 +7176,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15830.889,-0.56408364,15258.371};
+				position[]={15830.889,-0.56422806,15258.371};
 			};
 			isPlayable=1;
 			id=628;
 			type="VirtualSpectator_F";
-			atlOffset=51.094143;
+			atlOffset=51.093998;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7256,7 +7255,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
