@@ -7,13 +7,13 @@
 				<German>Dark Business (Adler)</German>
 			</Key>
 			<Key ID="str_GRAD_onLoadMission">
-				<Original>3 way conflict over a downed pilot and a truck of ammunition. An implementation of Awoihjaweohr's classical concept.</Original>
-				<German>Dreierkonflikt um einen abgeschossenen Piloten und einen Munitionslaster. Eine Implementierung des Klassiker von Awoihjaweohr</German>
+				<Original>3 way conflict over a downed pilot and a truck with fuel. An implementation of Awoihjaweohr's classical concept.</Original>
+				<German>Dreierkonflikt um einen abgeschossenen Piloten und einen Tanklaster. Eine Implementierung des Klassiker von Awoihjaweohr</German>
 			</Key>
 			<Key ID="str_GRAD_overviewText">
 				<Original>TvT scenario with three parties (or four, if you count the hostage).
 					&lt;br /&gt; Story:
-					&lt;br /&gt; A downed NATO (BLUFOR) pilot is held by rebels (IND). The other forces in the area want to apprehend (CSAT, i.e. OPFOR) or freee (NATO) him. The rebels need ammunition, which CSAT could provide in form of an ammo truck.
+					&lt;br /&gt; A downed NATO (BLUFOR) pilot is held by rebels (IND). The other forces in the area want to apprehend (CSAT, i.e. OPFOR) or freee (NATO) him. The rebels need ammunition, which CSAT could provide in form of a fuel truck.
 					&lt;br /&gt;
 					&lt;br /&gt;That's it. How the side leaders go about achieving their goals is up to them. Trade, fight, do both - only your objective matters.
 					&lt;br /&gt;
@@ -34,7 +34,7 @@
 					&lt;br /&gt; Umgebung/Ausrüstung:
 					&lt;br /&gt; * es ist dunkel
 					&lt;br /&gt; * anfangs gibt es keine Form der Kommunikation (Funkgeräte sind verschlüsselt) - Partner und Feinde müssen in einem recht großen Gebiet erstmal gefunden werden
-					&lt;br /&gt; * Nachtsichtgeräte nur für BLUFOR. IND,OPFOR benutzen Leuchtmittel, Tashenlampen usw.
+					&lt;br /&gt; * Nachtsichtgeräte nur für BLUFOR. IND,OPFOR benutzen Leuchtmittel, Taschenlampen usw.
 					&lt;br /&gt; * nur unbewaffnete Radfahrzeuge (IND,OPFOR) bzw Helikopter (BLUFOR)
 					&lt;br /&gt; * Permadeath / kein respawn
 					&lt;br /&gt; * Großenteils default-Ausrüstung
@@ -122,7 +122,7 @@
 				<German>"Dark Business"?</German>
 			</Key>
 			<Key ID="str_GRAD_scenario_story">
-				<Original>A downed NATO (BLUFOR) pilot is held by rebels (IND). The other forces in the area want to apprehend (CSAT, i.e. OPFOR) or freee (NATO) him. The rebels need ammunition, which CSAT could provide in form of an ammo truck.
+				<Original>A downed NATO (BLUFOR) pilot is held by rebels (IND). The other forces in the area want to apprehend (CSAT, i.e. OPFOR) or freee (NATO) him. The rebels need ammunition, which CSAT could provide in form of an fuel truck.
 					&lt;br /&gt;
 					&lt;br /&gt;That's it. How the side leaders go about achieving their goals is up to them. Trade, fight, do both - only your objective matters.
                 </Original>
@@ -192,12 +192,12 @@
 				<German>Zurück zu NATO-Einheiten finden!</German>
 			</Key>
 			<Key ID="str_GRAD_IND_title">
-				<Original>Capture an ammo truck</Original>
-				<German>Munitionstruck erbeuten</German>
+				<Original>Capture a fuel truck</Original>
+				<German>Tanklaster erbeuten</German>
 			</Key>
 			<Key ID="str_GRAD_IND_condition">
-				<Original>Get the ammo truck to your home base!</Original>
-				<German>Bringen Sie den Munitionstruck zu Ihrer Heimatbasis!</German>
+				<Original>Get the fuel truck deep into your territory!</Original>
+				<German>Bringen Sie den Tanklaster tief in ihr Heimatgebiet!</German>
 			</Key>
 			<Key ID="str_GRAD_IND_story">
 				<Original>Yesterday evening, a NATO plane was shot down by CSAT units. A watchful shepherd alerted us to a parachute. One of our teams was near, and after only a short search we could apprehend the pilot. What a happy day! As you all know, we have problems with ammunition supply. Pilots are worth a lot. CSAT units do have lots of ammunition, we know that much. With the pilot to bargain with, we might convince them to give us a truckload.&lt;br /&gt;&lt;br /&gt;Be careful, this game is dangerous!</Original>
@@ -212,8 +212,8 @@
 				<German>Unsere ruhmreichen Streitkräfte haben ein Flugzeug des Aggressors zerstört. Unsere Patrouillen fanden in dem Gebiet einen Fallschirm, und schlossen daraus, daß der Pilot sich retten konnte. Wir vermuten, daß er bei den Rebellen Unterschlupf gefunden hat. Ihre Aufgabe ist es, diesen Piloten zu finden und in Gewahrsam zu nehmen. Tun Sie, was nötig ist. Dies ist eine Mission von höchster Wichtigkeit. Verhandeln Sie mit den Rebellen, drohen Sie ihnen, erschießen Sie sie oder geben Sie ihnen Waffen - über allem steht das Ziel, diesen Piloten lebend in unsere Hände zu bekommen. &lt;br /&gt;&lt;br /&gt;Scheitern ist keine Option!</German>
 			</Key>
 			<Key ID="str_GRAD_OPFOR_condition">
-				<Original>Bring the pilot to your home base alive</Original>
-				<German>Bringen Sie den Piloten lebendig zu Ihrer Heimatbasis!</German>
+				<Original>Bring the pilot deep into your home territory alive</Original>
+				<German>Bringen Sie den Piloten lebendig tief in Ihr Heimatgebiet!</German>
 			</Key>
 			<Key ID="str_GRAD_task_dd_title">
 				<Original>Dont die</Original>
