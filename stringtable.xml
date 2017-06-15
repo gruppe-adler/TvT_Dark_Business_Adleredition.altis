@@ -27,7 +27,7 @@
 				</Original>
 				<German>TvT-Szenario mit drei Parteien (vier, wenn man die Geisel mitzählt).
 					&lt;br /&gt; Story:
-					&lt;br /&gt; Ein abgeschossener NATO (BLUFOR)-Pilot  wird von Rebellen (IND) gefangengehalten. Die anderen Kräfte möchten ihn festnehmen (CSAT, d.h. OPFOR) beziehungsweise befreien (NATO). Die Rebellen brauchen Munition, die CSAT ihnen in Form eines Munitions-LKW geben könnte.
+					&lt;br /&gt; Ein abgeschossener NATO (BLUFOR)-Pilot  wird von Rebellen (IND) gefangengehalten. Die anderen Kräfte möchten ihn festnehmen (CSAT, d.h. OPFOR) beziehungsweise befreien (NATO). Die Rebellen brauchen Treibstoff, die CSAT ihnen in Form eines Tanklasters geben könnte.
 					&lt;br /&gt;
 					&lt;br /&gt; Das ist alles. Was die Führer der einzelnen Seiten tun, um ihr Ziel zu erreichen, bleibt ihnen überlassen. Handeln, kämpfen, oder beides - nur das Einsatzziel zählt.
 					&lt;br /&gt;
@@ -122,7 +122,7 @@
 				<German>"Dark Business"?</German>
 			</Key>
 			<Key ID="str_GRAD_scenario_story">
-				<Original>A downed NATO (BLUFOR) pilot is held by rebels (IND). The other forces in the area want to apprehend (CSAT, i.e. OPFOR) or freee (NATO) him. The rebels need ammunition, which CSAT could provide in form of an fuel truck.
+				<Original>A downed NATO (BLUFOR) pilot is held by rebels (IND). The other forces in the area want to apprehend (CSAT, i.e. OPFOR) or free (NATO) him. The rebels need fuel, which CSAT could provide in form of an fuel truck.
 					&lt;br /&gt;
 					&lt;br /&gt;That's it. How the side leaders go about achieving their goals is up to them. Trade, fight, do both - only your objective matters.
                 </Original>
