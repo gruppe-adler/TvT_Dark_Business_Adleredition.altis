@@ -27,7 +27,7 @@ Local time is sometime in the night.
 * RED, GREEN:    
     * a few light wheeled vehicles
 * RED:
-    * one ammo truck
+    * one fuel truck
 
 ## Slot setup
 
@@ -38,8 +38,8 @@ Additionally, BLU has 2 pilot slots for their MH-6, plus one slot for the captur
 
 * everyone: stay alive
 * BLU: get the HOSTAGE to the BLU base
-* RED: get the HOSTAGE to RED territory alive 
-* GREEN: get RED's ammo truck to GREEN territory 
+* RED: get the HOSTAGE into RED territory alive 
+* GREEN: get RED's fuel truck into GREEN territory 
 * HOSTAGE: Arrive at the BLU base alive
 
 ## Execution
