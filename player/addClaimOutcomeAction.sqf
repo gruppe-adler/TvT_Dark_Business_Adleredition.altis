@@ -1,7 +1,8 @@
-_victoryCondition = { (taskState task_main_objective == "SUCCEEDED") };
-_defeatCondition =  { (taskState task_main_objective == "FAILED") };
+
+_victoryCondition = { ((missionNamespace getVariable [DB_playerVictoryVarName, ""]) == "SUCCEEDED") };
+_defeatCondition =  { ((missionNamespace getVariable [DB_playerVictoryVarName, ""]) == "FAILED") };
 _callback = {
-    [[player, playerSide, taskState task_main_objective], "server\claimOutcomeFor.sqf"] remoteExec ["execVM", 2, false];
+    [[player, playerSide, (missionNamespace getVariable [DB_playerVictoryVarName, ""])], "server\claimOutcomeFor.sqf"] remoteExec ["execVM", 2, false];
 };
 
 _action = ["GRAD_mission_claimVictory", "Claim Victory", "", _callback, _victoryCondition] call ace_interact_menu_fnc_createAction;

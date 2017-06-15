@@ -6,7 +6,7 @@ _taskState = param [2];
 
 if (_taskState == "SUCCEEDED" && (_side in VICTORY_CLAIMS)) exitWith {
     _msg =  "victory already claimed for " + (str _side);
-    adminLog(_msg)
+    adminLog(_msg);
     [_msg] remoteExec ["hint", _player, true];
 };
 
@@ -30,5 +30,5 @@ if (_taskState == "SUCCEEDED") then {
 [[_side], "player\outcomeClaimed.sqf"] remoteExec ["execVM", _side, true];
 
 switch (_side) do {
-    case RESISTANCE: opfor_munitions_truck setPos [0, 0];
+    case RESISTANCE: {opfor_munitions_truck setPos [0, 0]};
 };
