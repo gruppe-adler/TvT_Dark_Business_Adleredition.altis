@@ -1,8 +1,8 @@
 #include "missionMacros.h"
 
-DEBUG_MODE = ("DebugMode" call BIS_fnc_getParamValue) == 1; DEBUG_MODE = true;
+
+DEBUG_MODE = (["DebugMode", 1] call BIS_fnc_getParamValue) == 1;
 VIRTUAL_ARSENAL_PLACEMENTS = ("VirtualArsenalPlacements" call BIS_fnc_getParamValue);
-VICTORY_TIMEOUT = 900; // seconds
 RE_EQUIP_TIME = 900; // how long should re-equipment be possible after mission start?
 
 disableRemoteSensors true;

@@ -22,8 +22,18 @@ if (_mainObjectiveState != _taskState) exitWith {
 };
 
 if (_taskState == "SUCCEEDED") then {
-    VICTORY_CLAIMS pushBack _side;
+    VICTORY_CLAIMS pushBackUnique _side;
     publicVariable "VICTORY_CLAIMS";
+};
+if (_taskState == "FAILED") then {
+    DEFEAT_CLAIMS pushBackUnique _side;
+    publicVariable "DEFEAT_CLAIMS";
+};
+
+_allClaims = DEFEAT_CLAIMS + VICTORY_CLAIMS;
+_allClaimsUnique = _allClaims arrayIntersect [BLUFOR, INDEPENDENT, OPFOR];
+if (count _allClaimsUnique == 3) then {
+    [DB_endMission, [], 10] call CBA_fnc_waitAndExecute; // all accounted for!
 };
 
 

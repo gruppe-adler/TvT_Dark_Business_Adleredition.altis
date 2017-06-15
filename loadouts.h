@@ -1,5 +1,5 @@
 class Loadouts {
-    baseDelay = 0;
+    baseDelay = 5;
     perPlayerDelay = 1;
     handleRadios = 1;
     resetLoadout = 1;
@@ -46,7 +46,6 @@ class Loadouts {
             radio = "tf_anprc148jem";
         };
     };
-
 
     class Type {
         class B_Pilot_F {
