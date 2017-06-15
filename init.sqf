@@ -1,6 +1,5 @@
 #include "missionMacros.h"
 
-
 DEBUG_MODE = (["DebugMode", 1] call BIS_fnc_getParamValue) == 1;
 VIRTUAL_ARSENAL_PLACEMENTS = ("VirtualArsenalPlacements" call BIS_fnc_getParamValue);
 RE_EQUIP_TIME = 900; // how long should re-equipment be possible after mission start?
@@ -20,19 +19,19 @@ if (isServer) then {
     ["Initialize", [true]] call BIS_fnc_dynamicGroups;
 
     [] execVM "helpers\removeInventory.sqf";
-
 };
 
 if (hasInterface) then {
     waitUntil {!isNull player};
     enableSentences false;
+    DB_playerIsDead = false;
+    [] execVM "helpers\patchAceCommonSpectatorCheck.sqf";
 
-    if (side player == civilian) then { // spectators
+    if (playerSide == CIVILIAN) then { // spectators
 
         [{
             [] execVM "player\moveToSpec.sqf";
         }, [], 15] call CBA_fnc_waitAndExecute;
-
 
     } else  {
         [] execVM "player\init\playerVictoryVarName.sqf";
@@ -42,8 +41,6 @@ if (hasInterface) then {
         [] execVM "player\loadoutAction.sqf";
         [] execVM "player\moveToSpecAction.sqf";
         [] execVM "player\addClaimOutcomeAction.sqf";
-
-        [] execVM "helpers\patchAceCommonSpectatorCheck.sqf";
 
         ["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
     };

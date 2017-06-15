@@ -19,13 +19,10 @@ DB_client_updateTaskState = {
     _mainObjectiveState = 'CANCELED';
     _taskSurviveState = 'SUCCEEDED';
 
-    if (!alive player) then {
+    if (DB_playerIsDead) then {
         _taskSurviveState = 'FAILED';
     };
-    if (side player == civilian) then {
-        _taskSurviveState = 'FAILED';
-    };
-
+    
     _mainObjectiveState = (missionNamespace getVariable [DB_playerVictoryVarName, ""]);
 
     task_main_objective setTaskState _mainObjectiveState;
