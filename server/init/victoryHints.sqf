@@ -14,28 +14,28 @@ DB_publishTaskStates = {
 	publicVariable 'OBJECTIVE_STATE_OPFOR';
 };
 
+DB_client_updateTaskState = {
+    _mainObjectiveState = 'CANCELED';
+    _taskSurviveState = 'SUCCEEDED';
+    if (!alive player) then {
+        _taskSurviveState = 'FAILED';
+    };
+    switch (side player) do {
+        case WEST: {_mainObjectiveState = OBJECTIVE_STATE_BLUFOR};
+        case RESISTANCE: {_mainObjectiveState = OBJECTIVE_STATE_IND};
+        case EAST: {_mainObjectiveState = OBJECTIVE_STATE_OPFOR};
+        default { _taskSurviveState = 'FAILED'};
+    };
+    task_main_objective setTaskState _mainObjectiveState;
+    task_survive setTaskState _taskSurviveState;
+};
+
 DB_updateTasks = {
 	call DB_publishTaskStates;
 	sleep 1;
-	_foo = {
-		_mainObjectiveState = 'CANCELED';
-		_taskSurviveState = 'SUCCEEDED';
-		if (!alive player) then {
-			_taskSurviveState = 'FAILED';
-		};
-		switch (side player) do {
-			case WEST: {_mainObjectiveState = OBJECTIVE_STATE_BLUFOR};
-			case RESISTANCE: {_mainObjectiveState = OBJECTIVE_STATE_IND};
-			case EAST: {_mainObjectiveState = OBJECTIVE_STATE_OPFOR};
-			default { _taskSurviveState = 'FAILED'};
-		};
-		task_main_objective setTaskState _mainObjectiveState;
-		task_survive setTaskState _taskSurviveState;
+	DB_client_updateTaskState remoteExec ["BIS_fnc_call", [WEST, EAST, CIVILIAN, RESISTANCE], true];
 
-	};
-	_foo  remoteExec ["BIS_fnc_call", [WEST, EAST, CIVILIAN, RESISTANCE], true];
-
-	// interestingly, CSSA3 causes people to be CIV, BUT THE SERVER DOES NOT SEEM KNOW THAT, AT LEAST NOT FOR PURPOSES OF REMOTEEXEC TARGETING
+    // interestingly, CSSA3 causes people to be CIV, BUT THE SERVER DOES NOT SEEM KNOW THAT, AT LEAST NOT FOR PURPOSES OF REMOTEEXEC TARGETING
 	// THIS DOESNT WORK:
 	// {task_main_objective setTaskState 'CANCELED';} remoteExec ["BIS_fnc_call", CIVILIAN, true];
 };
@@ -199,4 +199,4 @@ DB_createInAreaPresenceTrigger = {
     }
 ] call CBA_fnc_waitUntilAndExecute;
 
-call DB_publishTaskStates;
+[] call DB_publishTaskStates;
