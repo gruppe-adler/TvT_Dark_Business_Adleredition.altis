@@ -37,7 +37,7 @@ class Params
 		title = $STR_GRAD_placeVirtualArsenal;
 		values[] = {0, 1, 7}; // bitmap: 1.. BLUFOR, 2..OPFOR, 4...IND
 		texts[] = {$STR_GRAD_none, $STR_GRAD_blu, $STR_GRAD_all};
-		default = 1;
+		default = 0;
 	};
 };
 
