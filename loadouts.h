@@ -226,6 +226,8 @@ class Loadouts {
         };
         class O_Soldier_AR_F {
             primaryWeapon = "LMG_Zafir_F";
+            secondaryWeapon = "hgun_Pistol_heavy_02_F";
+            secondaryWeaponPointer = "acc_flashlight_pistol";
             addItemsToVest[] = {
                 LIST_2("ACE_Chemlight_Higreen"),
                 LIST_2("SmokeShell")
@@ -319,8 +321,10 @@ class Loadouts {
         class I_Soldier_AR_F {
             primaryWeapon = "LMG_Mk200_F";
             primaryWeaponUnderbarrel = "bipod_03_F_blk";
+            secondaryWeapon = "hgun_Pistol_heavy_02_F";
+            secondaryWeaponPointer = "acc_flashlight_pistol";
             addItemsToVest[] = {
-                LIST_2("ACE_Chemlight_Hiyellow"),
+                LIST_2("ACE_Chemlight_HiYellow"),
                 LIST_2("SmokeShell")
             };
             addItemsToBackpack[] = {
