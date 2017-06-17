@@ -1,23 +1,12 @@
 DB_lighter = objNull;
 
-_LighterToggle = {
-    if (isNull DB_lighter) then {
-        _light = "#lightpoint" createVehicle (getPos player); // TODO: is this global? if no, I'll need to do it on every machine. fugly.
-        _light setLightBrightness 0.3;
-        _light setLightAmbient [0.6, 0.45, 0.3];
-        _light setLightColor [0.6, 0.5, 0.3];
-        _light attachTo [player, [0.2, 0.4, 1.6]];
-        _light setLightUseFlare true;
-        _light setLightFlareSize 0.3;
-        _light setLightFlareMaxDistance 500;
-        _light setLightAttenuation [0.5, 2, 3, 0];
-        DB_lighter = _light;
-    } else {
-        detach DB_lighter;
-        deleteVehicle DB_lighter;
-        DB_lighter = objNull;
+_lighterToggle = {
+    _unit = player;
+    _light = _unit getVariable ["DB_lighter", objNull];
+    _newState = false;
+    if (isNull _light) then { _newState = true; };
 
-    };
+    [_unit, _newState] remoteExec ["DB_lighterSwitch", 0, true];
 };
 // alternatively: ACE_Chemlight_HiOrange
 // Chemlight_Orange
@@ -25,5 +14,5 @@ _LighterToggle = {
     player,
     1,
     ["ACE_SelfActions"],
-    (["GRAD_mission_lighterOn", "Toggle Lighter", "", _LighterToggle, {true}] call ace_interact_menu_fnc_createAction)
+    (["GRAD_mission_lighterOn", "Toggle Lighter", "", _lighterToggle, {true}] call ace_interact_menu_fnc_createAction)
 ] call ace_interact_menu_fnc_addActionToObject;

@@ -9,6 +9,8 @@ disableRemoteSensors true;
  tf_no_auto_long_range_radio = true;
  tf_give_personal_radio_to_regular_soldier = false;
 
+[] execVM "helpers\lighterSwitch.sqf";
+
 if (isServer) then {
     [] execVM "server\init\tfarSettings.sqf";
     [] execVM "server\init\prepAmmoBoxes.sqf";
