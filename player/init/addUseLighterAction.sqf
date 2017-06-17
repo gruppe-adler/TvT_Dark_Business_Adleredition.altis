@@ -6,12 +6,11 @@ _LighterToggle = {
         _light setLightBrightness 0.3;
         _light setLightAmbient [0.6, 0.45, 0.3];
         _light setLightColor [0.6, 0.5, 0.3];
-        _light attachTo [player, [0.2, 0.5, 0.6]];
+        _light attachTo [player, [0.2, 0.4, 1.6]];
         _light setLightUseFlare true;
-        _light setLightFlareSize 0.5;
+        _light setLightFlareSize 0.3;
         _light setLightFlareMaxDistance 500;
         _light setLightAttenuation [0.5, 2, 3, 0];
-
         DB_lighter = _light;
     } else {
         detach DB_lighter;
