@@ -223,20 +223,20 @@ class Loadouts {
             };
         };
         class O_Soldier_AR_F {
-            primaryWeapon = "rhs_weap_pkm";
+            primaryWeapon = "LMG_Zafir_F";
             addItemsToVest[] = {
                 LIST_2("ACE_Chemlight_Higreen"),
                 LIST_2("SmokeShell")
             };
             addItemsToBackpack[] = {
-                LIST_6("rhs_100Rnd_762x54mmR_green")
+                LIST_4("150Rnd_762x54_Box_Tracer")
             };
         };
         class O_Soldier_AAR_F {
             primaryWeapon = "arifle_AK12_F";
             headgear = "rhs_6b27m_green";
             addItemsToVest[] = {
-                LIST_8("30Rnd_762x39_Mag_Tracer_F"),
+                LIST_4("150Rnd_762x54_Box_Tracer"),
                 LIST_2("ACE_Chemlight_Higreen"),
                 LIST_2("SmokeShell")
             };
