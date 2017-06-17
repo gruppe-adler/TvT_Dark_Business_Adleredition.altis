@@ -8,6 +8,7 @@ class Loadouts {
     resetLoadout = 1;
 
     class AllUnits {
+        uniform = "U_C_Scientist";
         addItemsToUniform[] = {
             "ACE_Flashlight_KSF1",
 
@@ -42,6 +43,7 @@ class Loadouts {
             nvgoggles = "ACE_NVG_Gen1";
             headgear = "rhsusf_protech_helmet_rhino_ess";
             vest = "V_TacVest_oli";
+            backpack = "B_TacticalPack_blk";
             addItemsToVest[] = {"acc_flashlight"};
             gps = "ItemGPS";
             radio = "tf_anprc152";
@@ -176,7 +178,7 @@ class Loadouts {
             addItemsToBackpack[] = {
                 LIST_5("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
                 LIST_4("HandGrenade"),
-                LIST_2("ACE_Chemlight_Hired")
+                LIST_2("ACE_Chemlight_HiRed")
             };
         };
         class B_Soldier_AT_F: B_Soldier_F {};
