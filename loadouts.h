@@ -1,3 +1,6 @@
+#define SANI_BACKPACK() \
+    LIST_25("ACE_fieldDressing"),LIST_25("ACE_elasticBandage"),LIST_10("ACE_packingBandage"),LIST_10("ACE_quikclot"),LIST_12("ACE_epinephrine"),LIST_16("ACE_morphine"),LIST_6("ACE_adenosine"),LIST_6("ACE_tourniquet"),LIST_8("ACE_salineIV_500")
+
 class Loadouts {
     baseDelay = 5;
     perPlayerDelay = 1;
@@ -7,7 +10,13 @@ class Loadouts {
     class AllUnits {
         addItemsToUniform[] = {
             "ACE_Flashlight_KSF1",
-            LIST_5("ACE_fieldDressing")
+
+            LIST_4("ACE_packingBandage"),
+            LIST_4("ACE_elasticBandage"),
+            LIST_4("ACE_quikclot"),
+            LIST_4("ACE_tourniquet"),
+            LIST_2("ACE_morphine"),
+            LIST_2("ACE_epinephrine")
         };
         map = "ItemMap";
         compass = "ItemCompass";
@@ -40,6 +49,7 @@ class Loadouts {
         class Opfor {
             uniform = "rhs_uniform_gorka_r_g";
             vest = "rhs_vydra_3m";
+            backpack = "rhs_assault_umbts";
             headgear = "rhs_6b27m_green_ess_bala";
             primaryWeapon = "arifle_AK12_F";
             primaryWeaponOptics = "optic_aco_grn";
@@ -48,16 +58,18 @@ class Loadouts {
         };
         class Independent {
             uniform = "rhsgref_uniform_woodland";
+            vest = "V_TacChestrig_cbr_F";
+            backpack = "B_Kitbag_mcamo";
             primaryWeapon = "arifle_AK12_F";
             primaryWeaponOptics = "optic_aco";
             primaryWeaponPointer = "acc_flashlight";
-            vest = "V_TacChestrig_cbr_F";
             headgear = "rhsgref_helmet_pasgt_woodland";
             radio = "tf_anprc148jem";
         };
     };
 
     class Type {
+
         class B_Pilot_F {
             uniform = "U_B_PilotCoveralls";
             addItemsToUniform[] = {"acc_flashlight", "ACE_IR_Strobe_Item", "ACE_Chemlight_IR", "ACE_Chemlight_HiRed"};
@@ -90,7 +102,9 @@ class Loadouts {
             binoculars = "ACE_Vector";
             addItemsToVest[] = {
                 LIST_10("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
-                LIST_2("SmokeShell"),
+                LIST_2("SmokeShell")
+            };
+            addItemsToBackpack[] = {
                 LIST_4("ACE_Chemlight_Hired"),
                 LIST_10("UGL_FlareRed_F")
             };
@@ -102,17 +116,20 @@ class Loadouts {
             binoculars = "ACE_Vector";
             addItemsToVest[] = {
                 LIST_10("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
-                LIST_2("SmokeShell"),
+                LIST_2("SmokeShell")
+            };
+            addItemsToBackpack[] = {
                 LIST_4("ACE_Chemlight_Hired"),
                 LIST_8("UGL_FlareRed_F")
             };
-
         };
         class B_Soldier_TL_F {
             primaryWeapon = "rhs_weap_m16a4_carryhandle";
             addItemsToVest[] = {
                 LIST_10("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
-                LIST_2("SmokeShell"),
+                LIST_2("SmokeShell")
+            };
+            addItemsToBackpack[] = {
                 LIST_4("ACE_Chemlight_Hired"),
                 LIST_4("UGL_FlareRed_F")
             };
@@ -120,25 +137,44 @@ class Loadouts {
         class B_Soldier_AR_F {
             primaryWeapon = "rhs_weap_m249_pip_L_para";
             addItemsToVest[] = {
-                LIST_6("rhs_200rnd_556x45_T_SAW"),
-                "SmokeShell",
+                LIST_3("rhs_200rnd_556x45_T_SAW"),
+                "SmokeShell"
+            };
+            addItemsToBackpack[] = {
                 LIST_2("ACE_Chemlight_Hired")
             };
         };
         class B_Soldier_AAR_F {
             primaryWeapon = "rhs_weap_m16a4_carryhandle";
             addItemsToVest[] = {
-                LIST_10("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
-                LIST_2("rhs_200rnd_556x45_T_SAW"),
-                "SmokeShell",
+                LIST_8("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
+                "SmokeShell"
+            };
+            addItemsToBackpack[] = {
+                LIST_4("rhs_200rnd_556x45_T_SAW"),
                 LIST_2("ACE_Chemlight_Hired")
+            };
+        };
+        class B_Medic_F {
+            primaryWeapon = "rhs_weap_m16a4_carryhandle";
+            addItemsToVest[] = {
+                LIST_8("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
+                LIST_2("ACE_Chemlight_HiRed"),
+                LIST_2("ACE_Chemlight_HiBlue"),
+                LIST_4("SmokeShell")
+            };
+            addItemsToBackpack[] = {
+                SANI_BACKPACK()
             };
         };
         class B_Soldier_F {
             primaryWeapon = "rhs_weap_m16a4_carryhandle";
             addItemsToVest[] = {
-                LIST_15("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
-                LIST_2("SmokeShell"),
+                LIST_10("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
+                LIST_2("SmokeShell")
+            };
+            addItemsToBackpack[] = {
+                LIST_5("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
                 LIST_4("HandGrenade"),
                 LIST_2("ACE_Chemlight_Hired")
             };
@@ -153,7 +189,9 @@ class Loadouts {
             headgear = "rhs_beret_milp";
             addItemsToVest[] = {
                 LIST_10("30Rnd_762x39_Mag_Tracer_Green_F"),
-                LIST_2("SmokeShell"),
+                LIST_2("SmokeShell")
+            };
+            addItemsToBackpack[] = {
                 LIST_4("ACE_Chemlight_Higreen"),
                 LIST_10("UGL_FlareGreen_F")
             };
@@ -166,7 +204,9 @@ class Loadouts {
             gps = "ItemGPS";
             addItemsToVest[] = {
                 LIST_10("30Rnd_762x39_Mag_Tracer_Green_F"),
-                LIST_2("SmokeShell"),
+                LIST_2("SmokeShell")
+            };
+            addItemsToBackpack[] = {
                 LIST_4("ACE_Chemlight_Higreen"),
                 LIST_8("UGL_FlareGreen_F")
             };
@@ -175,7 +215,9 @@ class Loadouts {
             primaryWeapon = "arifle_AK12_GL_F";
             addItemsToVest[] = {
                 LIST_10("30Rnd_762x39_Mag_Tracer_Green_F"),
-                LIST_2("SmokeShell"),
+                LIST_2("SmokeShell")
+            };
+            addItemsToBackpack[] = {
                 LIST_4("ACE_Chemlight_Higreen"),
                 LIST_4("UGL_FlareGreen_F")
             };
@@ -184,8 +226,10 @@ class Loadouts {
             primaryWeapon = "rhs_weap_pkm";
             addItemsToVest[] = {
                 LIST_2("ACE_Chemlight_Higreen"),
-                LIST_2("SmokeShell"),
-                LIST_4("rhs_100Rnd_762x54mmR_green")
+                LIST_2("SmokeShell")
+            };
+            addItemsToBackpack[] = {
+                LIST_6("rhs_100Rnd_762x54mmR_green")
             };
         };
         class O_Soldier_AAR_F {
@@ -194,8 +238,10 @@ class Loadouts {
             addItemsToVest[] = {
                 LIST_8("30Rnd_762x39_Mag_Tracer_F"),
                 LIST_2("ACE_Chemlight_Higreen"),
-                LIST_2("SmokeShell"),
-                LIST_4("rhs_100Rnd_762x54mmR_green")
+                LIST_2("SmokeShell")
+            };
+            addItemsToBackpack[] = {
+                LIST_6("rhs_100Rnd_762x54mmR_green")
             };
         };
         class O_Medic_F {
@@ -204,7 +250,11 @@ class Loadouts {
             addItemsToVest[] = {
                 LIST_8("30Rnd_762x39_Mag_Tracer_F"),
                 LIST_2("ACE_Chemlight_HiGreen"),
+                LIST_2("ACE_Chemlight_HiBlue"),
                 LIST_4("SmokeShell")
+            };
+            addItemsToBackpack[] = {
+                SANI_BACKPACK()
             };
         };
         class O_Soldier_F {
@@ -212,7 +262,10 @@ class Loadouts {
             headgear = "rhs_6b27m_green_ess";
             addItemsToVest[] = {
                 LIST_10("30Rnd_762x39_Mag_Tracer_Green_F"),
-                LIST_2("SmokeShell"),
+                LIST_2("SmokeShell")
+            };
+            addItemsToBackpack[] = {
+                LIST_5("30Rnd_762x39_Mag_Tracer_Green_F"),
                 LIST_4("HandGrenade"),
                 LIST_2("ACE_Chemlight_Higreen")
             };
@@ -227,8 +280,10 @@ class Loadouts {
             gps = "ItemGPS";
             addItemsToVest[] = {
                 LIST_10("30Rnd_762x39_Mag_Tracer_F"),
-                LIST_4("ACE_Chemlight_Hiyellow"),
-                LIST_2("SmokeShell"),
+                LIST_2("SmokeShell")
+            };
+            addItemsToBackpack[] = {
+                LIST_4("ACE_Chemlight_HiYellow"),
                 LIST_10("UGL_FlareYellow_F")
             };
 
@@ -241,17 +296,21 @@ class Loadouts {
             gps = "ItemGPS";
             addItemsToVest[] = {
                 LIST_10("30Rnd_762x39_Mag_Tracer_F"),
+                LIST_2("SmokeShell")
+            };
+            addItemsToBackpack[] = {
                 LIST_4("ACE_Chemlight_Hiyellow"),
-                LIST_2("SmokeShell"),
                 LIST_8("UGL_FlareYellow_F")
             };
         };
         class I_Soldier_TL_F {
             primaryWeapon = "arifle_AK12_GL_F";
             addItemsToVest[] = {
-                LIST_12("30Rnd_762x39_Mag_Tracer_F"),
+                LIST_10("30Rnd_762x39_Mag_Tracer_F"),
+                LIST_2("SmokeShell")
+            };
+            addItemsToBackpack[] = {
                 LIST_4("ACE_Chemlight_Hiyellow"),
-                LIST_2("SmokeShell"),
                 LIST_4("UGL_FlareYellow_F")
             };
         };
@@ -260,17 +319,21 @@ class Loadouts {
             primaryWeaponUnderbarrel = "bipod_03_F_blk";
             addItemsToVest[] = {
                 LIST_2("ACE_Chemlight_Hiyellow"),
-                LIST_2("SmokeShell"),
+                LIST_2("SmokeShell")
+            };
+            addItemsToBackpack[] = {
                 LIST_3("200Rnd_65x39_cased_Box_Tracer")
             };
         };
         class I_Soldier_AAR_F {
             primaryWeapon = "arifle_AK12_F";
             addItemsToVest[] = {
-                LIST_2("ACE_Chemlight_Hiyellow"),
-                LIST_2("SmokeShell"),
-                LIST_2("200Rnd_65x39_cased_Box_Tracer"),
                 LIST_8("30Rnd_762x39_Mag_Tracer_F"),
+                LIST_2("SmokeShell")
+            };
+            addItemsToBackpack[] = {
+                LIST_2("ACE_Chemlight_HiYellow"),
+                LIST_3("200Rnd_65x39_cased_Box_Tracer")
             };
         };
         class I_Medic_F {
@@ -278,15 +341,22 @@ class Loadouts {
             addItemsToVest[] = {
                 LIST_12("30Rnd_762x39_Mag_Tracer_F"),
                 LIST_2("ACE_Chemlight_Hiyellow"),
+                LIST_2("ACE_Chemlight_HiBlue"),
                 LIST_4("SmokeShell")
+            };
+            addItemsToBackpack[] = {
+                SANI_BACKPACK()
             };
         };
         class I_Soldier_F {
             primaryWeapon = "arifle_AK12_F";
             addItemsToVest[] = {
-                LIST_12("30Rnd_762x39_Mag_Tracer_F"),
+                LIST_10("30Rnd_762x39_Mag_Tracer_F"),
+                LIST_2("SmokeShell")
+            };
+            addItemsToBackpack[] = {
+                LIST_5("30Rnd_762x39_Mag_Tracer_F"),
                 LIST_2("ACE_Chemlight_Hiyellow"),
-                LIST_2("SmokeShell"),
                 LIST_4("HandGrenade")
             };
         };
