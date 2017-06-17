@@ -27,4 +27,5 @@ if ("B_Pilot_F" == typeOf _unit) then {
                 [_vehicle, "hostage jumped out"] remoteExec ["vehicleChat", 0];
             };
     }];
+    [] execVM "player\init\addUseLighterAction.sqf";
 };
