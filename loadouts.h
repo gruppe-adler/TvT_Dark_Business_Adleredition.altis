@@ -225,7 +225,7 @@ class Loadouts {
             };
         };
         class O_Soldier_AR_F {
-            primaryWeapon = "LMG_Zafir_F";
+            primaryWeapon = "rhs_weap_pkp";
             secondaryWeapon = "hgun_Pistol_heavy_02_F";
             secondaryWeaponPointer = "acc_flashlight_pistol";
             addItemsToVest[] = {
@@ -233,7 +233,7 @@ class Loadouts {
                 LIST_2("SmokeShell")
             };
             addItemsToBackpack[] = {
-                LIST_4("150Rnd_762x54_Box_Tracer")
+                LIST_6("rhs_100Rnd_762x54mmR_green")
             };
         };
         class O_Soldier_AAR_F {
@@ -319,7 +319,7 @@ class Loadouts {
             };
         };
         class I_Soldier_AR_F {
-            primaryWeapon = "LMG_Mk200_F";
+            primaryWeapon = "rhs_weap_pkm";
             primaryWeaponUnderbarrel = "bipod_03_F_blk";
             secondaryWeapon = "hgun_Pistol_heavy_02_F";
             secondaryWeaponPointer = "acc_flashlight_pistol";
@@ -328,7 +328,7 @@ class Loadouts {
                 LIST_2("SmokeShell")
             };
             addItemsToBackpack[] = {
-                LIST_3("200Rnd_65x39_cased_Box_Tracer")
+                LIST_6("rhs_100Rnd_762x54mmR_green")
             };
         };
         class I_Soldier_AAR_F {
@@ -339,7 +339,7 @@ class Loadouts {
             };
             addItemsToBackpack[] = {
                 LIST_2("ACE_Chemlight_HiYellow"),
-                LIST_3("200Rnd_65x39_cased_Box_Tracer")
+                LIST_6("rhs_100Rnd_762x54mmR_green")
             };
         };
         class I_Medic_F {
