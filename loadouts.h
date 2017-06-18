@@ -1,5 +1,5 @@
 #define SANI_BACKPACK() \
-    LIST_25("ACE_fieldDressing"),LIST_25("ACE_elasticBandage"),LIST_10("ACE_packingBandage"),LIST_10("ACE_quikclot"),LIST_12("ACE_epinephrine"),LIST_16("ACE_morphine"),LIST_6("ACE_adenosine"),LIST_6("ACE_tourniquet"),LIST_8("ACE_salineIV_500")
+    "ACE_personalAidKit", LIST_25("ACE_fieldDressing"),LIST_25("ACE_elasticBandage"),LIST_10("ACE_packingBandage"),LIST_10("ACE_quikclot"),LIST_12("ACE_epinephrine"),LIST_16("ACE_morphine"),LIST_6("ACE_adenosine"),LIST_6("ACE_tourniquet"),LIST_8("ACE_salineIV_500")
 
 class Loadouts {
     baseDelay = 5;
