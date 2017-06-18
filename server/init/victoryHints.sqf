@@ -22,7 +22,7 @@ DB_client_updateTaskState = {
     if (DB_playerIsDead) then {
         _taskSurviveState = 'FAILED';
     };
-    
+
     _mainObjectiveState = (missionNamespace getVariable [DB_playerVictoryVarName, ""]);
 
     task_main_objective setTaskState _mainObjectiveState;
@@ -94,8 +94,8 @@ DB_createInAreaPresenceTrigger = {
                 (blufor_hostage in thisList) // FIXME dead units are excepted from trigger stuff. yes -.-
             },
             {
-                _status = 'dead';
-                if (alive blufor_hostage) then { _status = 'alive'; };
+                _status = 'alive';
+                if (typeof blufor_hostage == "ACE_BodyBagObject") then { _status = 'dead'; };
                 _msg = format ["Dark Business: BLUFOR hostage reached BLUFOR base %1!", _status];
     			OBJECTIVE_STATE_BLUFOR = 'SUCCEEDED';
                 if (_status == "dead") then {
@@ -224,3 +224,12 @@ DB_createInAreaPresenceTrigger = {
 ] call CBA_fnc_waitUntilAndExecute;
 
 [] call DB_publishTaskStates;
+
+
+DB_killedHandler = addMissionEventHandler ["EntityKilled",
+{
+    _killed = param [0, objNull];
+    if (_killed == blufor_hostage) then {
+        adminLog("hostage killed");
+    };
+}];

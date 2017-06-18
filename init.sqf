@@ -17,6 +17,7 @@ if (isServer) then {
     [] execVM "server\init\setAllSidesFriendly.sqf";
     [] execVM "server\init\victoryHints.sqf";
     [] execVM "server\init\makeUnitsEditableForZeus.sqf";
+    [] execVM "server\init\handleHostageDisconnect.sqf";
 
     ["Initialize", [true]] call BIS_fnc_dynamicGroups;
 
@@ -37,6 +38,7 @@ if (hasInterface) then {
 
     } else  {
         [] execVM "player\init\playerVictoryVarName.sqf";
+        [] execVM "player\init\addBodyBagAction.sqf";
         [] execVM "player\prepPlayer.sqf";
         [] execVM "player\addBriefing.sqf";
         [] execVM "player\addArsenal.sqf";
