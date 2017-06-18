@@ -39,6 +39,7 @@ if (hasInterface) then {
     } else  {
         [] execVM "player\init\playerVictoryVarName.sqf";
         [] execVM "player\init\addBodyBagAction.sqf";
+        [] execVM "player\init\checkOutOfArea.sqf";
         [] execVM "player\prepPlayer.sqf";
         [] execVM "player\addBriefing.sqf";
         [] execVM "player\addArsenal.sqf";
