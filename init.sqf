@@ -8,6 +8,9 @@ disableRemoteSensors true;
 
  tf_no_auto_long_range_radio = true;
  tf_give_personal_radio_to_regular_soldier = false;
+ tf_west_radio_code = (str blufor);
+ tf_east_radio_code = (str opfor);
+ tf_guer_radio_code = (str independent);
 
 [] execVM "helpers\lighterSwitch.sqf";
 
