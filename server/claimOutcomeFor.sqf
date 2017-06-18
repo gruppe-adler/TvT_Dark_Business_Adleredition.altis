@@ -32,7 +32,7 @@ if (_minObjectiveState < -1) then {
 
 _allClaims = DEFEAT_CLAIMS + VICTORY_CLAIMS;
 _allClaimsUnique = _allClaims arrayIntersect [BLUFOR, INDEPENDENT, OPFOR];
-if (count _allClaimsUnique == 3) then {
+if ((count _allClaimsUnique) == 3) then {
     [DB_endMission, [], 10] call CBA_fnc_waitAndExecute; // all accounted for!
 };
 
