@@ -1,6 +1,7 @@
 _side = param [0, sideUnknown];
+_claimedObjectiveState = param [1, 0];
 
-if (player == blufor_hostage) exitWith { // nope. hostage is separate
+if ((player == blufor_hostage) && _claimedObjectiveState != 2) exitWith {
     true
 };
 

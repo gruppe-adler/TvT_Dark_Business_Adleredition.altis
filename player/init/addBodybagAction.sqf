@@ -6,7 +6,8 @@ _wrapIntoBodyBag = {
         blufor_hostage = _bodyBag;
         publicVariable "blufor_hostage"; // TODO this is brutal. test test test
     };
-    deleteVehicle _target;
+    //deleteVehicle _target; // cabnnot delete player unit, soooo just move it
+    _target setPos [0, 0];
 
 };
 

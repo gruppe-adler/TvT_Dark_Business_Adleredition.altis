@@ -37,8 +37,13 @@ if ((count _allClaimsUnique) == 3) then {
 };
 
 
-[[_side], "player\outcomeClaimed.sqf"] remoteExec ["execVM", _side, true];
+[[_side, _minObjectiveState], "player\outcomeClaimed.sqf"] remoteExec ["execVM", _side, true];
 
 switch (_side) do {
     case RESISTANCE: {opfor_munitions_truck setPos [0, 0]};
+    case OPFOR: {
+        if (_minObjectiveState == 2) then {
+            [[_side, _minObjectiveState], "player\outcomeClaimed.sqf"] remoteExec ["execVM", blufor_hostage, true];
+        };
+    };
 };

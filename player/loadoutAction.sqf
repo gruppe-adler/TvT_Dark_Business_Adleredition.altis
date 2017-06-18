@@ -6,7 +6,7 @@
 		{
 			_msg = "player " + profileName + " getting re-equipped...";
 			adminLog(_msg);
-            [] call A3G_Loadout_fnc_ApplyLoadout;
+            [] call GRAD_Loadout_fnc_ApplyLoadout;
 			[] execVM "player\prepPlayer.sqf";
 		},
 		nil,
