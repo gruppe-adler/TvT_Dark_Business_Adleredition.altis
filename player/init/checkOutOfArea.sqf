@@ -3,8 +3,8 @@ if (playerSide in [INDEPENDENT, OPFOR]) then {
         {
             _markerName = "";
             switch (playerSide) do {
-                case INDEPENDENT: { _markerName = "marker_area_green"};
-                case OPFOR: { _markerName = "marker_area_green"};
+                case INDEPENDENT: { _markerName = "marker_area_greenfor"};
+                case OPFOR: { _markerName = "marker_area_redfor"};
             };
             if (!(alive player) || _markerName == "") exitWith {objNull};
 
@@ -28,10 +28,9 @@ if (playerSide == BLUFOR) then {
         {
             if (!(alive player) || (player == blufor_hostage)) exitWith {objNull};
 
-            _pos = getPos player;
-
-            if ((_pos inArea "marker_area_green") || (_pos inArea "marker_area_red")) then {
-                _height = (getPosATL player) select 2;
+            _pos = getPosATL player;
+            _height = (_pos select 2);
+            if ((_pos inArea "marker_area_greenfor") || (_pos inArea "marker_area_redfor")) then {
                 if (_height < 10) then {
                     [
                 		[player],
