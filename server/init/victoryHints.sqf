@@ -1,8 +1,8 @@
 #include "..\..\missionMacros.h"
 
-OBJECTIVE_STATE_BLUFOR = 0;
-OBJECTIVE_STATE_IND = 0;
-OBJECTIVE_STATE_OPFOR = 0;
+OBJECTIVE_STATE_BLUFOR = -2;
+OBJECTIVE_STATE_IND = -2;
+OBJECTIVE_STATE_OPFOR = -2;
 
 VICTORY_CLAIMS = [];
 DEFEAT_CLAIMS = [];
@@ -130,8 +130,8 @@ DB_createInAreaPresenceTrigger = {
 					adminLog("hostage left blufor area, but victory has already been claimed");
 				};
 				_msg = format ["Dark Business: BLUFOR hostage left BLUFOR base %1!", _status];
-				OBJECTIVE_STATE_BLUFOR = 0;
-				OBJECTIVE_STATE_OPFOR = 0;
+				OBJECTIVE_STATE_BLUFOR = -2;
+				OBJECTIVE_STATE_OPFOR = -2;
 				call DB_publishTaskStates;
 				adminLog(_msg);
 			}
@@ -166,8 +166,8 @@ DB_createInAreaPresenceTrigger = {
 					adminLog("hostage left redfor area, but victory has already been claimed");
 				};
 				_msg = format ["Dark Business: BLUFOR hostage left REDFOR base %1!", _status];
-				OBJECTIVE_STATE_BLUFOR = 0;
-				OBJECTIVE_STATE_OPFOR = 0;
+				OBJECTIVE_STATE_BLUFOR = -2;
+				OBJECTIVE_STATE_OPFOR = -2;
 				call DB_publishTaskStates;
 				adminLog(_msg);
 			}
@@ -196,7 +196,7 @@ DB_createInAreaPresenceTrigger = {
 					adminLog("truck left greenfor area, but victory has already been claimed");
 				};
 				_msg = format ["Dark Business: truck left GREENFOR base %1!", _status];
-				OBJECTIVE_STATE_IND = 0;
+				OBJECTIVE_STATE_IND = -2;
 				call DB_publishTaskStates;
 				adminLog(_msg);
 			}

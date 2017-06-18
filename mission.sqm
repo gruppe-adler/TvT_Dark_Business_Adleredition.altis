@@ -17,9 +17,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={19414.973,497.39893,9555.4404};
-		dir[]={0.91768825,-0.3691791,-0.14734679};
-		up[]={0.36485091,0.92921877,-0.05858244};
-		aside[]={-0.15854686,-4.4243643e-007,-0.98742557};
+		dir[]={0.77139175,-0.60417914,-0.19981179};
+		up[]={0.58487833,0.79684734,-0.15150066};
+		aside[]={-0.25075328,-8.0111204e-007,-0.96805316};
 	};
 };
 binarizationWanted=0;
@@ -1390,8 +1390,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17660.611,32.791538,10569.563};
-						angles[]={6.19276,5.6620574,0.0013439035};
+						position[]={17661.268,32.717335,10568.54};
+						angles[]={6.2658539,5.6620574,6.2113123};
 					};
 					side="Independent";
 					flags=6;
@@ -1400,6 +1400,7 @@ class Mission
 						skill=0.60000002;
 						rank="CAPTAIN";
 						name="ind_lead";
+						isPlayer=1;
 					};
 					id=132;
 					type="I_officer_F";
@@ -1470,7 +1471,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17657.283,33.040565,10570.638};
+						position[]={17657.939,32.975513,10569.614};
 						angles[]={6.2658529,0.79336321,6.2113094};
 					};
 					side="Independent";
@@ -1490,7 +1491,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17649.785,33.173435,10567.159};
+						position[]={17650.441,33.05912,10566.136};
 						angles[]={6.1795578,0,6.2711854};
 					};
 					side="Independent";
@@ -1509,7 +1510,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17657.236,33.184563,10573.948};
+						position[]={17657.893,33.092716,10572.925};
 						angles[]={6.1927657,2.4713333,0.0013372133};
 					};
 					side="Independent";

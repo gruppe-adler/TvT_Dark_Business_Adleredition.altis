@@ -44,7 +44,7 @@ if (hasInterface) then {
         [] execVM "player\addArsenal.sqf";
         [] execVM "player\loadoutAction.sqf";
         [] execVM "player\moveToSpecAction.sqf";
-        [] execVM "player\addClaimOutcomeAction.sqf";
+        [] execVM "player\init\addClaimOutcomeAction.sqf";
 
         ["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
     };
