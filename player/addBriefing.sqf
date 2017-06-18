@@ -1,12 +1,10 @@
 
-
-
 _title = "";
 _content = "";
 _condition = "";
 _title = "";
 
-switch (side player) do {
+switch (playerSide) do {
 	case west: {
 		_title = localize "str_GRAD_BLUFOR_title";
 		_content = localize "str_GRAD_BLUFOR_story";
@@ -41,6 +39,13 @@ player setCurrentTask task_main_objective;
 
 task_survive = player createSimpleTask ['dont_die'];
 task_survive setSimpleTaskDescription [localize "str_GRAD_task_dd_desc", localize "str_GRAD_task_dd_title", localize "str_GRAD_task_dd_title"];
+
+if (playerSide == west || playerSide == east) then {
+	_secondaryTitle = "retrieve hostage dead or alive";
+	_secondaryCondition = "If all else fails, at least retrieve the hostage's body";
+	task_secondary_objective = player createSimpleTask [_secondaryTitle];
+	task_secondary_objective setSimpleTaskDescription [_secondaryCondition, _secondaryTitle, _secondaryTitle];
+};
 
 player createDiarySubject ["scenario", localize "str_GRAD_scenario_subject"];
 

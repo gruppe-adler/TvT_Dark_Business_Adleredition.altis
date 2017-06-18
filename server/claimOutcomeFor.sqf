@@ -2,30 +2,30 @@
 
 _player = param [0];
 _side = param [1];
-_taskState = param [2];
+_minObjectiveState = param [2];
 
-if (_taskState == "SUCCEEDED" && (_side in VICTORY_CLAIMS)) exitWith {
+if (_minObjectiveState > 0 && (_side in VICTORY_CLAIMS)) exitWith {
     _msg =  "victory already claimed for " + (str _side);
     adminLog(_msg);
     [_msg] remoteExec ["hint", _player, true];
 };
 
-_mainObjectiveState = 'CREATED';
+_serverObjectiveState = 0;
 switch (_side) do {
-    case WEST: {_mainObjectiveState = OBJECTIVE_STATE_BLUFOR};
-    case RESISTANCE: {_mainObjectiveState = OBJECTIVE_STATE_IND};
-    case EAST: {_mainObjectiveState = OBJECTIVE_STATE_OPFOR};
+    case WEST: {_serverObjectiveState = OBJECTIVE_STATE_BLUFOR};
+    case RESISTANCE: {_serverObjectiveState = OBJECTIVE_STATE_IND};
+    case EAST: {_serverObjectiveState = OBJECTIVE_STATE_OPFOR};
 };
 
-if (_mainObjectiveState != _taskState) exitWith {
+if (_minObjectiveState > _serverObjectiveState) exitWith {
     ['the server disagrees.'] remoteExec ["hint", _player, true];
 };
 
-if (_taskState == "SUCCEEDED") then {
+if (_minObjectiveState >= -1) then {
     VICTORY_CLAIMS pushBackUnique _side;
     publicVariable "VICTORY_CLAIMS";
 };
-if (_taskState == "FAILED") then {
+if (_minObjectiveState < -1) then {
     DEFEAT_CLAIMS pushBackUnique _side;
     publicVariable "DEFEAT_CLAIMS";
 };
