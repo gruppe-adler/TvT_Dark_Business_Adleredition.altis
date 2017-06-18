@@ -21,3 +21,26 @@ if (playerSide in [INDEPENDENT, OPFOR]) then {
         []
     ] call CBA_fnc_addPerFrameHandler;
 };
+
+
+if (playerSide == BLUFOR) then {
+    [
+        {
+            if (!(alive player) || (player == blufor_hostage)) exitWith {objNull};
+
+            _pos = getPos player;
+
+            if ((_pos inArea "marker_area_green") || (_pos inArea "marker_area_red")) then {
+                _height = (getPosATL player) select 2;
+                if (_height < 10) then {
+                    [
+                		[player],
+                		"server\reportPlayerAstray.sqf"
+                	] remoteExec ["execVM", 2, false];
+                };
+            };
+        },
+        30,
+        []
+    ] call CBA_fnc_addPerFrameHandler;
+};
