@@ -22,7 +22,7 @@ if (playerSide in [INDEPENDENT, OPFOR]) then {
     ] call CBA_fnc_addPerFrameHandler;
 };
 
-
+/*
 if (playerSide == BLUFOR) then {
     [
         {
@@ -43,3 +43,4 @@ if (playerSide == BLUFOR) then {
         []
     ] call CBA_fnc_addPerFrameHandler;
 };
+*/
