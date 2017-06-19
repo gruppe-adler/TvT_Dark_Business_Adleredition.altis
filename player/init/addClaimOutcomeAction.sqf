@@ -11,9 +11,12 @@ _callbackVictory = {
 
 DB_defeatClaimCounter = 0;
 _callbackDefeat = {
-    if (DB_defeatClaimCounter == 1) exitWith {
+    if (DB_defeatClaimCounter == 0) exitWith {
         DB_defeatClaimCounter = 1;
-        hint "do you really want to do admit defeat and go to spec mode? Try again for 'yes'";
+        [{DB_defeatClaimCounter = 0;}, [], 60] call CBA_fnc_waitAndExecute;
+        _msg = "Do you really want to do admit defeat for your side and go to spec mode? Confirm by trying again within 60s";
+        hint _msg;
+        systemChat _msg;
     };
     if (player == blufor_hostage) exitWith { // hostage must NOT be able to influence all of blufor
         player setDamage 1;
